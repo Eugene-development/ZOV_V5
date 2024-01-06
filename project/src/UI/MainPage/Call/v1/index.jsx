@@ -21,7 +21,7 @@ export default () => {
             <div className="mt-10 flex items-center justify-center gap-x-6 ">
               <button
                 onClick={openVisibleFormConsultation}
-                className="rounded-md bg-red-700 px-8 py-2.5 text-sm font-semibold shadow-lg shadow-gray-500 text-white hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-gray-900 px-8 py-2.5 text-sm font-semibold shadow-xl shadow-gray-500 text-white hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Бесплатный дизайн проект
               </button>

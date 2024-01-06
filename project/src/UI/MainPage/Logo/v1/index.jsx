@@ -62,7 +62,7 @@ export default () => {
               <div className="gap-4 mt-8 sm:grid sm:grid-cols-4 sm:mt-12 object-contain">
                 <img
                   className="col-span-2 mb-4 sm:mb-0 rounded-lg [200/80]"
-                  src="https://avatars.mds.yandex.net/get-yabs_performance/1887606/picdf653584f1cddfcb7c3f7666d5d65772/hugeX"
+                  src="https://storage.yandexcloud.net/zovrus/site/tech/1.jpeg"
                   alt="content gallery 1"
                 />
                 {/* <img
@@ -72,12 +72,12 @@ export default () => {
                 /> */}
                 <img
                   className="hidden col-span-1 sm:block rounded-lg "
-                  src="https://proreiling.ru/wp-content/uploads/8/2/3/82356d35a56e50470847da9781fe2415.jpeg"
+                  src="https://storage.yandexcloud.net/zovrus/site/tech/2.jpeg"
                   alt="content gallery 2"
                 />
                 <img
                   className="hidden col-span-1 sm:block rounded-lg "
-                  src="https://tehnomult.ru/uploads/blog/foto-1226-03-2020-10-02.jpg"
+                  src="https://storage.yandexcloud.net/zovrus/site/tech/3.jpeg"
                   alt="content gallery 3"
                 />
                 {/* <img
@@ -87,17 +87,17 @@ export default () => {
                 /> */}
                 <img
                   className="hidden col-span-1 sm:block rounded-lg "
-                  src="https://avatars.mds.yandex.net/get-mpic/4219717/img_id5024808702663609812.jpeg/orig"
+                  src="https://storage.yandexcloud.net/zovrus/site/tech/4.jpeg"
                   alt="content gallery 4"
                 />
                 <img
                   className="hidden col-span-1 sm:block rounded-lg "
-                  src="https://btkorzina.ru/wp-content/uploads/2021/02/603350e88733b.jpg"
+                  src="https://storage.yandexcloud.net/zovrus/site/tech/5.jpeg"
                   alt="content gallery 6"
                 />
                 <img
                   className="col-span-2 rounded-lg aspect-[200/97]"
-                  src="https://mafa-kzn.ru/images/Interer_uglovoy_kuhni_8_15162501.jpg"
+                  src="https://storage.yandexcloud.net/zovrus/site/tech/6.jpeg"
                   alt="content gallery 5"
                 />
               </div>

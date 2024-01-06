@@ -11,6 +11,12 @@ const nextConfig = {
   // remotePatterns: [
   //   {
   //     protocol: "https",
+  //     hostname: "storage.yandexcloud.net",
+  //   },
+  // ],
+  // remotePatterns: [
+  //   {
+  //     protocol: "https",
   //     hostname: "art-holding.su",
   //     port: "",
   //     pathname: "/**",
