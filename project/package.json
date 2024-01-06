@@ -1,0 +1,41 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.13",
+    "@heroicons/react": "^2.0.16",
+    "axios": "^1.6.3",
+    "clsx": "^1.2.1",
+    "debug": "^4.3.4",
+    "framer-motion": "^10.12.12",
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.0.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-use": "^17.4.0",
+    "sharp": "^0.32.6",
+    "supports-color": "^8.1.1",
+    "zustand": "^4.3.9"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.4",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "prettier": "^3.0.0",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
