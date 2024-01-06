@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["art-holding.su", "zovofficial.com", "zovrus.ru"],
+    domains: [
+      "art-holding.su",
+      "zovofficial.com",
+      "zovrus.ru",
+      "https://storage.yandexcloud.net",
+    ],
   },
   // remotePatterns: [
   //   {

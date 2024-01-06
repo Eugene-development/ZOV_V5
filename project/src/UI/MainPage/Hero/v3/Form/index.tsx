@@ -38,7 +38,7 @@ export default () => {
 
   return (
     <div className="hidden md:block relative isolate mt-8 ">
-      <div className="max-w-xl lg:max-w-2xl bg-gray-900/60 p-6 shadow-2xl shadow-black rounded-md">
+      <div className="max-w-xl lg:max-w-2xl bg-gray-800/60 p-6 shadow-2xl shadow-black rounded-md">
         <p className="mb-6 text-xl font-semibold leading-6 text-white">
           Заявка на бесплатный дизайн проект и просчёт
         </p>
