@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+
 import Form from "./Form";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
@@ -67,40 +69,40 @@ export default function index() {
             </svg>
           </button>
         </div>
-        {/* <div className="grid gap-8 pt-8 lg:pt-12 mt-8 lg:mt-12 sm:grid-cols-2 lg:grid-cols-4 bg-gray-800/60 p-6 shadow-2xl shadow-black rounded-md">
+        <div className="grid gap-8 pt-8 lg:py-12 mt-8 lg:mt-12 sm:grid-cols-2 lg:grid-cols-4 bg-gray-800/60 p-6 shadow-2xl shadow-black rounded-md">
             <div>
                 <h2 className="mb-1 text-lg font-bold">Кухонные гарнитуры</h2>
-                <p className="mb-1 text-sm text-gray-400">We announced fourth quarter 2021 results</p>
-                <a href="#" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
-                    Read more
-                    <svg className="ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                </a>
+                <p className="mb-1 text-sm text-gray-200">Бесплатный дизайн-проект</p>
+                <Link href="/catalog/kuhna" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
+                    Подробнее
+                    <svg className="ml-2 w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                </Link>
             </div>
             <div>
                 <h2 className="mb-1 text-lg font-bold">Гардеробные комнаты</h2>
-                <p className="mb-1 text-sm text-gray-400">We announced fourth quarter 2021 results</p>
-                <a href="#" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
-                    Read more
-                    <svg className="ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                </a>
+                <p className="mb-1 text-sm text-gray-200">Рассрочка</p>
+                <Link href="/catalog/garderob" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
+                    Подробнее
+                    <svg className="ml-2 w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                </Link>
             </div>
             <div>
                 <h2 className="mb-1 text-lg font-bold">Шкафы купе</h2>
-                <p className="mb-1 text-sm text-gray-400">We announced fourth quarter 2021 results</p>
-                <a href="#" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
-                    Read more
-                    <svg className="ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                </a>
+                <p className="mb-1 text-sm text-gray-200">Акции</p>
+                <Link href="/catalog/kupe" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
+                    Подробнее
+                    <svg className="ml-2 w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                </Link>
             </div>
             <div>
                 <h2 className="mb-1 text-lg font-bold">Распродажа мебели</h2>
-                <p className="mb-1 text-sm text-gray-400">We announced fourth quarter 2021 results</p>
-                <a href="#" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
-                    Read more
-                    <svg className="ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                </a>
+                <p className="mb-1 text-sm text-gray-200">Скидки</p>
+                <Link href="/catalog/rasprodazha" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
+                    Подробнее
+                    <svg className="ml-2 w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                </Link>
             </div>
-        </div>               */}
+        </div>              
       </div>
     </section>
   );

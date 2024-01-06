@@ -13,11 +13,6 @@ const data = {
   },
   products: [
     {
-      project: "КУХНЯ ЛОНГФОРД ПРЯМАЯ",
-      description: "180000 рублей",
-      img: "https://zovrus.ru/files/_cache/product/chr-8922.resize1200x1200w.jpg?7381128335e22fc636d9ad53a5ea196e",
-    },
-    {
       project: "СТРАЙП ЛММ9ОБР",
       description: "143800 рублей",
       img: "https://zovrus.ru/files/_cache/product/1.-osnovnoe-foto.resize1200x1200w.jpg?5a195c08eebce1f98ab113d6d6bb061b",
