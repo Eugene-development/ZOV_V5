@@ -42,7 +42,7 @@ const products = [
     description: "Реализация продукции по сниженным ценам",
     href: "/catalog/rasprodazha",
     icon: CursorArrowRaysIcon,
-    img: "https://zovrus.ru/files/_cache/product/1-glavnoe-foto.resize1200x1200w.jpg?2aa0c5a19ce1394fe35b46aadd2d97b8",
+    img: "https://zovrus.ru/files/_cache/product/chr-1468-1.resize1200x1200w.jpg?bb6ff66a75163cd326252dd51a442d6b",
   },
 ];
 const equipment = [
@@ -130,7 +130,7 @@ export default () => {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative rounded-lg p-6 text-sm leading-6 bg-gray-50 border-l transition ease-in-out hover:scale-110"
+                      className="group relative rounded-lg p-6 text-sm leading-6 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-50 border-l transition ease-in-out hover:scale-110"
                     >
                       <div className="flex ">
                         <img

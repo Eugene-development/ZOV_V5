@@ -6,6 +6,7 @@ import { Banner, Header, Footer, FormConsultation, PromoCode } from "@/UI";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 export const metadata: Metadata = {
   //  ^?
 
