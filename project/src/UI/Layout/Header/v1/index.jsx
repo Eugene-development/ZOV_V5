@@ -69,8 +69,8 @@ export default () => {
           <Link href="/" className="-m-1.5 pl-3">
             <span className="sr-only">Фабрика "ЗОВ"</span>
             <img
-              className="h-12 w-auto"
-              src="https://zovofficial.com/image/catalog/logo-rus-x2.png"
+              className="size-10"
+              src="https://storage.yandexcloud.net/zovrus/brand/logo-rus-x2.png"
               alt="логотип"
             />
           </Link>

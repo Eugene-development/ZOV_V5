@@ -5,7 +5,7 @@ const nextConfig = {
       "art-holding.su",
       "zovofficial.com",
       "zovrus.ru",
-      "https://storage.yandexcloud.net",
+      "storage.yandexcloud.net",
     ],
   },
   // remotePatterns: [
