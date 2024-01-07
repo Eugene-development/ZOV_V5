@@ -6,7 +6,7 @@ export default () => {
       <div className="bg-gray-50">
         <div className="mx-auto max-w-full py-16  sm:py-20 px-4 sm:px-16 lg:px-24 ">
           <div className="max-w-screen-lg mx-auto  lg:mb-20 text-center font-display">
-            <h2 className="tracking-wide my-8 text-3xl md:text-7xl font-display font-extrabold text-gray-800 dark:text-white">
+            <h2 className="tracking-wide my-8 text-3xl md:text-8xl font-display font-extrabold text-gray-800 dark:text-white">
               Мебель <br className="md:hidden" /> для жизни
             </h2>
             <p className="font-light mx-auto max-w-3xl text-gray-500 dark:text-gray-400 text-sm sm:text-xl">

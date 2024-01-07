@@ -18,7 +18,7 @@ export default function index() {
     <section className="shadow-xl bg-[url('https://storage.yandexcloud.net/zovrus/site/1-1600x1573.jpg')] bg-no-repeat bg-cover bg-center bg-gray-200 bg-blend-multiply">
     {/* <section className="shadow-xl bg-[url('https://zovofficial.com/image/cache/catalog/products/kuhni/2022/velvet/1-1600x1573.jpg')] bg-no-repeat bg-cover bg-center bg-gray-300 bg-blend-multiply"> */}
       <div className="relative py-8 px-4 mx-auto max-w-screen-xl text-white lg:py-16 z-1">
-        <div className="mb-6 sm:mb-12">
+        <div className="mb-6 sm:mb-8">
           <div className="inline-flex sm:space-x-6">
             <span className="hidden md:block rounded-full bg-gray-500/10 px-6 py-1 text-xs md:text-sm font-semibold leading-6 text-gray-50 ring-1 ring-inset ring-gray-500/40 ">
               Мебель для жизни
@@ -36,8 +36,8 @@ export default function index() {
           </div>
         </div>
         <div className="mb-6 max-w-screen-lg lg:mb-0">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-7xl">
-            Мебель Белоруссии &#171;ЗОВ&#187;
+          <h1 className="mb-12 text-4xl text-gray-100 font-extrabold font-display tracking-widest leading-none md:text-5xl lg:text-8xl">
+            Фабрика &#171;ЗОВ&#187;
           </h1>
           <p className="mb-6 p-2 font-light text-white lg:mb-8 md:text-lg lg:text-xl bg-gray-900/20 ">
             Мебельная фабрика «ЗОВ» - это крупнейший производитель корпусной
@@ -71,33 +71,33 @@ export default function index() {
         </div>
         <div className="grid gap-8 pt-8 lg:py-12 mt-8 lg:mt-12 sm:grid-cols-2 lg:grid-cols-4 bg-gray-800/60 p-6 shadow-2xl shadow-black rounded-md">
             <div>
-                <h2 className="mb-1 text-lg font-bold">Кухонные гарнитуры</h2>
-                <p className="mb-1 text-sm text-gray-200">Бесплатный дизайн-проект</p>
-                <Link href="/catalog/kuhna" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
+                <h2 className="mb-1 text-xl font-bold">Кухонные гарнитуры</h2>
+                {/* <p className="mb-1 text-sm text-gray-200">Бесплатный дизайн-проект</p> */}
+                <Link href="/catalog/kuhna" className="mt-2 inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
                     Подробнее
                     <svg className="ml-2 w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </Link>
             </div>
             <div>
-                <h2 className="mb-1 text-lg font-bold">Гардеробные комнаты</h2>
-                <p className="mb-1 text-sm text-gray-200">Рассрочка</p>
-                <Link href="/catalog/garderob" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
+                <h2 className="mb-1 text-xl font-bold">Гардеробные комнаты</h2>
+                {/* <p className="mb-1 text-sm text-gray-200">Бесплатный дизайн-проект</p> */}
+                <Link href="/catalog/garderob" className="mt-2 inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
                     Подробнее
                     <svg className="ml-2 w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </Link>
             </div>
             <div>
-                <h2 className="mb-1 text-lg font-bold">Шкафы купе</h2>
-                <p className="mb-1 text-sm text-gray-200">Акции</p>
-                <Link href="/catalog/kupe" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
+                <h2 className="mb-1 text-xl font-bold">Шкафы купе</h2>
+                {/* <p className="mb-1 text-sm text-gray-200">Бесплатный дизайн-проект</p> */}
+                <Link href="/catalog/kupe" className="mt-2 inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
                     Подробнее
                     <svg className="ml-2 w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </Link>
             </div>
             <div>
-                <h2 className="mb-1 text-lg font-bold">Распродажа мебели</h2>
-                <p className="mb-1 text-sm text-gray-200">Скидки</p>
-                <Link href="/catalog/rasprodazha" className="inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
+                <h2 className="mb-1 text-xl font-bold">Распродажа мебели</h2>
+                {/* <p className="mb-1 text-sm text-gray-200">Бесплатный дизайн-проект</p> */}
+                <Link href="/catalog/rasprodazha" className="mt-2 inline-flex items-center text-sm font-semibold text-gray-200 hover:underline">
                     Подробнее
                     <svg className="ml-2 w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </Link>

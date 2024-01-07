@@ -25,7 +25,7 @@ export default () => {
           {/* <h2 className="tracking-wide mb-8 text-3xl md:text-7xl  font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-green-400 to-violet-600">
             ЦВЕТОВАЯ ПАЛИТРА
           </h2> */}
-          <h2 className="tracking-wide mb-8 text-2xl md:text-7xl  font-extrabold">
+          <h2 className="tracking-wide mb-8 text-2xl md:text-8xl  font-extrabold">
             <span className="relative whitespace-nowrap text-blue-600">
               <svg
                 aria-hidden="true"
@@ -40,7 +40,7 @@ export default () => {
               </span>
             </span>
           </h2>
-          <p className="pt-2 sm:py-8 font-light text-sm sm:text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-green-500 to-violet-600">
+          <p className="pt-2 sm:py-10 font-light text-sm sm:text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-green-500 to-violet-600">
             Вы обязательно найдёте подходящий цвет под ваш интерьер из более чем
             2000 вариантов. От нежных пастельных тонов до ярких цветовых решений
             в матовом или глянцевом исполнении.
