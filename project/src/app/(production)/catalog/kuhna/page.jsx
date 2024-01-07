@@ -128,7 +128,7 @@ export default async () => {
   return (
     <>
       <HeadProduct head={data.head} />
-      <ProductList products={data.products} />
+      <ProductList products={products} />
     </>
   );
 };

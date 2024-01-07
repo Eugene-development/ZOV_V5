@@ -6,6 +6,7 @@ const nextConfig = {
       "zovofficial.com",
       "zovrus.ru",
       "storage.yandexcloud.net",
+      "lumen-image-bucket.s3.eu-central-1.amazonaws.com",
     ],
   },
   // remotePatterns: [
