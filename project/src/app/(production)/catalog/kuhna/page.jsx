@@ -1,4 +1,5 @@
 import { HeadProduct, ProductList } from "@/UI";
+import { getProduct } from "./server";
 
 export const metadata = {
   title: "Фабрика ЗОВ | Кухонные гарнитуры",
@@ -118,7 +119,12 @@ const data = {
   ],
 };
 
-export default () => {
+export default async () => {
+  const products = await getProduct()
+  console.log(products)
+
+
+  
   return (
     <>
       <HeadProduct head={data.head} />

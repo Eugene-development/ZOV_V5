@@ -36,7 +36,7 @@ export default function index() {
           </div>
         </div>
         <div className="mb-6 max-w-screen-lg lg:mb-0">
-          <h1 className="mb-12 text-4xl text-gray-100 font-extrabold font-display tracking-widest leading-none md:text-5xl lg:text-8xl">
+          <h1 className="mb-12 ml-2 text-4xl text-gray-100 font-extrabold font-display tracking-wide leading-none md:text-5xl lg:text-8xl">
             Фабрика &#171;ЗОВ&#187;
           </h1>
           <p className="mb-6 p-2 font-light text-white lg:mb-8 md:text-lg lg:text-xl bg-gray-900/20 ">
