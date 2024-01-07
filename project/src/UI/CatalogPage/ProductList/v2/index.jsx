@@ -30,7 +30,7 @@ export default (props) => {
                   >
                     <Image
                       className="object-cover w-full h-[320px] scale-100 ease-in duration-300 group-hover:scale-125 "
-                      src={`https://lumen-image-bucket.s3.eu-central-1.amazonaws.com/images/${item?.image?.hash}`}
+                      src={`${process.env.NEXT_PUBLIC_S3}${item?.image?.hash}`}
                       width={360}
                       height={190}
                       alt='кухонный гарнитур'
