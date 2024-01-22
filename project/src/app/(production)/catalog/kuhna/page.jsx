@@ -121,7 +121,7 @@ const data = {
 
 export default async () => {
   const products = await getProduct()
-  console.log(products)
+  // console.log(products)
 
 
   

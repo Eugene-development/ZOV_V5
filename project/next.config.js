@@ -1,40 +1,39 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "art-holding.su",
-      "zovofficial.com",
-      "zovrus.ru",
-      "storage.yandexcloud.net",
-      "lumen-image-bucket.s3.eu-central-1.amazonaws.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "art-holding.su",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "zovofficial.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "zovrus.ru",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "storage.yandexcloud.net",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "lumen-image-bucket.s3.eu-central-1.amazonaws.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
-  // remotePatterns: [
-  //   {
-  //     protocol: "https",
-  //     hostname: "storage.yandexcloud.net",
-  //   },
-  // ],
-  // remotePatterns: [
-  //   {
-  //     protocol: "https",
-  //     hostname: "art-holding.su",
-  //     port: "",
-  //     pathname: "/**",
-  //   },
-  //   {
-  //     protocol: "https",
-  //     hostname: "zovofficial.com",
-  //     port: "",
-  //     pathname: "/**",
-  //   },
-  //   {
-  //     protocol: "https",
-  //     hostname: "zovrus.ru",
-  //     port: "",
-  //     pathname: "/**",
-  //   },
-  // ],
   experimental: {},
 };
 
