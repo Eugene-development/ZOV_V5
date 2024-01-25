@@ -64,7 +64,7 @@ export default () => {
                       as="h3"
                       className="text-base font-semibold leading-6 text-gray-900"
                     >
-                      Проект - {currentProduct.project}
+                      Проект - {currentProduct.value}
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="sm:px-8 text-xs sm:text-sm text-gray-500 ">
@@ -76,8 +76,8 @@ export default () => {
 
                 <Image
                   className="my-8 object-cover w-full sm:h-[320px] lg:h-[480px] scale-100 ease-in duration-300 group-hover:scale-125 rounded-md"
-                  src={currentProduct.img}
-                  alt={currentProduct.project}
+                  src={`${process.env.NEXT_PUBLIC_S3}/${currentProduct?.image?.hash}`}
+                  alt={`Проект ${currentProduct.value}`}
                   width={640}
                   height={420}
                 />

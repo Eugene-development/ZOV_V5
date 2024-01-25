@@ -14,11 +14,13 @@ const { visibleProductModal } = useProductStore;
 export default (props) => {
   const { openVisibleFormConsultation } = visibleFormConsultation();
   const { openVisibleProductModal } = visibleProductModal();
-
+// console.log(props)
   return (
     <>
         <ProductModal />
-
+    {/* { props == null && 
+     <p>Список пуст</p>   
+    } */}
     {props &&       
       <section className="bg-white dark:bg-gray-900 antialiased">
         <div className="max-w-screen-2xl px-4 mx-auto ">
@@ -36,7 +38,7 @@ export default (props) => {
                       src={`${process.env.NEXT_PUBLIC_S3}/${item?.image?.hash}`}
                       width={360}
                       height={190}
-                      alt='Мебель'
+                      alt={`Проект ${item.value}`}
                     />
                     <div className="absolute inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
                       {/* <div className="text-center"> */}
