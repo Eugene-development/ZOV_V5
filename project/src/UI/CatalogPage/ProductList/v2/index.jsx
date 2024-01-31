@@ -33,7 +33,7 @@ export default (props) => {
                     className="my-2 relative overflow-hidden group shadow-lg shadow-gray-700"
                   >
                     <Image
-                      className="object-cover w-full h-[320px] scale-100 ease-in duration-300 group-hover:scale-125 "
+                      className="object-cover w-full h-[360px]  scale-100 ease-in duration-300 group-hover:scale-125 "
                       // TODO: А если нет изображения?
                       src={`${process.env.NEXT_PUBLIC_S3}/${item?.image?.hash}`}
                       width={360}

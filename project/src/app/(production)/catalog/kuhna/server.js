@@ -20,6 +20,7 @@ const ALL_PRODUCTS = gql`
       }
     }
   }
+
   fragment body on Product {
     id
     value
@@ -28,6 +29,7 @@ const ALL_PRODUCTS = gql`
     created_at
     updated_at
   }
+
   fragment SEO on Product {
     seoTitle {
       value
