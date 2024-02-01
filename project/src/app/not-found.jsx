@@ -1,11 +1,11 @@
 import Link from "next/link";
 export const metadata = {
-	title: '',
-	description: '',
-	robots: {
-		index: false
-	}
-}
+  title: "",
+  description: "",
+  robots: {
+    index: false,
+  },
+};
 
 export default function NotFound() {
   return (

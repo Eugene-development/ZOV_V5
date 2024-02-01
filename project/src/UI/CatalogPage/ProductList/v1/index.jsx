@@ -14,7 +14,6 @@ export default (props) => {
   const { openVisibleFormConsultation } = visibleFormConsultation();
   const { openVisibleProductModal } = visibleProductModal();
 
-
   return (
     <>
       <ProductModal />

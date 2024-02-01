@@ -75,10 +75,10 @@ export default () => {
                 </div>
 
                 <Image
-                  className="my-8 object-cover w-full sm:h-[320px] lg:h-[480px] scale-100 ease-in duration-300 group-hover:scale-125 rounded-md"
+                  className="my-8 object-cover w-full sm:h-[320px] lg:h-[600px] scale-100 ease-in duration-300 group-hover:scale-125 rounded-md"
                   src={`${process.env.NEXT_PUBLIC_S3}/${currentProduct?.image?.hash}`}
                   alt={`Проект ${currentProduct.value}`}
-                  width={640}
+                  width={660}
                   height={420}
                 />
 

@@ -120,15 +120,20 @@ const data = {
 };
 
 export default async () => {
-  const products = await getProduct()
-  // console.log(products)
+  const products = await getProduct();
 
+  const filteredProducts = products.product.filter(
+    (product) => product.parent.value.toLowerCase() === "кухня",
+  );
 
-  
+  const newJsonData = {
+    product: filteredProducts,
+  };
+
   return (
     <>
       <HeadProduct head={data.head} />
-      <ProductList products={products} />
+      <ProductList products={newJsonData} />
     </>
   );
 };

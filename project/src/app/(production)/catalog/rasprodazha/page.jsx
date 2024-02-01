@@ -1,4 +1,5 @@
 import { HeadProduct, ProductList } from "@/UI";
+import { getProduct } from "./server";
 
 export const metadata = {
   title: "Фабрика ЗОВ | Распродажа",
@@ -25,11 +26,22 @@ const data = {
   ],
 };
 
-export default () => {
+export default async() => {
+
+    const products = await getProduct();
+
+  const filteredProducts = products.product.filter(
+    (product) => product.parent.value.toLowerCase() === "распродажа",
+  );
+
+  const newJsonData = {
+    product: filteredProducts,
+  };
+
   return (
     <>
       <HeadProduct head={data.head} />
-      <ProductList products={data.products} />
+      <ProductList products={newJsonData} />
     </>
   );
 };

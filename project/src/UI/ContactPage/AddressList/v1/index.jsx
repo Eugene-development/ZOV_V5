@@ -245,12 +245,13 @@ export default () => {
                     <p className="mb-2 text-base font-bold leading-tight text-gray-900 dark:text-white ">
                       <span>{item.address}</span>
                     </p>
-                    {item.metro !== '' ? 
+                    {item.metro !== "" ? (
                       <p className="my-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">
                         Метро: "{item.metro}"
                       </p>
-                      : <br/>
-                    }                   
+                    ) : (
+                      <br />
+                    )}
                     <p className="mb-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">
                       Режим работы: {item.workingMode}
                     </p>
