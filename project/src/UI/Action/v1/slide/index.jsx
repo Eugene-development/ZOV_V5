@@ -56,7 +56,7 @@ export default ({ action }) => {
             </div>
             <div className="hidden sm:block">
               <img
-                className="p-4 mx-auto sm:flex h-[28rem]"
+                className="p-4 mx-auto sm:flex max-h-[24rem]"
                 src={action.image}
                 alt="фото рубрики"
               />

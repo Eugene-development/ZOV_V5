@@ -36,25 +36,25 @@ const actions = [
     image:
       "https://www.stoleshka.ru/upload/iblock/90a/90ab6288fe4e6bacdf79ddf0299f9590.jpg",
   },
-  {
-    id: 2,
-    title: "Бытовая техника KRONA",
-    description:
-      "Эксклюзивные предложения от немецкого бренда на приобретение комплектов бытовой техники",
-    conditions: [
-      {
-        title:
-          "При покупке 3 позиций - любая Варочная поверхность стоимостью до 20 500 руб в Подарок",
-      },
-      {
-        title: "При покупке 3 позиций - СВЧ LAUNE 60 в Подарок",
-      },
-      {
-        title: "При покупке 4 позиций - ПММ BRENTA на 45/60 в Подарок",
-      },
-    ],
-    image: "https://krona.ru/local/dev/mockup/img/logo/logo.svg",
-  },
+  // {
+  //   id: 2,
+  //   title: "Бытовая техника KRONA",
+  //   description:
+  //     "Эксклюзивные предложения от немецкого бренда на приобретение комплектов бытовой техники",
+  //   conditions: [
+  //     {
+  //       title:
+  //         "При покупке 3 позиций - любая Варочная поверхность стоимостью до 20 500 руб в Подарок",
+  //     },
+  //     {
+  //       title: "При покупке 3 позиций - СВЧ LAUNE 60 в Подарок",
+  //     },
+  //     {
+  //       title: "При покупке 4 позиций - ПММ BRENTA на 45/60 в Подарок",
+  //     },
+  //   ],
+  //   image: "https://storage.yandexcloud.net/zovrus/site/tech/krona.png",
+  // },
 ];
 
 export default function page() {

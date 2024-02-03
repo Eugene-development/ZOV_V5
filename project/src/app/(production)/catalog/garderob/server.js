@@ -63,7 +63,7 @@ export async function getProduct() {
     return await request(
       NEXT_PUBLIC_GRAPHQL,
       ALL_PRODUCTS,
-      variables,
+      variables
       //   requestHeaders
     );
   } catch (error) {
