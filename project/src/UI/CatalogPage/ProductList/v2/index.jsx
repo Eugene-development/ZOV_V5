@@ -52,7 +52,7 @@ export default (props) => {
                 </div>
               ))}
             </div>
-            <div className="max-w-full p-4 mx-auto my-8 rounded-md lg:my-20 bg-gray-900 shadow-lg">
+            <div className="max-w-full p-4 mx-auto my-8 rounded-md lg:my-20 bg-gray-900 shadow-lg animate-background-shine">
               <div className="flex flex-col justify-between gap-3 md:gap-6 md:items-center md:flex-row">
                 <div className="flex items-center gap-1.5">
                   <span className="text-base font-normal text-gray-50 dark:text-gray-400">
@@ -64,9 +64,9 @@ export default (props) => {
 
                 <button
                   onClick={openVisibleFormConsultation}
-                  className="inline-flex items-center text-base font-medium text-red-800 hover:underline bg-gray-50 p-2 rounded-md"
+                  className="inline-flex items-center text-base font-medium text-red-800 hover:underline bg-gray-200 px-3 py-2 rounded-md"
                 >
-                  Бесплатный проект-дизайн
+                  Бесплатный дизайн-проект
                   <svg
                     aria-hidden="true"
                     className="w-5 h-5 ml-1.5 "
