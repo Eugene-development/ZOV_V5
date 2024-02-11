@@ -64,7 +64,7 @@ export default () => {
                       as="h3"
                       className="text-base font-semibold leading-6 text-gray-900"
                     >
-                      Проект - {currentProduct.value}
+                      Проект: {currentProduct.value}
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="sm:px-8 text-xs sm:text-sm text-gray-500 ">

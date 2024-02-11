@@ -52,25 +52,24 @@ export default (props) => {
                 </div>
               ))}
             </div>
-            <div className="max-w-full p-4 mx-auto my-8 rounded-md lg:my-20 bg-gray-50 dark:bg-gray-800 shadow-lg">
+            <div className="max-w-full p-4 mx-auto my-8 rounded-md lg:my-20 bg-gray-900 shadow-lg">
               <div className="flex flex-col justify-between gap-3 md:gap-6 md:items-center md:flex-row">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-base font-normal text-gray-700 dark:text-gray-400">
+                  <span className="text-base font-normal text-gray-50 dark:text-gray-400">
                     <span className="font-semibold">
-                      Получите бесплатную консультацию от нашего дизайнера по
-                      размерам, комплектации, цвету и ценам
+                      Получите бесплатный проект и просчёт мебели от нашего дизайнера 
                     </span>
                   </span>
                 </div>
 
                 <button
                   onClick={openVisibleFormConsultation}
-                  className="inline-flex items-center text-base font-medium text-indigo-600 hover:underline dark:text-red-500"
+                  className="inline-flex items-center text-base font-medium text-red-800 hover:underline bg-gray-50 p-2 rounded-md"
                 >
-                  Бесплатная консультация
+                  Бесплатный проект-дизайн
                   <svg
                     aria-hidden="true"
-                    className="w-5 h-5 ml-1.5"
+                    className="w-5 h-5 ml-1.5 "
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
