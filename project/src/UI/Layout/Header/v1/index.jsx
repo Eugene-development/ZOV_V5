@@ -108,10 +108,10 @@ export default () => {
           </Link>
 
           <Popover>
-            <Popover.Button className="outline-none pl-4 pr-3 flex items-center gap-x-1 text-sm xl:text-base font-display font-semibold leading-6 text-gray-950 hover:text-red-800 transition ease-in-out hover:scale-110">
+            <Popover.Button className="outline-none pl-4 pr-3 flex *:hover:rotate-90 items-center gap-x-1 text-sm xl:text-base font-display font-semibold leading-6 text-gray-950 hover:text-red-800 transition ease-in-out hover:scale-110">
               Каталог
               <ChevronRightIcon
-                className="h-5 w-5 flex-none text-red-700 animate-pulse"
+                className="h-5 w-5 flex-none text-red-700  animate-pulse"
                 aria-hidden="true"
               />
             </Popover.Button>
