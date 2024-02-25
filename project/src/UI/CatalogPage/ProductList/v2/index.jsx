@@ -52,6 +52,7 @@ export default (props) => {
                 </div>
               ))}
             </div>
+            
             <div className="max-w-full p-4 mx-auto my-8 rounded-md lg:my-20 bg-gradient-to-r from-gray-50 from-10% via-gray-50 via-30% to-gray-800 to-90%">
               <div className="flex flex-col justify-between gap-3 md:gap-6 md:items-center md:flex-row">
                 <div className="flex items-center gap-1.5">

@@ -4,6 +4,7 @@ export const metadata = {
   title: "Белорусская фабрика мебели ЗОВ | Акции",
   description: "Скидки и акции от нашей компании ЗОВ",
 };
+
 const actions = [
   {
     id: 1,
