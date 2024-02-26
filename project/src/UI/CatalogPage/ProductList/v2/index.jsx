@@ -55,7 +55,7 @@ export default (props) => {
 
             
           </div>
-  <section className="relative z-10 overflow-hidden bg-gray-700 py-16 px-24 mt-40">
+  <section className="relative z-10 overflow-hidden bg-gray-800 py-16 px-24 mt-40">
     <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
@@ -72,8 +72,8 @@ export default (props) => {
             </div>
             <div className="w-full px-4 lg:w-1/2">
                 <div className="text-center lg:text-right"><button onClick={openVisibleFormConsultation}
-                        className="font-semibold rounded-lg mx-auto inline-flex items-center justify-center bg-white py-4 px-9 hover:bg-opacity-90"
-                        href="#">Заказать дизайн-проект</button>
+                        className="font-semibold rounded-lg mx-auto inline-flex items-center justify-center bg-white py-4 px-10 hover:bg-opacity-90"
+                        >Заказать дизайн-проект</button>
                 </div>
             </div>
         </div>
