@@ -1,5 +1,4 @@
 User-Agent: *
 Allow: /
 Disallow: /private/
-
 Clean-param: etext
