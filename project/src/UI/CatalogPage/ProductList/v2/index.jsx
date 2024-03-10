@@ -24,7 +24,7 @@ export default ({products}) => {
               {products.map((item) => (
                 <div key={item.value}>
                   <FadeIn>
-                    <Link href={item.slug}
+                    <Link href={`/product/${item.slug}`}
                       
                       className="my-2 relative overflow-hidden group shadow-lg shadow-gray-700"
                     >
