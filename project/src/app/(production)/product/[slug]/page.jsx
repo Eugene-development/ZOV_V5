@@ -6,9 +6,26 @@ import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
 
 const product = {
   name: 'Кухонный гарнитур МИ0000',
-  price: '$140',
-  rating: 4,
+  rating: 5,
   images: [
+    {
+      id: 1,
+      name: 'Angled view',
+      src: 'https://zovrus.ru/files/_cache/product/chr-1662_1.resize1200x1200w.jpg?af6dc73996cfd1fdd3a81afe24ddc872',
+      alt: 'Angled front view with bag zipped and handles upright.',
+    },
+    {
+      id: 1,
+      name: 'Angled view',
+      src: 'https://zovrus.ru/files/_cache/product/chr-1662_1.resize1200x1200w.jpg?af6dc73996cfd1fdd3a81afe24ddc872',
+      alt: 'Angled front view with bag zipped and handles upright.',
+    },
+    {
+      id: 1,
+      name: 'Angled view',
+      src: 'https://zovrus.ru/files/_cache/product/chr-1662_1.resize1200x1200w.jpg?af6dc73996cfd1fdd3a81afe24ddc872',
+      alt: 'Angled front view with bag zipped and handles upright.',
+    },
     {
       id: 1,
       name: 'Angled view',
@@ -23,9 +40,21 @@ const product = {
     { name: 'Washed Gray', bgColor: 'bg-gray-500', selectedColor: 'ring-gray-500' },
   ],
   description: `
-    <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+    <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag.</p>
   `,
   details: [
+    {
+      name: 'Цена',
+      items: [
+        'Multiple strap configurations',
+        'Spacious interior with top zip',
+        'Leather handle and tabs',
+        'Interior dividers',
+        'Stainless strap loops',
+        'Double stitched construction',
+        'Water-resistant',
+      ],
+    },
     {
       name: 'Замер',
       items: [
@@ -37,7 +66,21 @@ const product = {
         'Double stitched construction',
         'Water-resistant',
       ],
+    },
+    {
       name: 'Доставка',
+      items: [
+        'Multiple strap configurations',
+        'Spacious interior with top zip',
+        'Leather handle and tabs',
+        'Interior dividers',
+        'Stainless strap loops',
+        'Double stitched construction',
+        'Water-resistant',
+      ],
+    },
+    {
+      name: 'Установка',
       items: [
         'Multiple strap configurations',
         'Spacious interior with top zip',
@@ -61,8 +104,8 @@ export default function Example() {
 
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+      <div className="max-w-screen-2xl px-4 mx-auto py-16 sm:px-6 sm:py-24  lg:px-8">
+        <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-16">
           {/* Image gallery */}
           <Tab.Group as="div" className="flex flex-col-reverse">
             {/* Image selector */}
@@ -93,7 +136,7 @@ export default function Example() {
               </Tab.List>
             </div>
 
-            <Tab.Panels className="aspect-h-1 aspect-w-1 w-full">
+            <Tab.Panels className="aspect-h-3 aspect-w-4 w-full">
               {product.images.map((image) => (
                 <Tab.Panel key={image.id}>
                   <img
@@ -108,12 +151,12 @@ export default function Example() {
 
           {/* Product info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900">{product.name}</h1>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900">{product.name}</h1>
 
-            <div className="mt-3">
+            {/* <div className="mt-3">
               <h2 className="sr-only">Product information</h2>
-              <p className="text-xl tracking-tight text-gray-900">Категория: Шкафы купе</p>
-            </div>
+              <p className="text-lg tracking-tight text-gray-900">Категория: Шкафы купе</p>
+            </div> */}
 
             {/* Reviews */}
             <div className="mt-3">
@@ -124,7 +167,7 @@ export default function Example() {
                     <StarIcon
                       key={rating}
                       className={classNames(
-                        product.rating > rating ? 'text-gray-500' : 'text-gray-300',
+                        product.rating > rating ? 'text-red-500' : 'text-gray-300',
                         'h-5 w-5 flex-shrink-0'
                       )}
                       aria-hidden="true"
@@ -144,11 +187,10 @@ export default function Example() {
               />
             </div>
 
-            <form className="mt-6">
-              {/* Colors */}
+            <div className="mt-6">
+             
               <div>
-                <h3 className="text-sm text-gray-600">Материал фасадов</h3>
-123
+                <h3 className="text-sm text-red-600">АКЦИЯ: Замер в пределах МКАД бесплатно</h3>
               </div>
 
               <div className="mt-10 flex">
@@ -167,7 +209,7 @@ export default function Example() {
                   <span className="sr-only">Добавить в избранное</span>
                 </button>
               </div>
-            </form>
+            </div>
 
             <section aria-labelledby="details-heading" className="mt-12">
               <h2 id="details-heading" className="sr-only">
