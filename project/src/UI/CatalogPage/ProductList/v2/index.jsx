@@ -18,27 +18,27 @@ export default ({products}) => {
     <>
       <ProductModal />
       {products && (
-        <section className="bg-white dark:bg-gray-900 antialiased">
+        <section className="  antialiased">
           <div className="max-w-screen-2xl px-4 mx-auto ">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {products.map((item) => (
                 <div key={item.value}>
                   <FadeIn>
                     <Link href={`/product/${item.slug}`}
                       
-                      className="my-2 relative overflow-hidden group shadow-lg shadow-gray-700"
+                      className="my-2 relative overflow-hidden group "
                     >
                       <Image
-                        className="object-cover w-full h-[360px] "
+                        className="object-cover w-full h-[360px] shadow-xl shadow-gray-800 border-4"
                         // TODO: А если нет изображения?
                         src={`${process.env.NEXT_PUBLIC_S3}/${item?.image?.hash}`}
                         width={360}
                         height={190}
                         alt={`Проект ${item.value}`}
                       />
-                      <div className="absolute inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
+                      <div className="absolute  inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
                         {/* <div className="text-center"> */}
-                        <div onClick={() => openVisibleProductModal(item)} className="text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
+                        <div onClick={() => openVisibleProductModal(item)} className="mb-2 text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
                           <p className="text-sm font-medium text-white">
                             {item.value}
                           </p>

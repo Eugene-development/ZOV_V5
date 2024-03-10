@@ -11,7 +11,7 @@ export default (props) => {
   ];
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
-      <div className="bg-white py-8 sm:py-20">
+      <div className="bg-white py-8 sm:py-16">
         <div className="mx-auto max-w-screen-base text-center font-display">
           <nav className="flex mb-6" aria-label="Breadcrumb">
             <ol role="list" className="flex items-center space-x-4 mx-auto">
@@ -52,7 +52,8 @@ export default (props) => {
           {/* <p className="px-2 font-light text-gray-500 text-sm sm:text-lg dark:text-gray-400">
             {props.head}
           </p> */}
-          <p className="px-2 font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Выберите подходящую конфигурацию, стиль и цвет вашего будущего кухонного гарнитура</p>
+          <p className="px-2 font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Выберите подходящую конфигурацию, стиль и цвет вашей будущей мебели от нашей фабрики.</p>
+          <p className="px-2 font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Возможно изготовление по вашим размерам.</p>
         </div>
       </div>
     </motion.main>

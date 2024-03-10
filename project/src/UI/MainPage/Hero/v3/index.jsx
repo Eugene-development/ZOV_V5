@@ -35,18 +35,15 @@ export default function index() {
             </button>
           </div>
         </div>
-        <div className="mb-6 max-w-screen-lg lg:mb-0">
-          <h1 className="mb-12 ml-2 text-4xl text-gray-100 font-extrabold font-display tracking-wide leading-none md:text-5xl lg:text-8xl">
+        <div className="mb-6 max-w-4xl lg:mb-0">
+          <h1 className="mb-16 ml-2 text-4xl text-gray-100 font-extrabold font-display tracking-wide leading-none md:text-5xl lg:text-8xl">
             Фабрика &#171;ЗОВ&#187;
           </h1>
-          <p className="mb-6 p-2 font-light text-white lg:mb-8 md:text-lg lg:text-xl bg-gray-900/20 ">
+          <p className=" p-2 font-light text-white lg:mb-8 md:text-lg lg:text-xl bg-gray-900/20 ">
             Мебельная фабрика «ЗОВ» - это крупнейший производитель корпусной
-            мебели в Республике Беларусь, который гарантирует Вам высочайшее
-            качество и доступную цену. <br />{" "}
-            <span className="hidden md:block">
-              <strong>Заполните форму</strong> и наши дизайнеры бесплатно
-              составят для Вас дизайн проект и посчитают его ориентировочную
-              стоимость.
+            мебели на заказ по индивидуальным размерам в Республике Беларусь и за её пределами. <br />{" "}
+            <span className="hidden md:block mt-2">
+              Наша фабрика гарантирует Вам высочайшее качество премиальной мебели и доступную цену на всю линейку продукции.
             </span>
           </p>
           <Form />
