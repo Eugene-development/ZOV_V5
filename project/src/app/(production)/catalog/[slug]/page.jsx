@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
 
 	return {
 		title: 'Фабрика ЗОВ | ' + meta.category_one.value,
-		description: 'Если Вас интересуют ' + meta.category_one.value + ', то ознакомьтесь с нашими предложениями готовых вариантов на нашем сайте.',
+		description: 'Если Вас интересуют ' + meta.category_one.value + ' с нашей фабрики ЗОВ, то ознакомьтесь с нашими предложениями вариантов мебели на нашем сайте.',
 			
 	}
 }
