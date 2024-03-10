@@ -1,5 +1,6 @@
 import { HeadProduct, ProductList } from "@/UI";
-import { getProduct, getOneCategory } from "../server";
+import { getOneCategory } from "../server";
+
 
 // export const metadata = {
 //   title: "Фабрика ЗОВ | Кухонные гарнитуры",
@@ -15,13 +16,14 @@ import { getProduct, getOneCategory } from "../server";
 // };
 
 
+
+
 export async function generateMetadata({ params }) {
-	const meta = await getOneCategory({ params })
+	const meta = await getOneCategory({params})
 
 	return {
-		title:
-			meta.category_one.value,
-		description: meta.category_one.value,
+		title: 'Фабрика ЗОВ | ' + meta.category_one.value,
+		description: 'Если Вас интересуют ' + meta.category_one.value + ', то ознакомьтесь с нашими предложениями готовых вариантов на нашем сайте.',
 			
 	}
 }
@@ -29,7 +31,7 @@ export async function generateMetadata({ params }) {
 export default async ({params}) => {
 //   const products = await getProduct();
   const data = await getOneCategory({ params });
-  console.log(data)
+  // console.log(data)
 
 //   const filteredProducts = products.product.filter(
 //     (product) => product.parent.value.toLowerCase() === "кухня",
