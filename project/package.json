@@ -16,16 +16,16 @@
     "clsx": "^1.2.1",
     "debug": "^4.3.4",
     "framer-motion": "^10.12.12",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
+    "next": "^14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "^14.1.0",
     "react-responsive-carousel": "^3.2.23",
     "react-use": "^17.4.0",
     "sharp": "^0.32.6",
     "supports-color": "^8.1.1",
-    "zustand": "^4.3.9",
-    "graphql": "^16.8.1",
-    "graphql-request": "^6.1.0"
+    "zustand": "^4.3.9"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

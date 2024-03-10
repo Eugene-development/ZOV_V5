@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import { FadeIn } from "@/functions/FadeIn";
 
@@ -23,12 +24,12 @@ export default ({products}) => {
               {products.map((item) => (
                 <div key={item.value}>
                   <FadeIn>
-                    <div
-                      onClick={() => openVisibleProductModal(item)}
+                    <Link href={item.slug}
+                      
                       className="my-2 relative overflow-hidden group shadow-lg shadow-gray-700"
                     >
                       <Image
-                        className="object-cover w-full h-[360px]  scale-100 ease-in duration-300 group-hover:scale-125 "
+                        className="object-cover w-full h-[360px] "
                         // TODO: А если нет изображения?
                         src={`${process.env.NEXT_PUBLIC_S3}/${item?.image?.hash}`}
                         width={360}
@@ -37,13 +38,13 @@ export default ({products}) => {
                       />
                       <div className="absolute inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
                         {/* <div className="text-center"> */}
-                        <div className="text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
+                        <div onClick={() => openVisibleProductModal(item)} className="text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
                           <p className="text-sm font-medium text-white">
                             {item.value}
                           </p>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </FadeIn>
                 </div>
               ))}
