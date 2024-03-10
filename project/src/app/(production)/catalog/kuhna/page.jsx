@@ -121,6 +121,7 @@ const data = {
 
 export default async () => {
   const products = await getProduct();
+  // console.log(products)
 
   const filteredProducts = products.product.filter(
     (product) => product.parent.value.toLowerCase() === "кухня",

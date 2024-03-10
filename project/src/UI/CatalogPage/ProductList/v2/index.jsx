@@ -55,14 +55,14 @@ export default (props) => {
 
             
           </div>
-  <section className="relative z-10 overflow-hidden bg-gray-800 py-16 px-24 mt-40">
+  <section className="relative z-10 overflow-hidden bg-gray-800 py-16 px-12 sm:px-24 mt-40">
     <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
                 <div className="text-center lg:text-left ">
                     <div className="mb-10 lg:mb-0 ">
                         <h2
-                            className="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white ">
+                            className="mt-0 mb-3 text-2xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white ">
                             Бесплатная услуга от нашей фабрики "ЗОВ"</h2>
                         <p
                             className="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
