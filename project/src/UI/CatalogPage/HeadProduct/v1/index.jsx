@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import { HomeIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export default (props) => {
+  console.log(props)
   const pages = [
     { name: "Каталог", href: "#", current: false },
-    { name: props.head.h1, href: "#", current: true },
+    { name: props.head, href: "#", current: true },
   ];
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
@@ -46,12 +47,12 @@ export default (props) => {
           </nav>
 
           <h1 className="mb-4 text-2xl lg:text-6xl font-display font-bold text-gray-900 dark:text-white">
-            {props.head.h1}
+            {props.head}
           </h1>
-          <p className="px-2 font-light text-gray-500 text-sm sm:text-lg dark:text-gray-400">
-            {props.head.description}
-          </p>
-          {/* <p className="px-2 font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Выберите с помощью фильтра подходящую конфигурацию, стиль и цвет кухонного гарнитура</p> */}
+          {/* <p className="px-2 font-light text-gray-500 text-sm sm:text-lg dark:text-gray-400">
+            {props.head}
+          </p> */}
+          <p className="px-2 font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Выберите подходящую конфигурацию, стиль и цвет вашего будущего кухонного гарнитура</p>
         </div>
       </div>
     </motion.main>

@@ -6,7 +6,7 @@ export const metadata = {
   description: "Кухонные гарнитуры от фабрики ЗОВ",
 };
 
-const data = {
+const data1 = {
   head: {
     h1: "Кухонные гарнитуры",
     description:
@@ -16,8 +16,8 @@ const data = {
 
 export default async ({params}) => {
 //   const products = await getProduct();
-  const oneCategory = await getOneCategory({ params });
-//   console.log(oneCategory)
+  const data = await getOneCategory({ params });
+  console.log(data)
 
 //   const filteredProducts = products.product.filter(
 //     (product) => product.parent.value.toLowerCase() === "кухня",
@@ -29,8 +29,8 @@ export default async ({params}) => {
 
   return (
     <>
-      <HeadProduct head={data.head} />
-      <ProductList products={oneCategory} />
+      <HeadProduct head={data.category_one.value} />
+      <ProductList products={data.category_one.product} />
       {/* <ProductList products={newJsonData} /> */}
     </>
   );

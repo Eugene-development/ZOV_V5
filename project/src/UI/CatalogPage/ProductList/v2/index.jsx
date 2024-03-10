@@ -20,7 +20,7 @@ export default ({products}) => {
         <section className="bg-white dark:bg-gray-900 antialiased">
           <div className="max-w-screen-2xl px-4 mx-auto ">
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {products.category_one.product?.map((item) => (
+              {products.map((item) => (
                 <div key={item.value}>
                   <FadeIn>
                     <div
