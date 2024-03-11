@@ -29,7 +29,7 @@ export { default as Values } from "./CompanyPage/Values/v1";
 export { default as Video } from "./CompanyPage/Video/v1";
 
 // Catalog
-export { default as HeadProduct } from "./CatalogPage/HeadProduct/v1";
+export { default as HeadProductList } from "./CatalogPage/HeadProductList/v1";
 export { default as ProductList } from "./CatalogPage/ProductList/v2";
 
 // Blog

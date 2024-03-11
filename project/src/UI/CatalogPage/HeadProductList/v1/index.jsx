@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { HomeIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export default (props) => {
-  console.log(props)
   const pages = [
     { name: "Каталог", href: "#", current: false },
     { name: props.head, href: "#", current: true },

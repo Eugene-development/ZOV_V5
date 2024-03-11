@@ -18,7 +18,7 @@ export default ({products}) => {
     <>
       <ProductModal />
       {products && (
-        <section className="  antialiased">
+        <section className="py-8 sm:py-16 antialiased">
           <div className="max-w-screen-2xl px-4 mx-auto ">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {products.map((item) => (

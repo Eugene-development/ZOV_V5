@@ -5,7 +5,7 @@ import { StarIcon } from '@heroicons/react/20/solid'
 import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
 
 const product = {
-  name: 'Кухонный гарнитур МИ0000',
+  name: 'МИ0000',
   rating: 5,
   images: [
     {
@@ -95,6 +95,14 @@ const product = {
   ],
 }
 
+
+const stats = [
+  { name: 'Рубрика', value: 'Мебель' },
+  { name: 'Категория', value: 'Кухонные гарнитуры', unit: 'поз.' },
+]
+
+
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -104,7 +112,26 @@ export default function Example() {
 
   return (
     <div className="bg-white">
-      <div className="max-w-screen-2xl px-4 mx-auto py-16 sm:px-6 sm:py-24  lg:px-8">
+
+      <div className=" bg-gray-900">
+        <div className="max-w-screen-2xl px-4 mx-auto sm:px-6">
+          <div className="grid grid-cols-1 gap-px bg-white/5 sm:grid-cols-2 ">
+            {stats.map((stat) => (
+              <div key={stat.name} className="bg-gray-900 px-4 py-5 sm:px-6 lg:px-8">
+                <p className="text-sm font-medium leading-6 text-gray-400">{stat.name}</p>
+                <p className="mt-2 flex items-baseline gap-x-2">
+                  <span className="text-3xl font-semibold tracking-tight text-white">{stat.value}</span>
+                  {stat.unit ? <span className="text-sm text-gray-400">(64 {stat.unit})</span> : null}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>      
+    
+    
+    
+    <div className="max-w-screen-2xl px-8 mx-auto py-4 sm:px-6 sm:py-16  lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-16">
           {/* Image gallery */}
           <Tab.Group as="div" className="flex flex-col-reverse">

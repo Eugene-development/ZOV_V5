@@ -21,7 +21,7 @@ export default () => {
             <div className="mt-10 flex items-center justify-center  ">
               <button
                 onClick={openVisibleFormConsultation}               
-                className="block  rounded-md  px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 
+                className="block  rounded-md  px-6 py-2.5 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 
                 animate-background-shine items-center justify-center  border border-red-800 bg-[linear-gradient(110deg,#b91c1c,45%,#dc2626,55%,#b91c1c)] bg-[length:200%_100%]  transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
               >
                 Закажите бесплатный дизайн проект
