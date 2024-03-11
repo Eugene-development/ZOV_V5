@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
+import { useFormsStore } from "@/store/forms";
+const { visibleFormConsultation } = useFormsStore;
 
 const product = {
   name: 'МИ0000',
@@ -109,6 +111,7 @@ function classNames(...classes) {
 
 export default function Example() {
   const [selectedColor, setSelectedColor] = useState(product.colors[0])
+  const { openVisibleFormConsultation } = visibleFormConsultation();
 
   return (
     <div className="bg-white">
@@ -206,7 +209,7 @@ export default function Example() {
             </div>
 
             <div className="mt-6">
-              <h3 className="sr-only">Description</h3>
+              <h3 className="sr-only">Описание</h3>
 
               <div
                 className="space-y-6 text-base text-gray-700"
@@ -223,9 +226,10 @@ export default function Example() {
               <div className="mt-10 flex">
                 <button
                   type="submit"
+                  onClick={openVisibleFormConsultation}
                   className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-gray-600 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
-                  Записаться на замер
+                  Составить дизайн проект
                 </button>
 
                 <button
@@ -240,7 +244,7 @@ export default function Example() {
 
             <section aria-labelledby="details-heading" className="mt-12">
               <h2 id="details-heading" className="sr-only">
-                Добавить в избранное
+                Информация
               </h2>
 
               <div className="divide-y divide-gray-200 border-t">
