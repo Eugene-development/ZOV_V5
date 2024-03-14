@@ -114,7 +114,7 @@ export default function Example() {
   const { openVisibleFormConsultation } = visibleFormConsultation();
 
   return (
-    <div className="bg-white">
+    <>
 
       <div className=" bg-gray-900">
         <div className="max-w-screen-2xl px-4 mx-auto sm:px-6">
@@ -134,7 +134,7 @@ export default function Example() {
     
     
     
-    <div className="max-w-screen-2xl px-8 mx-auto py-4 sm:px-6 sm:py-16  lg:px-8">
+      <div className="max-w-screen-2xl px-8 mx-auto py-4 sm:px-6 sm:py-16  lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-16">
           {/* Image gallery */}
           <Tab.Group as="div" className="flex flex-col-reverse">
@@ -290,6 +290,6 @@ export default function Example() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
