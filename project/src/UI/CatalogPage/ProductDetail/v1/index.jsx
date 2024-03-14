@@ -114,17 +114,18 @@ console.log(props)
             {/* Image selector */}
             <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
               <Tab.List className="grid grid-cols-4 gap-6">
-                {product.images.map((image) => (
+                {props.product.image.map((item) => (
                   <Tab
-                    key={image.id}
+                    key={item.hash}
                     className="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
                   >
                     {({ selected }) => (
                       <>
-                        <span className="sr-only">{image.name}</span>
+                        <span className="sr-only">{item.hash}</span>
                         <span className="absolute inset-0 overflow-hidden rounded-md">
-                          <img src={image.src} alt="" className="h-full w-full object-cover object-center" />
+                          <img src={`${process.env.NEXT_PUBLIC_S3}/${item?.hash}`} alt={props.product.value} className="h-full w-full object-cover object-center" />
                         </span>
+                        {/* {img.hash} */}
                         <span
                           className={classNames(
                             selected ? 'ring-gray-500' : 'ring-transparent',
@@ -140,15 +141,11 @@ console.log(props)
             </div>
 
             <Tab.Panels className="aspect-h-3 aspect-w-4 w-full">
-              {props.product.image.map((img) => (
-                // <div key={img.hash}>
-                //   {img.hash}
-                // </div>
-                
+              {props.product.image.map((img) => (               
                 <Tab.Panel key={img.hash}>
                   <img
                     src={`${process.env.NEXT_PUBLIC_S3}/${img?.hash}`}
-                    alt="Продукт"
+                    alt={props.product.value}
                     className="h-full w-full object-cover object-center sm:rounded-lg"
                   />
                 </Tab.Panel>

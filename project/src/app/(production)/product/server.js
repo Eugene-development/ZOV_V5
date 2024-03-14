@@ -8,18 +8,11 @@ const ONE_PRODUCT = gql`
     product_one(slug: $slug, key: $key) {
       id
       value
-      price {
-        value
-      }
-      unit {
-        value
-      }
       text {
         value
       }
       image {
         hash
-        alt
       }
       parent: parentable {
         ... on Category {

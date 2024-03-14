@@ -25,12 +25,13 @@ export default ({products}) => {
                 <div key={item.value}>
                   <FadeIn>
                     <Link href={`/product/${item.slug}`}
+                      
                       className="my-2 relative overflow-hidden group "
                     >
                       <Image
                         className="object-cover w-full h-[360px] shadow-xl shadow-gray-800 border-2"
                         // TODO: А если нет изображения?
-                        src={`${process.env.NEXT_PUBLIC_S3}/${item?.image?.hash}`}
+                        src={`${process.env.NEXT_PUBLIC_S3}/${item?.image[0]?.hash}`}
                         width={360}
                         height={190}
                         alt={`Проект ${item.value}`}
