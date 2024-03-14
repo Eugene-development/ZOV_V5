@@ -45,57 +45,30 @@ const product = {
     { name: 'Washed Gray', bgColor: 'bg-gray-500', selectedColor: 'ring-gray-500' },
   ],
   description: `
-    <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag.</p>
+    <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag.</p>
   `,
   details: [
     {
-      name: 'Цена',
+      name: 'Общая информация',
       items: [
-        'Multiple strap configurations',
-        'Spacious interior with top zip',
-        'Leather handle and tabs',
-        'Interior dividers',
-        'Stainless strap loops',
-        'Double stitched construction',
-        'Water-resistant',
+        'Цена',
+        'Замер',
+        'Договор',
+        'Предоплата',
+        'Рассрочка',
+        'Доставка',
+        'Установка',
       ],
     },
     {
-      name: 'Замер',
+      name: 'Комплектация изделия',
       items: [
-        'Multiple strap configurations',
-        'Spacious interior with top zip',
-        'Leather handle and tabs',
-        'Interior dividers',
-        'Stainless strap loops',
-        'Double stitched construction',
-        'Water-resistant',
+        'Цена',
+        'Замер',
+        'Договор',
       ],
     },
-    {
-      name: 'Доставка',
-      items: [
-        'Multiple strap configurations',
-        'Spacious interior with top zip',
-        'Leather handle and tabs',
-        'Interior dividers',
-        'Stainless strap loops',
-        'Double stitched construction',
-        'Water-resistant',
-      ],
-    },
-    {
-      name: 'Установка',
-      items: [
-        'Multiple strap configurations',
-        'Spacious interior with top zip',
-        'Leather handle and tabs',
-        'Interior dividers',
-        'Stainless strap loops',
-        'Double stitched construction',
-        'Water-resistant',
-      ],
-    },
+    
     // More sections...
   ],
 }
@@ -197,13 +170,20 @@ console.log(props)
                 <h3 className="text-sm text-red-600">АКЦИЯ: Замер в пределах МКАД бесплатно</h3>
               </div>
 
-              <div className="mt-10 flex">
+              <div className="mt-8 flex">
                 <button
                   type="submit"
                   onClick={openVisibleFormConsultation}
                   className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-gray-600 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
                   Составить дизайн проект
+                </button>
+                <button
+                  type="submit"
+                  onClick={openVisibleFormConsultation}
+                  className="ml-4 flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-gray-600 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                >
+                  Заказать замер помещения
                 </button>
 
                 <button
