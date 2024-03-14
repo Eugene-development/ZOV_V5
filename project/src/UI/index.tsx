@@ -31,6 +31,7 @@ export { default as Video } from "./CompanyPage/Video/v1";
 // Catalog
 export { default as HeadProductList } from "./CatalogPage/HeadProductList/v1";
 export { default as ProductList } from "./CatalogPage/ProductList/v2";
+export { default as ProductDetail } from "./CatalogPage/ProductDetail/v1";
 
 // Blog
 export { default as BlogList } from "./Blog/BlogList/v1";
