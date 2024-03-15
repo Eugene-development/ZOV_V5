@@ -232,7 +232,7 @@ export default () => {
           <div className="grid gap-6 lg:gap-12 md:grid-cols-2 font-display">
             {showrooms.map((item) => (
               <FadeIn key={item.address}>
-                <div className="flex flex-col xl:flex-row mb-4 p-5 transition ease-in-out hover:scale-105 border border-gray-100  rounded-md shadow-lg">
+                <div className="flex flex-col xl:flex-row mb-4 p-5 bg-gray-50 transition ease-in-out hover:scale-105 border border-gray-100  rounded-md shadow-lg">
                   <img
                     src={item.img}
                     className="md:mr-5  max-w-xs rounded-md object-fill h-56 w-96"
@@ -261,7 +261,7 @@ export default () => {
 
                     <button
                       onClick={openVisibleFormConsultation}
-                      className="mt-4 inline-flex items-center text-base font-medium text-indigo-800 hover:underline dark:text-red-500 font-display"
+                      className="mt-4 inline-flex items-center text-base font-medium text-gray-800 hover:underline dark:text-red-500 font-display"
                     >
                       Заявка на просчёт проекта
                       <svg
