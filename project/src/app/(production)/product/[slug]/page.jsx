@@ -12,6 +12,9 @@ const stats = [
 
 
 
+import { Suspense } from 'react'
+// import Loading from "./loading";
+
 export default async ({ params }) => {
     const data = await getOneProduct({ params });
 
@@ -33,8 +36,9 @@ export default async ({ params }) => {
           </div>
         </div>
       </div>      
-
-<ProductDetail product={data.product_one}/>
+      <Suspense fallback={<p>Loading feed...</p>}>
+        <ProductDetail product={data.product_one}/>
+      </Suspense>
     
     
     </>

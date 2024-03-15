@@ -1,6 +1,5 @@
 "use client"
-import { useState } from 'react'
-
+import { Suspense } from 'react'
 import { Disclosure, Tab } from '@headlessui/react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
@@ -113,19 +112,23 @@ console.log(props)
               </Tab.List>
             </div>
 
+
+            
             <Tab.Panels className="aspect-h-3 aspect-w-4 w-full">
               {props.product.image.map((img) => (               
                 <Tab.Panel key={img.hash}>
+                  
                   <img
                     src={`${process.env.NEXT_PUBLIC_S3}/${img?.hash}`}
                     alt={props.product.value}
                     className="h-full w-full object-cover object-center sm:rounded-lg"
                   />
+
                 </Tab.Panel>
               ))}
             </Tab.Panels>
-          </Tab.Group>
 
+          </Tab.Group>
           {/* Product info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900">{props.product.value}</h1>
@@ -160,7 +163,7 @@ console.log(props)
 
               <div
                 className="space-y-6 text-base text-gray-700"
-                dangerouslySetInnerHTML={{ __html: product.description }}
+                dangerouslySetInnerHTML={{ __html: props.product.text[0]?.value }}
               />
             </div>
 
