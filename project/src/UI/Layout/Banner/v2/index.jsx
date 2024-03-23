@@ -69,7 +69,8 @@ export default (props) => {
       </div>
 
       <div className="hidden md:block text-sm leading-6 text-gray-50">
-        <strong className="font-semibold">У вас есть готовый проект?</strong>
+
+        <strong className="font-semibold">Акция 1</strong>
         <svg
           viewBox="0 0 2 2"
           className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
@@ -77,11 +78,25 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-        Отправьте нам на просчёт &nbsp;
-        <span aria-hidden="true">
-          {" "}
-          <span className="text-red-500">&rarr; &nbsp;</span> info@zov.top
-        </span>
+        <strong className="font-semibold">Акция 1</strong>
+        <svg
+          viewBox="0 0 2 2"
+          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
+          aria-hidden="true"
+        >
+          <circle cx={1} cy={1} r={1} />
+        </svg>
+        <strong className="font-semibold">Акция 1</strong>
+        <svg
+          viewBox="0 0 2 2"
+          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
+          aria-hidden="true"
+        >
+          <circle cx={1} cy={1} r={1} />
+        </svg>
+        <strong className="font-semibold">Акция 1</strong>
+
+
       </div>
       <div className="hidden md:flex flex-1 justify-end divide-x">
         <Favorites />

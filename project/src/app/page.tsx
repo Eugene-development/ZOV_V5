@@ -30,7 +30,7 @@ export default function Home() {
       <Feature />
       <Equipment />
       <Testimonials />
-      <Call />
+      {/* <Call /> */}
     </>
   );
 }
