@@ -5,10 +5,6 @@ export const metadata = {
   description: "Скидки и акции от нашей компании ЗОВ",
 };
 
-const stats = [
-  { name: 'Рубрика', value: 'Мебель' },
-  { name: 'Категория', value: 'Кухонные гарнитуры', unit: 'поз.' },
-]
 const actions = [
   {
     id: 1,
