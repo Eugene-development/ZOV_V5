@@ -1,7 +1,7 @@
 export { default as Spasibo } from "./Spasibo/v1";
 export { default as FormConsultation } from "./Forms/Consultation/v1";
 export { default as PromoCode } from "./Modal/Promo/v1";
-export { default as Banner } from "./Layout/Banner/v1";
+export { default as Banner } from "./Layout/Banner/v2";
 export { default as Footer } from "./Layout/Footer/v1";
 export { default as Header } from "./Layout/Header/v1";
 export { default as ActionList } from "./ActionList/v1";
