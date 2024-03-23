@@ -14,7 +14,6 @@ export async function generateMetadata({ params }) {
 
 export default async ({ params }) => {
   const data = await getOneCategory({ params });
-  console.log(data)
 
   const stats = [
     { name: 'Рубрика', value: 'Мебель' },
