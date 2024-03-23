@@ -17,7 +17,7 @@ export default async ({ params }) => {
 
   const stats = [
     { name: 'Рубрика', value: 'Мебель' },
-    { name: 'Категория', value: data.category_one.value, unit: 'поз.' },
+    { name: 'Категория', value: data.category_one.value, count: data.category_one.product.length, unit: 'поз.' },
   ]
   //   const filteredProducts = products.product.filter(
   //     (product) => product.parent.value.toLowerCase() === "кухня",
@@ -38,7 +38,7 @@ export default async ({ params }) => {
                 <p className="text-sm font-medium leading-6 text-gray-400">{stat.name}</p>
                 <p className="mt-2 flex items-baseline gap-x-2">
                   <span className="text-3xl font-semibold tracking-tight text-white">{stat.value}</span>
-                  {stat.unit ? <span className="text-sm text-gray-400">({data.category_one.product.length} {stat.unit})</span> : null}
+                  {stat.count ? <span className="text-sm text-gray-400">({stat.count} {stat.unit})</span> : null}
                 </p>
               </div>
             ))}
