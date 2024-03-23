@@ -1,30 +1,32 @@
 import { HeadProductList, ProductList } from "@/UI";
 import { getOneCategory } from "../server";
 export async function generateMetadata({ params }) {
-	const meta = await getOneCategory({params})
+  const meta = await getOneCategory({ params })
 
-	return {
-		title: 'Фабрика ЗОВ | ' + meta.category_one.value,
-		description: 'Если Вас интересуют ' + meta.category_one.value + ' с нашей фабрики ЗОВ, то ознакомьтесь с нашими предложениями вариантов мебели на нашем сайте.',
-			
-	}
+  return {
+    title: 'Фабрика ЗОВ | ' + meta.category_one.value,
+    description: 'Если Вас интересуют ' + meta.category_one.value + ' с нашей фабрики ЗОВ, то ознакомьтесь с нашими предложениями вариантов мебели на нашем сайте.',
+
+  }
 }
 
-const stats = [
-  { name: 'Рубрика', value: 'Мебель' },
-  { name: 'Категория', value: 'Кухонные гарнитуры', unit: 'поз.' },
-]
 
-export default async ({params}) => {
+
+export default async ({ params }) => {
   const data = await getOneCategory({ params });
+  console.log(data)
 
-//   const filteredProducts = products.product.filter(
-//     (product) => product.parent.value.toLowerCase() === "кухня",
-//   );
+  const stats = [
+    { name: 'Рубрика', value: 'Мебель' },
+    { name: 'Категория', value: data.category_one.value, unit: 'поз.' },
+  ]
+  //   const filteredProducts = products.product.filter(
+  //     (product) => product.parent.value.toLowerCase() === "кухня",
+  //   );
 
-//   const newJsonData = {
-//     product: filteredProducts,
-//   };
+  //   const newJsonData = {
+  //     product: filteredProducts,
+  //   };
 
   return (
     <>
@@ -37,13 +39,13 @@ export default async ({params}) => {
                 <p className="text-sm font-medium leading-6 text-gray-400">{stat.name}</p>
                 <p className="mt-2 flex items-baseline gap-x-2">
                   <span className="text-3xl font-semibold tracking-tight text-white">{stat.value}</span>
-                  {stat.unit ? <span className="text-sm text-gray-400">(64 {stat.unit})</span> : null}
+                  {stat.unit ? <span className="text-sm text-gray-400">({data.category_one.product.length} {stat.unit})</span> : null}
                 </p>
               </div>
             ))}
           </div>
         </div>
-      </div>     
+      </div>
       <ProductList products={data.category_one.product} />
     </>
   );
