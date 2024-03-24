@@ -11,6 +11,14 @@ const visibleProductModal = create((set) => ({
     set(() => ({ currentVisibleProductModal: false })),
 }));
 
+const similarProducts = create((set) => ({
+  currentSimilarProducts: [],
+  showSimilarProducts: (param: any) => {
+    set(() => ({ currentSimilarProducts: param }));
+  },
+}));
+
 export const useProductStore = {
   visibleProductModal,
+  similarProducts
 };

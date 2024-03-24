@@ -6,10 +6,12 @@ import { FadeIn } from "@/functions/FadeIn";
 import ProductModal from "./ProductModal";
 
 import { useProductStore } from "@/store/product";
-const { visibleProductModal } = useProductStore;
+const { visibleProductModal, similarProducts } = useProductStore;
 
 export default ({ products }) => {
   const { openVisibleProductModal } = visibleProductModal();
+  const { showSimilarProducts } = similarProducts();
+
   return (
     <>
       <ProductModal />
@@ -22,33 +24,32 @@ export default ({ products }) => {
                   <FadeIn>
                     <Link href={`/product/${item.slug}`}
 
-                      className="my-2 relative overflow-hidden group "
                     >
-                      <Image
-                        className="object-cover w-full h-[360px] shadow-xl shadow-gray-800 border-2 "
-                        // TODO: А если нет изображения?
-                        src={`${process.env.NEXT_PUBLIC_S3}/${item?.image[0]?.hash}`}
-                        width={360}
-                        height={190}
-                        alt={`Проект ${item.value}`}
-                      />
-                      <div className="absolute  inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
-                        {/* <div className="text-center"> */}
-                        <div onClick={() => openVisibleProductModal(item)} className="mb-2 text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
-                          <p className="text-sm font-medium text-white">
-                            {item.value}
-                          </p>
-                        </div>
+                      <div onClick={() => showSimilarProducts(products)} className="my-2 relative overflow-hidden group ">
+                        <Image
+                          className="object-cover w-full h-[360px] shadow-xl shadow-gray-500 border-2 "
+                          // TODO: А если нет изображения?
+                          src={`${process.env.NEXT_PUBLIC_S3}/${item?.image[0]?.hash}`}
+                          width={360}
+                          height={190}
+                          alt={`Проект ${item.value}`}
+                        />
+                        {/* <div className="absolute  inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
+                          <div onClick={() => openVisibleProductModal(item)} className="mb-2 text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
+                            <p className="text-sm font-medium text-white">
+                              {item.value}
+                            </p>
+                          </div>
+                        </div> */}
+
                       </div>
+
                     </Link>
                   </FadeIn>
                 </div>
               ))}
             </div>
-
-
           </div>
-
         </section>
 
       )}
