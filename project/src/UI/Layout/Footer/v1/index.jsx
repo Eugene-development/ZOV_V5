@@ -109,8 +109,8 @@ export default () => {
               <div className="text-center lg:text-left ">
                 <div className="mb-10 lg:mb-0 ">
                   <h2
-                    className="mt-0 mb-3 text-2xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white ">
-                    Бесплатная услуга от нашей фабрики "ЗОВ"</h2>
+                    className="mt-0 mb-3 text-2xl font-semibold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white ">
+                    Бесплатная услуга от Фабрики "ЗОВ"</h2>
                   <p
                     className="w-full text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed text-white">
                   </p>

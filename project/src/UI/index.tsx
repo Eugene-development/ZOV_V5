@@ -8,7 +8,7 @@ export { default as ActionList } from "./ActionList/v1";
 export { default as HeadContacts } from "./ContactPage/HeadContacts/v1";
 export { default as Map } from "./ContactPage/Map/v1";
 export { default as AddressList } from "./ContactPage/AddressList/v1";
-export { default as ServiceList } from "./ServiceList/v1";
+export { default as ServiceList } from "./ServiceList/v2";
 export { default as Vacancy } from "./Vacancy/v1";
 export { default as Brand } from "./MainPage/Brand/v1";
 export { default as Call } from "./MainPage/Call/v1";
