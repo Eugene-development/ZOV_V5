@@ -6,6 +6,7 @@ import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   CursorArrowRaysIcon,
+  EnvelopeIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
@@ -200,9 +201,9 @@ export default () => {
             Салоны
           </Link>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-1 ">
           <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
-            <div className="bg-white flex rounded-lg px-2 xl:px-6 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
+            <div className="mr-4 bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
               <PhoneIcon
                 className="block h-4 w-4 xl:h-6 xl:w-6 text-gray-950 animate-pulse"
                 aria-hidden="true"
@@ -213,6 +214,18 @@ export default () => {
               >
                 8 (915) 400-00-20
               </Link>
+            </div>
+            <div className="bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
+              <EnvelopeIcon
+                className="block h-4 w-4 xl:h-6 xl:w-6 text-gray-950 animate-pulse"
+                aria-hidden="true"
+              />
+              <div
+
+                className=" ml-2 text-sm xl:text-base font-bold text-gray-950"
+              >
+                info@zov.top
+              </div>
             </div>
           </div>
         </div>
@@ -323,6 +336,21 @@ export default () => {
               </div>
               <div className="py-6">
                 <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+                  <div className="flex rounded-lg px-3 py-1.5 text-xl mx-auto font-semibold leading-6 text-gray-800 shadow-xl ring-2 ring-gray-200/100 hover:ring-gray-500/20 ">
+                    <div className="flex mx-auto">
+                      <Link
+                        href="tel:+79154000020"
+                        className="flex ml-2 text-lg font-bold "
+                      >
+                        {" "}
+                        <PhoneIcon
+                          className="block mr-3 h-6 w-6 hover:text-red-800"
+                          aria-hidden="true"
+                        />{" "}
+                        8 (915) 400-00-20
+                      </Link>
+                    </div>
+                  </div>
                   <div className="flex rounded-lg px-3 py-1.5 text-xl mx-auto font-semibold leading-6 text-gray-800 shadow-xl ring-2 ring-gray-200/100 hover:ring-gray-500/20 ">
                     <div className="flex mx-auto">
                       <Link
