@@ -16,16 +16,16 @@ export default ({ products }) => {
       {products && (
         <section className="py-8 sm:py-16 antialiased">
           <div className="max-w-screen-2xl px-4 mx-auto ">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
               {products.map((item) => (
-                <div key={item.value}>
+                <div key={item.value} className="transition ease-in-out hover:scale-105">
                   <FadeIn>
                     <Link href={`/product/${item.slug}`}
 
                       className="my-2 relative overflow-hidden group "
                     >
                       <Image
-                        className="object-cover w-full h-[360px] shadow-xl shadow-gray-800 border-2"
+                        className="object-cover w-full h-[360px] shadow-xl shadow-gray-800 border-2 "
                         // TODO: А если нет изображения?
                         src={`${process.env.NEXT_PUBLIC_S3}/${item?.image[0]?.hash}`}
                         width={360}
