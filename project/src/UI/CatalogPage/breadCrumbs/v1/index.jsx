@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link"
 export default ({ breadCrumbs }) => {
     console.log(breadCrumbs)
     return (
@@ -7,15 +8,17 @@ export default ({ breadCrumbs }) => {
                 <div className="grid grid-cols-1 gap-px bg-white/5 sm:grid-cols-2 ">
                     {breadCrumbs.map((item) => (
                         <div key={item.name} className="bg-gray-900 px-4 py-5 sm:px-6 lg:px-8">
-                            <p className="text-sm font-medium leading-6 text-gray-400">{item.name}</p>
-                            <p className="mt-2 flex items-baseline gap-x-2">
-                                <span className="text-3xl font-semibold tracking-tight text-white">{item.value}</span>
-                                {item.count ? <span className="text-sm text-gray-400">({item.count} {item.unit})</span> : null}
-                            </p>
+                            <Link href={`/catalog/${item.href}`}>
+                                <p className="text-sm font-medium leading-6 text-gray-400">{item.name}</p>
+                                <p className="mt-2 flex items-baseline gap-x-2">
+                                    <span className="text-3xl font-semibold tracking-tight text-white">{item.value}</span>
+                                    {item.count ? <span className="text-sm text-gray-400">({item.count} {item.unit})</span> : null}
+                                </p>
+                            </Link>
                         </div>
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

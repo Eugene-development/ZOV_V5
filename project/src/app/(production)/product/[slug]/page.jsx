@@ -6,10 +6,10 @@ import { Suspense } from 'react'
 
 export default async ({ params }) => {
   const data = await getOneProduct({ params });
-  console.log(data);
+  // console.log(data);
   const breadCrumbs = [
     { name: 'Рубрика', value: 'Мебель' },
-    { name: 'Категория', value: data.product_one.parent.value, count: null, unit: 'поз.' },
+    { name: 'Категория', value: data.product_one.parent.value, count: null, unit: 'поз.', href: data.product_one.parent.slug },
   ]
 
   return (
