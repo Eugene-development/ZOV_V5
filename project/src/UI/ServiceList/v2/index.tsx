@@ -56,14 +56,14 @@ export default () => {
         <div className="relative overflow-hidden bg-white">
             {/* Decorative background image and gradient */}
             <div aria-hidden="true" className="absolute inset-0">
-                <div className="absolute inset-0 mx-auto max-w-7xl overflow-hidden xl:px-8">
+                <div className="absolute inset-0 mx-auto max-w-full overflow-hidden">
                     <img
-                        src="https://tailwindui.com/img/ecommerce-images/home-page-02-sale-full-width.jpg"
-                        alt=""
+                        src="https://storage.yandexcloud.net/zovrus/site/service/service.webp"
+                        alt="Сервис компании"
                         className="h-full w-full object-cover object-center"
                     />
                 </div>
-                <div className="absolute inset-0 bg-white bg-opacity-75" />
+                <div className="absolute inset-0 bg-white bg-opacity-80" />
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-white" />
             </div>
 
@@ -92,7 +92,7 @@ export default () => {
             {/* Testimonials */}
             <section
                 aria-labelledby="testimonial-heading"
-                className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24"
+                className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-2 lg:py-24"
             >
                 <div className="mx-auto max-w-2xl lg:max-w-none">
                     {/* <h2 id="testimonial-heading" className="text-2xl font-bold tracking-tight text-gray-900">
