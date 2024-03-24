@@ -22,17 +22,17 @@ export default () => {
     }
     const fourRandomProducts = getRandomElements(currentSimilarProducts, 4);
 
-    console.log(fourRandomProducts)
+    // console.log(fourRandomProducts)
 
     return (
         <div className="bg-gray-50">
             <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-20 lg:max-w-full lg:px-24">
                 <div className="flex items-center justify-between space-x-4">
-                    <h2 className="text-lg font-medium text-gray-900">Похожие из категории</h2>
-                    <a href="#" className="whitespace-nowrap text-sm font-medium text-red-700 hover:text-red-600">
+                    <h2 className="text-lg font-medium text-gray-900">Похожее из категории</h2>
+                    {/* <a href="#" className="whitespace-nowrap text-sm font-medium text-red-700 hover:text-red-600">
                         Показать все из категории
                         <span aria-hidden="true"> &rarr;</span>
-                    </a>
+                    </a> */}
                 </div>
                 <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
                     {fourRandomProducts.map((product) => (
