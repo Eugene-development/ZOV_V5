@@ -34,13 +34,13 @@ export default ({ products }) => {
                           height={190}
                           alt={`Проект ${item.value}`}
                         />
-                        {/* <div className="absolute  inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
-                          <div onClick={() => openVisibleProductModal(item)} className="mb-2 text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
+                        <div className="absolute  inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
+                          <div className="mb-2 text-center bg-gray-900 opacity-50 rounded-xl px-3 py-1">
                             <p className="text-sm font-medium text-white">
-                              {item.value}
+                              Проект - {item.value}
                             </p>
                           </div>
-                        </div> */}
+                        </div>
 
                       </div>
 
