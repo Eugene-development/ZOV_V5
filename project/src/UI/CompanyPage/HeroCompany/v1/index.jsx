@@ -50,9 +50,9 @@ export default () => {
           <div className="mx-auto max-w-7xl px-6 pb-16 pt-8 sm:pt-12 lg:px-8 lg:pt-6">
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="w-full max-w-2xl lg:shrink-0 xl:max-w-3xl font-display">
-                <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl ">
-                  <span></span>От нашей фабрики <br />{" "}
-                  <span className="sm:text-6xl">для вашей семьи</span>
+                <h2 className="text-xl font-semibold tracking-tight text-gray-900 sm:text-2xl ">
+                  <span></span>ОТ НАШЕЙ ФАБРИКИ <br />{" "}
+                  <span className="text-4xl sm:text-7xl">для вашей семьи</span>
                 </h2>
                 {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     Мы официальный дилер фабрики "ЗОВ" <br/>в России
