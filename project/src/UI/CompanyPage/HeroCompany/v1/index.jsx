@@ -76,7 +76,7 @@ export default () => {
                 <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <img
-                      src="https://avatars.dzeninfra.ru/get-zen_doc/9707955/pub_646a10017bd61e597f2efc50_646a100729bffd1d35f84376/scale_1200"
+                      src="https://storage.yandexcloud.net/zovrus/brand/111.jpeg"
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -86,7 +86,7 @@ export default () => {
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div className="relative">
                     <img
-                      src="https://i.pinimg.com/originals/2b/eb/21/2beb21eaddb9af05ba72db42c56266e9.jpg"
+                      src="https://storage.yandexcloud.net/zovrus/brand/222.webp"
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -94,7 +94,7 @@ export default () => {
                   </div>
                   <div className="relative">
                     <img
-                      src="https://avatars.mds.yandex.net/i?id=ab4209ff5dfacfafc95a9b51a43034e3f0035771-8169112-images-thumbs&n=13"
+                      src="https://storage.yandexcloud.net/zovrus/brand/333.webp"
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -104,7 +104,7 @@ export default () => {
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <img
-                      src="https://avatars.mds.yandex.net/i?id=f2fc566918295d53bf8e32a83bb6349ebaf231ba-8253234-images-thumbs&n=13"
+                      src="https://storage.yandexcloud.net/zovrus/brand/444.webp"
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -113,7 +113,7 @@ export default () => {
 
                   <div className="relative">
                     <img
-                      src="https://avatars.mds.yandex.net/i?id=1e40ae8822f8039323a4e8711eafc00c-4818427-images-thumbs&n=13"
+                      src="https://storage.yandexcloud.net/zovrus/brand/555.webp"
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
@@ -121,7 +121,7 @@ export default () => {
                   </div>
                   <div className="hidden md:block relative">
                     <img
-                      src="https://avatars.mds.yandex.net/i?id=90ee170d38948c7d40205eaf68d5f03a52468fb7-8270623-images-thumbs&n=13"
+                      src="https://storage.yandexcloud.net/zovrus/brand/666.webp"
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                     />
