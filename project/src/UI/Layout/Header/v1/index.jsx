@@ -131,23 +131,24 @@ export default () => {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative rounded-lg p-6 text-sm leading-6 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-50 border-l transition ease-in-out hover:scale-110"
+                      className="group relative rounded-lg p-5 text-sm leading-6 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-50 border-l transition ease-in-out hover:scale-110"
                     >
                       <div className="flex ">
-                        <img
+                        {/* <img
                           src={item.img}
                           className="h-16 w-24 object-fill rounded-md  shadow-xl"
                           aria-hidden="true"
-                        />
-                        {/* <item.icon className="h-6 w-6 text-gray-600 " aria-hidden="true" /> */}
+                        /> */}
+                        <item.icon className="size-5 text-gray-600" aria-hidden="true" />
+                        <Link
+                          href={item.href}
+                          className="ml-2 block text-lg font-semibold text-gray-800"
+                        >
+                          {item.name}
+                          <span className="absolute inset-0" />
+                        </Link>
                       </div>
-                      <Link
-                        href={item.href}
-                        className="mt-6 block text-lg font-semibold text-gray-800 "
-                      >
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </Link>
+
                       <p className="mt-1 text-gray-600">{item.description}</p>
                     </div>
                   ))}
