@@ -132,7 +132,7 @@ export default (props) => {
           </Tab.Group>
           {/* Product info */}
           <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900">{props.product.value}</h1>
+            <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">{props.product.value}</h1>
 
             {/* <div className="mt-3">
                 <h2 className="sr-only">Product information</h2>
@@ -140,7 +140,7 @@ export default (props) => {
               </div> */}
 
             {/* Reviews */}
-            <div className="mt-3">
+            <div className="mt-2 sm:mt-3">
               <h3 className="sr-only">Reviews</h3>
               <div className="flex items-center">
                 <div className="flex items-center">
@@ -155,7 +155,7 @@ export default (props) => {
                     />
                   ))}
                 </div>
-                <p className="sr-only">{product.rating} out of 5 stars</p>
+                <p className="sr-only">{product.rating} звёзд</p>
               </div>
             </div>
 
@@ -171,7 +171,7 @@ export default (props) => {
             <div className="mt-6">
 
               <div>
-                <h3 className="text-sm text-red-600">АКЦИЯ: Замер в пределах МКАД бесплатно</h3>
+                <h3 className="text-xs sm:text-sm text-red-600">АКЦИЯ: Замер в пределах МКАД бесплатно</h3>
               </div>
 
               <div className="mt-8 flex">
@@ -180,14 +180,17 @@ export default (props) => {
                   onClick={openVisibleFormConsultation}
                   className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-gray-600 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
-                  Составить дизайн проект
+                  <span className="hidden sm:block">Составить дизайн проект</span>
+                  <span className="block sm:hidden">Проект</span>
+
                 </button>
                 <button
                   type="submit"
                   onClick={openVisibleFormConsultation}
                   className="ml-4 flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-gray-600 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
-                  Заказать замер помещения
+                  <span className="hidden sm:block">Заказать замер помещения</span>
+                  <span className="block sm:hidden">Замер</span>
                 </button>
 
                 <button
