@@ -66,7 +66,7 @@ export default () => {
                 <p className="relative mt-8 text-base sm:text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                   Посетите ли вы наши салоны или проконсультируетесь он-лайн, в
                   любом случае вы получите полную и исчерпывающую информацию о
-                  нашей мебели, фасадах и фурнитуре.
+                  нашей мебели, фасадах, фурнитуре и о дополнительных услугах.
                 </p>
                 <p className="relative mt-6 text-base sm:text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                   Ждём Вас в наших салонах!
