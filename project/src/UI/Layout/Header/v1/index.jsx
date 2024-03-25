@@ -126,8 +126,8 @@ export default () => {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <div className="absolute inset-x-0 top-0 -z-10 bg-gray-50 pt-14 shadow-lg ring-1 ring-gray-900/5 border-t">
-                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-6 lg:px-8 xl:gap-x-8 ">
+              <div className="absolute inset-x-0 top-0 -z-10 bg-gray-50 pt-16 shadow-lg ring-1 ring-gray-900/5 border-t">
+                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-8 lg:px-8 xl:gap-x-8 ">
                   {products.map((item) => (
                     <div
                       key={item.name}
@@ -139,7 +139,7 @@ export default () => {
                           className="h-16 w-24 object-fill rounded-md  shadow-xl"
                           aria-hidden="true"
                         /> */}
-                        <item.icon className="size-5 text-gray-600" aria-hidden="true" />
+                        <item.icon className="size-5 text-red-900" aria-hidden="true" />
                         <Link
                           href={item.href}
                           className="ml-2 block text-lg font-semibold text-gray-800"
@@ -149,7 +149,7 @@ export default () => {
                         </Link>
                       </div>
 
-                      <p className="mt-1 text-gray-600">{item.description}</p>
+                      <p className="mt-2 text-gray-600">{item.description}</p>
                     </div>
                   ))}
                 </div>
