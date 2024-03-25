@@ -76,7 +76,7 @@ export default () => {
             />
           </Link>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex 2xl:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -88,7 +88,7 @@ export default () => {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex divide-x font-display">
+        <Popover.Group className="hidden 2xl:flex divide-x font-display">
           <Link
             href="/"
             className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 transition ease-in-out hover:scale-110"
@@ -202,7 +202,7 @@ export default () => {
             Салоны
           </Link>
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 ">
+        <div className="hidden 2xl:flex 2xl:flex-1 ">
           <div className="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
             <div className="mr-4 bg-white flex rounded-lg px-2 xl:px-4 py-1 text-xl font-semibold leading-6  shadow-lg shadow-gray-300/10 bg-gradient-to-r from-gray-50/50 via-gray-50/50 to-gray-100/50 ring-offset-2 ring-1 ring-gray-200">
               <PhoneIcon
@@ -222,7 +222,6 @@ export default () => {
                 aria-hidden="true"
               />
               <div
-
                 className=" ml-2 text-sm xl:text-base font-bold text-gray-950"
               >
                 info@zov.top
@@ -235,7 +234,7 @@ export default () => {
       {/* MobileMenu */}
       <Dialog
         as="div"
-        className="lg:hidden"
+        className="2xl:hidden"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
@@ -345,26 +344,20 @@ export default () => {
                       >
                         {" "}
                         <PhoneIcon
-                          className="block mr-3 h-6 w-6 hover:text-red-800"
+                          className="block mr-3 h-6 w-6"
                           aria-hidden="true"
                         />{" "}
                         8 (915) 400-00-20
                       </Link>
                     </div>
                   </div>
-                  <div className="flex rounded-lg px-3 py-1.5 text-xl mx-auto font-semibold leading-6 text-gray-800 shadow-xl ring-2 ring-gray-200/100 hover:ring-gray-500/20 ">
+                  <div className="flex rounded-lg mt-4 px-3 py-1.5 text-xl mx-auto font-semibold leading-6 text-gray-800 shadow-xl ring-2 ring-gray-200/100 hover:ring-gray-500/20 ">
                     <div className="flex mx-auto">
-                      <Link
-                        href="tel:+79154000020"
-                        className="flex ml-2 text-lg font-bold "
-                      >
-                        {" "}
-                        <PhoneIcon
-                          className="block mr-3 h-6 w-6 hover:text-red-800"
-                          aria-hidden="true"
-                        />{" "}
-                        8 (915) 400-00-20
-                      </Link>
+                      <EnvelopeIcon
+                        className="block mr-3 h-6 w-6"
+                        aria-hidden="true"
+                      />
+                      info@zov.top
                     </div>
                   </div>
                 </div>
@@ -373,6 +366,6 @@ export default () => {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </header>
+    </header >
   );
 };
