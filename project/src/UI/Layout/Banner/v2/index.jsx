@@ -9,6 +9,7 @@ import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 export default (props) => {
 
   return (
+
     <div className=" relative isolate flex items-center py-2.5 px-4 sm:px-3.5 bg-gray-900  justify-between">
       {/* {props.children} */}
       <svg
@@ -68,7 +69,8 @@ export default (props) => {
         </div>
       </div>
 
-      <div className="hidden md:block text-sm leading-6 text-gray-50">
+
+      <marquee direction="left" className="hidden mx-24 md:block text-sm leading-6 text-gray-50">
 
         <strong className="font-semibold">Акция 1</strong>
         <svg
@@ -97,7 +99,7 @@ export default (props) => {
         <strong className="font-semibold">Акция 1</strong>
 
 
-      </div>
+      </marquee>
       <div className="hidden md:flex flex-1 justify-end divide-x">
         <Favorites />
         <Search />
