@@ -15,7 +15,7 @@ export default function Breadcrumbs({ breadCrumbs }) {
                             <Link href={item.href ? `/catalog/${item.href}` : "#"}>
                                 <p className="text-sm font-medium leading-6 text-gray-400">{item.name}</p>
                                 <p className="mt-2 flex items-baseline gap-x-2">
-                                    <span className="text-3xl font-semibold tracking-tight text-white">{item.value}</span>
+                                    <span className="text-xl sm:text-3xl font-semibold tracking-tight text-white">{item.value}</span>
                                     {item.count && (
                                         <span className="text-sm text-gray-400">
                                             ({item.count} {item.unit})
