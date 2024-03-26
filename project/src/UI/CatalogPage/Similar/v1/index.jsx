@@ -5,9 +5,8 @@ import { useState, useEffect } from 'react'
 import { useProductStore } from "@/store/product";
 const { similarProducts } = useProductStore;
 
-export default () => {
+export default ({ categorySlug }) => {
     const { currentSimilarProducts } = similarProducts();
-
     function getRandomElements(arr, numElements) {
         // Создаем копию исходного массива
         let arrCopy = arr.slice();
@@ -35,10 +34,10 @@ export default () => {
                 <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-20 lg:max-w-full lg:px-24">
                     <div className="flex items-center justify-between space-x-4">
                         <h2 className="text-2xl font-medium text-gray-900">Похожее из категории</h2>
-                        <a href="#" className="whitespace-nowrap text-sm font-medium text-red-700 hover:text-red-600">
+                        <Link href={`/catalog/${categorySlug}`} className="whitespace-nowrap text-sm font-medium text-red-700 hover:text-red-600">
                             Вернуться в категорию
                             <span aria-hidden="true"> &rarr;</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
                         {fourRandomProducts.map((product) => (

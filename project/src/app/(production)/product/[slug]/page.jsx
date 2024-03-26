@@ -1,7 +1,7 @@
 import { BreadCrumbs, ProductDetail, SimilarProducts, SliderSimple } from "@/UI";
 import { getOneProduct } from "../server";
 
-import { Suspense } from 'react'
+// import { Suspense } from 'react'
 // import Loading from "./loading";
 
 export default async ({ params }) => {
@@ -23,7 +23,7 @@ export default async ({ params }) => {
       {/* </Suspense> */}
 
 
-      <SimilarProducts category={data.product_one.parent.value} />
+      <SimilarProducts categorySlug={data.product_one.parent.slug} />
       {/* <SliderSimple /> */}
 
     </>
