@@ -45,3 +45,6 @@ export { default as Policy } from "./Police/v1";
 
 // Action
 export { default as Action } from "./Action/v1";
+
+// Sliders
+export { default as SliderSimple } from "./Slider/Simple/v1";

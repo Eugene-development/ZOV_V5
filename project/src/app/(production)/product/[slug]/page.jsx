@@ -1,4 +1,4 @@
-import { BreadCrumbs, ProductDetail, SimilarProducts } from "@/UI";
+import { BreadCrumbs, ProductDetail, SimilarProducts, SliderSimple } from "@/UI";
 import { getOneProduct } from "../server";
 
 import { Suspense } from 'react'
@@ -24,6 +24,8 @@ export default async ({ params }) => {
 
 
       <SimilarProducts />
+      <SliderSimple />
+
     </>
   )
 }
