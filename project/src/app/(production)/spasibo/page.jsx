@@ -1,5 +1,5 @@
 import { Spasibo } from "@/UI";
 
-export default function page() {
-  return <Spasibo />;
+export default () => {
+  return <Spasibo />
 }

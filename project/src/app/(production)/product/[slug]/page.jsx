@@ -18,13 +18,13 @@ export default async ({ params }) => {
       <BreadCrumbs breadCrumbs={breadCrumbs} />
 
 
-      <Suspense fallback={<p>Loading feed...</p>}>
-        <ProductDetail product={data.product_one} />
-      </Suspense>
+      {/* <Suspense fallback={<p>Loading feed...</p>}> */}
+      <ProductDetail product={data.product_one} />
+      {/* </Suspense> */}
 
 
-      <SimilarProducts />
-      <SliderSimple />
+      <SimilarProducts category={data.product_one.parent.value} />
+      {/* <SliderSimple /> */}
 
     </>
   )
