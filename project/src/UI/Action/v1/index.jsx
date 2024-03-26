@@ -10,19 +10,20 @@ export default ({ actions }) => {
   return (
     <>
       <ActionModal />
-      <div className="overflow-hidden bg-white py-8 sm:pt-20 sm:pb-12">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-screen-sm text-center font-display">
-            <h2 className=" mb-4 text-3xl lg:text-5xl font-extrabold text-gray-800 dark:text-white">
-              Наши акции
-            </h2>
-            <p className="font-light text-gray-500 text-sm sm:text-lg dark:text-gray-400">
-              Мы стараемся Вас радовать не только качественной и красивой
-              мебелью, но и приятными бонусами при покупке!
-            </p>
-          </div>
+      <section
+        aria-labelledby="sale-heading"
+        className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8"
+      >
+        <div className="mx-auto max-w-2xl lg:max-w-none">
+          <h1 id="sale-heading" className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-7xl">
+            Наши акции и предложения
+          </h1>
+          <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-600">
+            Мы стараемся Вас радовать не только качественной и красивой
+            мебелью, но и приятными бонусами при покупке!
+          </p>
         </div>
-      </div>
+      </section>
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 2, y: -10 }}

@@ -71,7 +71,6 @@ export default () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-white via-white" />
                 </div>
 
-                {/* Callout */}
                 <section
                     aria-labelledby="sale-heading"
                     className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8"
@@ -80,20 +79,13 @@ export default () => {
                         <h1 id="sale-heading" className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-7xl">
                             Сервис нашей фабрики
                         </h1>
-                        <p className="mx-auto mt-4 max-w-xl text-xl text-gray-600">
+                        <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-600">
                             На всём пути нашего сотрудничества наши специалисты всегда готовы
-                            придти вам на помощь и решить любой текущий вопрос.
+                            придти вам на помощь и решить любой вопрос.
                         </p>
-                        {/* <a
-                        href="#"
-                        className="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-gray-800 sm:w-auto"
-                    >
-                        Get access to our one-time sale
-                    </a> */}
                     </div>
                 </section>
 
-                {/* Testimonials */}
                 <section
                     aria-labelledby="testimonial-heading"
                     className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-2 lg:py-16"
