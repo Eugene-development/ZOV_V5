@@ -10,7 +10,7 @@ const showrooms = [
     city: "Москва",
     address: "Мичуринский проспект,  10к1",
     metro: "Ломоносовский проспект",
-    workingMode: "10.00-21.00",
+    workingMode: "10.00-20.00",
     img: "https://zovrus.ru/files/_cache/salon/chr-0272.resize1200x1200w.jpg?80096ff06e44387e81a13326382b42f5",
     link: "/",
   },

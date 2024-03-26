@@ -96,7 +96,7 @@ export default () => {
                 {/* Testimonials */}
                 <section
                     aria-labelledby="testimonial-heading"
-                    className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-2 lg:py-24"
+                    className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-2 lg:py-16"
                 >
                     <div className="mx-auto max-w-2xl lg:max-w-none">
                         {/* <h2 id="testimonial-heading" className="text-2xl font-bold tracking-tight text-gray-900">
@@ -105,15 +105,15 @@ export default () => {
 
                         <div className=" lg:grid lg:grid-cols-3 lg:gap-x-8 ">
                             {services.map((item) => (
-                                <div key={item.name} className="sm:flex lg:block mt-12">
-                                    <dt className="flex items-center gap-x-3 text-lg font-semibold leading-7 text-gray-900">
+                                <div key={item.name} className="sm:flex lg:block mt-12 border-b pb-8">
+                                    <dt className="flex items-center gap-x-3 text-xl font-semibold leading-7 text-gray-900">
                                         <item.icon
-                                            className="h-5 w-5 flex-none text-red-700"
+                                            className="size-6 flex-none text-red-700"
                                             aria-hidden="true"
                                         />
                                         {item.name}
                                     </dt>
-                                    <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-2">
+                                    <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-4">
                                         <p className="text-lg text-gray-600">{item.description}</p>
                                     </div>
                                 </div>
