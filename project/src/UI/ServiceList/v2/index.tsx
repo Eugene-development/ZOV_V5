@@ -1,3 +1,6 @@
+'use client'
+import { motion } from "framer-motion";
+
 import {
     HomeIcon,
     TruckIcon,
@@ -53,70 +56,72 @@ const services = [
 ];
 export default () => {
     return (
-        <div className="relative overflow-hidden bg-white">
-            {/* Decorative background image and gradient */}
-            <div aria-hidden="true" className="absolute inset-0">
-                <div className="absolute inset-0 mx-auto max-w-full overflow-hidden">
-                    <img
-                        src="https://storage.yandexcloud.net/zovrus/site/service/service.webp"
-                        alt="Сервис компании"
-                        className="h-full w-full object-cover object-center"
-                    />
+        <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <div className="relative overflow-hidden bg-white">
+                {/* Decorative background image and gradient */}
+                <div aria-hidden="true" className="absolute inset-0">
+                    <div className="absolute inset-0 mx-auto max-w-full overflow-hidden">
+                        <img
+                            src="https://storage.yandexcloud.net/zovrus/site/service/service.webp"
+                            alt="Сервис компании"
+                            className="h-full w-full object-cover object-center"
+                        />
+                    </div>
+                    <div className="absolute inset-0 bg-white bg-opacity-80" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-white via-white" />
                 </div>
-                <div className="absolute inset-0 bg-white bg-opacity-80" />
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-white" />
-            </div>
 
-            {/* Callout */}
-            <section
-                aria-labelledby="sale-heading"
-                className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8"
-            >
-                <div className="mx-auto max-w-2xl lg:max-w-none">
-                    <h1 id="sale-heading" className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-7xl">
-                        Сервис нашей фабрики
-                    </h1>
-                    <p className="mx-auto mt-4 max-w-xl text-xl text-gray-600">
-                        На всём пути нашего сотрудничества наши специалисты всегда готовы
-                        придти вам на помощь и решить любой текущий вопрос.
-                    </p>
-                    {/* <a
+                {/* Callout */}
+                <section
+                    aria-labelledby="sale-heading"
+                    className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8"
+                >
+                    <div className="mx-auto max-w-2xl lg:max-w-none">
+                        <h1 id="sale-heading" className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-7xl">
+                            Сервис нашей фабрики
+                        </h1>
+                        <p className="mx-auto mt-4 max-w-xl text-xl text-gray-600">
+                            На всём пути нашего сотрудничества наши специалисты всегда готовы
+                            придти вам на помощь и решить любой текущий вопрос.
+                        </p>
+                        {/* <a
                         href="#"
                         className="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-gray-800 sm:w-auto"
                     >
                         Get access to our one-time sale
                     </a> */}
-                </div>
-            </section>
+                    </div>
+                </section>
 
-            {/* Testimonials */}
-            <section
-                aria-labelledby="testimonial-heading"
-                className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-2 lg:py-24"
-            >
-                <div className="mx-auto max-w-2xl lg:max-w-none">
-                    {/* <h2 id="testimonial-heading" className="text-2xl font-bold tracking-tight text-gray-900">
+                {/* Testimonials */}
+                <section
+                    aria-labelledby="testimonial-heading"
+                    className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-2 lg:py-24"
+                >
+                    <div className="mx-auto max-w-2xl lg:max-w-none">
+                        {/* <h2 id="testimonial-heading" className="text-2xl font-bold tracking-tight text-gray-900">
                         Наши услуги
                     </h2> */}
 
-                    <div className=" lg:grid lg:grid-cols-3 lg:gap-x-8 ">
-                        {services.map((item) => (
-                            <div key={item.name} className="sm:flex lg:block mt-12">
-                                <dt className="flex items-center gap-x-3 text-lg font-semibold leading-7 text-gray-900">
-                                    <item.icon
-                                        className="h-5 w-5 flex-none text-red-700"
-                                        aria-hidden="true"
-                                    />
-                                    {item.name}
-                                </dt>
-                                <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-2">
-                                    <p className="text-lg text-gray-600">{item.description}</p>
+                        <div className=" lg:grid lg:grid-cols-3 lg:gap-x-8 ">
+                            {services.map((item) => (
+                                <div key={item.name} className="sm:flex lg:block mt-12">
+                                    <dt className="flex items-center gap-x-3 text-lg font-semibold leading-7 text-gray-900">
+                                        <item.icon
+                                            className="h-5 w-5 flex-none text-red-700"
+                                            aria-hidden="true"
+                                        />
+                                        {item.name}
+                                    </dt>
+                                    <div className="mt-8 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-2">
+                                        <p className="text-lg text-gray-600">{item.description}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
-        </div>
+                </section>
+            </div>
+        </motion.main>
     )
 }
