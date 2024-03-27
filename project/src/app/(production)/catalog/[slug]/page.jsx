@@ -1,4 +1,4 @@
-import { BreadCrumbs, ProductList } from "@/UI";
+import { BreadCrumbs, ProductList, HeadProductList } from "@/UI";
 import { getOneCategory } from "../server";
 export async function generateMetadata({ params }) {
   const meta = await getOneCategory({ params })
@@ -16,7 +16,7 @@ export default async ({ params }) => {
   const data = await getOneCategory({ params });
 
   const breadCrumbs = [
-    { name: 'Рубрика', value: 'Мебель' },
+    { name: 'Раздел', value: 'Каталог' },
     { name: 'Категория', value: data.category_one.value, count: data.category_one.product.length, unit: 'поз.' },
   ]
   //   const filteredProducts = products.product.filter(
@@ -29,9 +29,8 @@ export default async ({ params }) => {
 
   return (
     <>
-      {/* <HeadProductList head={data.category_one.value} /> */}
-
       <BreadCrumbs breadCrumbs={breadCrumbs} />
+      {/* <HeadProductList head={data.category_one.value} /> */}
       <ProductList products={data.category_one.product} />
     </>
   );

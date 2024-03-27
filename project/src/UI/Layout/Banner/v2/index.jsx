@@ -88,7 +88,7 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-        <strong className="font-semibold">Земер помещения бесплатно</strong>
+        <strong className="font-semibold">Замер помещения бесплатно</strong>
         <svg
           viewBox="0 0 2 2"
           className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
