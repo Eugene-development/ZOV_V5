@@ -72,7 +72,6 @@ export default (props) => {
 
       <marquee direction="left" className="hidden mx-24 md:block text-sm leading-6 text-gray-50">
 
-        <strong className="font-semibold">Акция 1</strong>
         <svg
           viewBox="0 0 2 2"
           className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
@@ -80,7 +79,8 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-        <strong className="font-semibold">Акция 1</strong>
+
+        <strong className="font-semibold">Сборка и установка за счёт компании</strong>
         <svg
           viewBox="0 0 2 2"
           className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
@@ -88,7 +88,7 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-        <strong className="font-semibold">Акция 1</strong>
+        <strong className="font-semibold">Земер помещения бесплатно</strong>
         <svg
           viewBox="0 0 2 2"
           className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
@@ -96,7 +96,14 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-        <strong className="font-semibold">Акция 1</strong>
+        <strong className="font-semibold">Пятая позиция техники в подарок</strong>
+        <svg
+          viewBox="0 0 2 2"
+          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
+          aria-hidden="true"
+        >
+          <circle cx={1} cy={1} r={1} />
+        </svg>
 
 
       </marquee>

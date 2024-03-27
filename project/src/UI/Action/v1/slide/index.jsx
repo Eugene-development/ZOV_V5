@@ -13,7 +13,7 @@ export default ({ action }) => {
       animate={{ opacity: 2, y: -10 }}
       transition={{ type: "spring", stiffness: 50 }}
     >
-      <section className="py-8 md:py-2">
+      <section className="px-4 py-20 sm:px-6 lg:px-2 lg:py-16">
         <div className="relative isolate overflow-hidden">
           <div
             className="absolute inset-y-0 right-3/4 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg]  shadow-xl shadow-gray-600/10 ring-1 ring-gray-50 sm:-mr-80 lg:-mr-96"
@@ -56,7 +56,7 @@ export default ({ action }) => {
             </div>
             <div className="hidden sm:block">
               <img
-                className="p-4 mx-auto sm:flex max-h-[24rem]"
+                className="p-4 mx-auto sm:flex max-h-[26rem]"
                 src={action.image}
                 alt="фото рубрики"
               />
