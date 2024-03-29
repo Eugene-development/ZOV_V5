@@ -30,13 +30,16 @@ const favoritesProducts = create(
   persist(
     (set) => ({
       currentFavoritesProducts: [],
-      showFavoritesProducts: (param: any) => {
-        set(() => ({ currentFavoritesProducts: param }));
+      addToFavoritesProducts: (newProduct: any) => {
+        set((state: any) => ({
+          currentFavoritesProducts: [...state.currentFavoritesProducts, newProduct]
+        }));
       },
     }),
     {
       name: 'favorites'
-    }));
+    }
+  ));
 
 export const useProductStore = {
   visibleProductModal,
