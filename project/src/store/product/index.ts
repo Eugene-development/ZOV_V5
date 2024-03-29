@@ -16,7 +16,6 @@ const visibleProductModal = create(
 
 const similarProducts = create(
   persist(
-
     (set) => ({
       currentSimilarProducts: [],
       showSimilarProducts: (param: any) => {
@@ -27,7 +26,20 @@ const similarProducts = create(
       name: 'similar'
     }));
 
+const favoritesProducts = create(
+  persist(
+    (set) => ({
+      currentFavoritesProducts: [],
+      showFavoritesProducts: (param: any) => {
+        set(() => ({ currentFavoritesProducts: param }));
+      },
+    }),
+    {
+      name: 'favorites'
+    }));
+
 export const useProductStore = {
   visibleProductModal,
-  similarProducts
+  similarProducts,
+  favoritesProducts
 };

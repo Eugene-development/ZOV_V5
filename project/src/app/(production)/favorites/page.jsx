@@ -1,5 +1,5 @@
 
-export default function page() {
+export default () => {
     return (
         <div>123</div>
     )
