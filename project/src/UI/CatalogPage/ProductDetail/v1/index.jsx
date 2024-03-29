@@ -199,7 +199,7 @@ export default (props) => {
 
                 <button
                   type="button"
-                  onClick={() => addToFavoritesProducts({ id: 888 })}
+                  onClick={() => addToFavoritesProducts(props.product)}
                   className="ml-4 flex items-center justify-center rounded-md px-3 py-3 text-gray-400 hover:bg-gray-100 hover:text-gray-500"
                 >
                   <HeartIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
