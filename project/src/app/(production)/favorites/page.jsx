@@ -8,7 +8,7 @@ const { favoritesProducts } = useProductStore;
 
 const breadCrumbs = [
     { name: 'Раздел', value: 'Каталог' },
-    { name: 'Категория', value: 'ererer', count: '333', unit: 'поз.' },
+    { name: 'Категория', value: 'Избранное', count: null, unit: 'поз.' },
 ]
 
 // export const metadata = {

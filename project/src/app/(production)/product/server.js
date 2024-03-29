@@ -8,6 +8,7 @@ const ONE_PRODUCT = gql`
     product_one(slug: $slug, key: $key) {
       id
       value
+      slug
       text {
         value
       }
