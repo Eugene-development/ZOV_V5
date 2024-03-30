@@ -33,9 +33,9 @@ export default ({ categorySlug }) => {
             <div className="bg-gray-50" >
                 <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-20 lg:max-w-full lg:px-24">
                     <div className="flex items-center justify-between space-x-4">
-                        <h2 className="text-2xl font-medium text-gray-900">Похожее из категории</h2>
+                        <h2 className="text-sm lg:text-2xl font-medium text-gray-900">Похожее из категории</h2>
                         <Link href={`/catalog/${categorySlug}`} className="whitespace-nowrap text-sm font-medium text-red-700 hover:text-red-600">
-                            Вернуться в категорию
+                            В категорию
                             <span aria-hidden="true"> &rarr;</span>
                         </Link>
                     </div>

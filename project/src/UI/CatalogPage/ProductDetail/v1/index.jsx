@@ -144,7 +144,7 @@ export default (props) => {
               </div> */}
 
             {/* Reviews */}
-            <div className="mt-2 sm:mt-3">
+            <div className="hidden lg:block mt-2 sm:mt-3">
               <h3 className="sr-only">Reviews</h3>
               <div className="flex items-center">
                 <div className="flex items-center">
@@ -163,7 +163,7 @@ export default (props) => {
               </div>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-4">
               <h3 className="sr-only">Описание</h3>
 
               <div
