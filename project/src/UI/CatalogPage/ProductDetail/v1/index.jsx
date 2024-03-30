@@ -198,7 +198,7 @@ export default (props) => {
                 </button>
 
 
-                <FavoriteButton id={props.product.id} />
+                <FavoriteButton product={props.product} />
               </div>
             </div>
 
