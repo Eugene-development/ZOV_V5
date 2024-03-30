@@ -127,11 +127,11 @@ export default () => {
               leaveTo="opacity-0 -translate-y-1"
             >
               <div className="absolute inset-x-0 top-0 -z-10 bg-gray-50 pt-12 shadow-lg ring-1 ring-gray-900/5 border-t">
-                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-6 lg:px-8 xl:gap-x-8 ">
+                <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-8 lg:px-8 xl:gap-x-8 ">
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative rounded-lg p-5 text-sm leading-6 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-50 border-t ransparent border-gray-300 transition ease-in-out hover:scale-110"
+                      className="group relative rounded-lg p-5 text-sm leading-6 shadow-2xl shadow-gray-50 bg-gradient-to-br from-gray-200 via-gray-50 to-gray-50 border-t ransparent border-gray-300 transition ease-in-out hover:scale-110"
                     >
                       <div className="flex ">
                         {/* <img
@@ -153,9 +153,9 @@ export default () => {
                     </div>
                   ))}
                 </div>
-                <div className="bg-gray-800">
-                  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5">
+                <div className="bg-gray-800 ">
+                  <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+                    <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5 ">
                       {equipment.map((item) => (
                         <div
                           key={item.name}
