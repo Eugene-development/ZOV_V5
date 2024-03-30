@@ -131,7 +131,7 @@ export default () => {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative rounded-lg p-5 text-sm leading-6 shadow-2xl shadow-gray-50 bg-gradient-to-br from-gray-200 via-gray-50 to-gray-50 border-t ransparent border-gray-300 transition ease-in-out hover:scale-110"
+                      className="group relative rounded-lg p-5 text-sm leading-6 shadow-2xl shadow-gray-50 bg-gradient-to-br from-gray-50 via-gray-100 hover:via-gray-200 to-gray-50 border-l transparent border-gray-200 transition ease-in-out hover:scale-110"
                     >
                       <div className="flex ">
                         {/* <img
@@ -153,7 +153,7 @@ export default () => {
                     </div>
                   ))}
                 </div>
-                <div className="bg-gray-800 ">
+                <div className="bg-gray-900 ">
                   <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
                     <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5 ">
                       {equipment.map((item) => (
