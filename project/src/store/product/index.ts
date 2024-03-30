@@ -35,6 +35,11 @@ const favoritesProducts = create(
           currentFavoritesProducts: [...state.currentFavoritesProducts, newProduct]
         }));
       },
+      removeFromFavoritesProducts: (id: any) => {
+        set((state: any) => ({
+          currentFavoritesProducts: state.currentFavoritesProducts.filter((product: any) => product.id !== id)
+        }));
+      },
     }),
     {
       name: 'favorites'
