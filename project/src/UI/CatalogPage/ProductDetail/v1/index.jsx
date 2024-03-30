@@ -1,4 +1,7 @@
 "use client"
+
+import FavoriteButton from './favoriteButton'
+
 import { Suspense } from 'react'
 import { motion } from "framer-motion";
 
@@ -10,8 +13,6 @@ import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
 import { useFormsStore } from "@/store/forms";
 const { visibleFormConsultation } = useFormsStore;
 
-import { useProductStore } from "@/store/product";
-const { favoritesProducts } = useProductStore;
 
 const product = {
   // name: 'МИ0000',
@@ -81,7 +82,6 @@ function classNames(...classes) {
 }
 export default (props) => {
   const { openVisibleFormConsultation } = visibleFormConsultation();
-  const { addToFavoritesProducts } = favoritesProducts();
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
       <div className="max-w-screen-2xl px-8 mx-auto py-4 sm:px-6 sm:py-16  lg:px-8">
@@ -159,7 +159,7 @@ export default (props) => {
                     />
                   ))}
                 </div>
-                <p className="sr-only">{product.rating} звёзд</p>
+                <p className="sr-only">Пять звёзд</p>
               </div>
             </div>
 
@@ -197,14 +197,8 @@ export default (props) => {
                   <span className="block sm:hidden">Замер</span>
                 </button>
 
-                <button
-                  type="button"
-                  onClick={() => addToFavoritesProducts(props.product)}
-                  className="ml-4 flex items-center justify-center rounded-md px-3 py-3 text-gray-400 hover:bg-gray-100 hover:text-gray-500"
-                >
-                  <HeartIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
-                  <span className="sr-only">Добавить в избранное</span>
-                </button>
+
+                <FavoriteButton id={props.product.id} />
               </div>
             </div>
 
