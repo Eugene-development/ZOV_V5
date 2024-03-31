@@ -79,7 +79,14 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-
+        <strong className="font-semibold">Бесплатный дизайн-проект</strong>
+        <svg
+          viewBox="0 0 2 2"
+          className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
+          aria-hidden="true"
+        >
+          <circle cx={1} cy={1} r={1} />
+        </svg>
         <strong className="font-semibold">Сборка и установка за счёт компании</strong>
         <svg
           viewBox="0 0 2 2"

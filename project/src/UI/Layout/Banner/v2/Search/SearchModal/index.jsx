@@ -172,12 +172,6 @@ export default () => {
                                                                 <th scope="col" className="p-4">
                                                                     Результаты
                                                                 </th>
-                                                                {/* <th scope="col" className="p-4">
-                                                                    Категория
-                                                                </th> */}
-                                                                {/* <th scope="col" className="p-4">
-                                                                    Цена
-                                                                </th> */}
                                                                 <th
                                                                     scope="col"
                                                                     className="p-4"
@@ -199,11 +193,11 @@ export default () => {
                                                                                 Проект - {value}
                                                                             </span>
                                                                         </th>
-                                                                        {/* <td className="px-4 py-3">
-                                                                    <span className="bg-primary-100 text-primary-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300">
-                                                                        Desktop PC
-                                                                    </span>
-                                                                </td> */}
+                                                                        <td className="px-4 py-3">
+                                                                            <span className="bg-primary-100 text-primary-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300">
+                                                                                Desktop PC
+                                                                            </span>
+                                                                        </td>
                                                                         <td className="px-4 py-3  font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                                             {/* <div className="flex items-center space-x-4 ">
                                                                                 <Button
@@ -504,7 +498,7 @@ export default () => {
                                 <div className="mt-5 sm:mt-6">
                                     <button
                                         type="button"
-                                        className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:col-start-1 sm:mt-0"
+                                        className="mt-3 inline-flex w-full justify-center rounded-md bg-gray-100 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:col-start-1 sm:mt-0"
                                         onClick={closeVisibleSearch}
                                         ref={cancelButtonRef}
                                     >
