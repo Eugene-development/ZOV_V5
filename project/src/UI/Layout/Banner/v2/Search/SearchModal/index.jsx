@@ -9,7 +9,7 @@ import Button from './Button'
 export default () => {
     const { allProducts } = products()
 
-    // console.log(allProducts)
+    // console.log(allProducts.product?.length)
 
     const [request, setRequest] = useState('')
 
@@ -67,25 +67,25 @@ export default () => {
                                 <section className=" dark:bg-gray-900 antialiased">
                                     <div className="mx-auto max-w-screen-3xl">
                                         <div className="bg-white dark:bg-gray-800 relative border rounded-md">
-                                            {/* <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
-                                                <div className="flex-1 flex items-center space-x-2">
-                                                    <h5>
-                                                        <span className="text-gray-500">All Products:</span>
-                                                        <span className="dark:text-white">123456</span>
-                                                    </h5>
-                                                    <h5 className="text-gray-500 dark:text-gray-400 ml-1">1-100 (436)</h5>
-                                                    <button type="button" className="group" data-tooltip-target="results-tooltip">
-                                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
-                                                            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                                                        </svg>
-                                                        <span className="sr-only">More info</span>
-                                                    </button>
+                                            <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
+                                                <div className="flex-1 flex space-x-2">
+                                                    <div>
+                                                        <span className="text-gray-800 text-2xl">Поиск по каталогу</span>
+                                                        <span className="text-gray-500 dark:text-gray-400 ml-1">(всего проектов - {allProducts.product?.length})</span>
+                                                        <button type="button" className="group ml-1" data-tooltip-target="results-tooltip">
+                                                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" viewBox="0 0 20 20" fill="currentColor">
+                                                                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                                                            </svg>
+                                                            <span className="sr-only">More info</span>
+                                                        </button>
+
+                                                    </div>
                                                     <div id="results-tooltip" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
                                                         Showing 1-100 of 436 results
                                                         <div className="tooltip-arrow" data-popper-arrow=""></div>
                                                     </div>
                                                 </div>
-                                            </div> */}
+                                            </div>
                                             <div className="flex flex-col md:flex-row items-stretch md:items-center md:space-x-3 space-y-3 md:space-y-0 justify-between mx-4 py-4  ">
                                                 <div className="w-full md:w-1/2">
                                                     <div className="flex items-center">
@@ -118,7 +118,7 @@ export default () => {
                                                                 value={request}
                                                                 type="text"
                                                                 id="simple-search"
-                                                                placeholder="Поиск по каталогу"
+                                                                placeholder="Введите номер проекта"
                                                                 required=""
                                                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                                             />
