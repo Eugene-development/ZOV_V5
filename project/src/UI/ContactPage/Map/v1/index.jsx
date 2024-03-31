@@ -1,7 +1,7 @@
 export default () => {
   return (
-    <>
-      <div id="map" className="bg-white py-8 sm:pt-24 sm:pb-12">
+    <div className="bg-gray-50">
+      <div id="map" className=" py-8 sm:pt-24 sm:pb-12">
         <div className="mx-auto max-w-screen-sm text-center font-display">
           <h2 className=" mb-4 text-2xl lg:text-6xl font-extrabold text-gray-900 dark:text-white ">
             Мы на карте
@@ -22,7 +22,7 @@ export default () => {
           title="Map"
         />
       </div>
-      <div className="md:hidden mx-auto p-8 bg-gray-50 overflow-hidden sm:rounded-lg">
+      <div className="md:hidden mx-auto p-8  overflow-hidden sm:rounded-lg">
         <iframe
           className="mx-auto py-8 shadow-xl border-2"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Af53eed7fc969b9732e5ac139a551d2ebe71577fc49191db93689b4390e2a2fbf&amp;source=constructor"
@@ -31,6 +31,6 @@ export default () => {
           title="Map"
         />
       </div>
-    </>
+    </div>
   );
 };
