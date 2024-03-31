@@ -232,7 +232,7 @@ export default () => {
           <div className="grid gap-6 lg:gap-12 md:grid-cols-2 font-display">
             {showrooms.map((item) => (
               <FadeIn key={item.address}>
-                <div className="flex flex-col xl:flex-row mb-4 p-5 bg-gray-100 transition ease-in-out hover:scale-105 border border-gray-100 rounded-md shadow-lg shadow-gray-200 ring-2 ring-offset-2 ring-gray-200">
+                <div className="flex flex-col xl:flex-row mb-4 p-5  transition ease-in-out hover:scale-105 border border-gray-100 rounded-md shadow-lg shadow-gray-200 ring-2 ring-offset-2 ring-gray-200 bg-gradient-to-br from-white  hover:via-gray-100 to-gray-50">
                   <img
                     src={item.img}
                     className="md:mr-5  max-w-xs rounded-md object-fill h-56 w-96"
