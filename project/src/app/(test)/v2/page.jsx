@@ -11,9 +11,7 @@ export default function index() {
 
     useGSAP(() => {
         gsap.from(".box", { opacity: 0, stagger: 0.5 });
-    }, { scope: container }); // <-- magic
-
-
+    }, { scope: container });
 
     return (
         <div ref={container}>
