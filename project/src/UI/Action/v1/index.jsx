@@ -7,6 +7,8 @@ import ActionModal from "./ActionModal";
 import Slide from "./slide";
 
 export default ({ actions }) => {
+
+
   return (
     <>
       <ActionModal />
