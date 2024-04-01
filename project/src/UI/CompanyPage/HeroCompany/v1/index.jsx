@@ -51,7 +51,7 @@ export default () => {
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="w-full max-w-2xl lg:shrink-0 xl:max-w-3xl font-display">
                 <h2 className="text-xl font-semibold tracking-tight text-gray-900 sm:text-2xl ">
-                  <span></span>ОТ НАШЕЙ ФАБРИКИ <br />{" "}
+                  <span>ОТ НАШЕЙ ФАБРИКИ</span> <br />{" "}
                   <span className="text-4xl sm:text-5xl xl:text-7xl font-bold">ДЛЯ ВАШЕЙ СЕМЬИ</span>
                 </h2>
                 {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">

@@ -20,7 +20,7 @@ export default function index() {
   const container = useRef();
 
   useGSAP(() => {
-    gsap.from(".box", { opacity: 0, stagger: 0.5 });
+    gsap.from(".box", { opacity: 0, stagger: 1 });
   }, { scope: container });
 
   const { openVisiblePromo } = visiblePromo();
