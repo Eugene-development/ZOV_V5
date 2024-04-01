@@ -1,7 +1,19 @@
 "use client";
 import { motion } from "framer-motion";
+import { useRef } from "react";
+
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default () => {
+
+  const container = useRef();
+
+  useGSAP(() => {
+    gsap.from(".box", { opacity: 0, stagger: 1 });
+  }, { scope: container });
+
+
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <div className="relative isolate -z-10">
@@ -71,8 +83,8 @@ export default () => {
                   Ждём Вас в наших салонах!
                 </p>
               </div>
-              <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+              <div ref={container} className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+                <div className="box ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <img
                       src="https://storage.yandexcloud.net/zovrus/brand/111.jpeg"
@@ -82,7 +94,7 @@ export default () => {
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                 </div>
-                <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                <div className="box mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div className="relative">
                     <img
                       src="https://storage.yandexcloud.net/zovrus/brand/222.webp"
@@ -100,7 +112,7 @@ export default () => {
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                 </div>
-                <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                <div className="box w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <img
                       src="https://storage.yandexcloud.net/zovrus/brand/444.webp"
