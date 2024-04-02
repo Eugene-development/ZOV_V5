@@ -136,7 +136,7 @@ const showrooms = [
   },
   {
     city: "Москва",
-    address: "Большая Черкизовская Улица, 11",
+    address: "Большая Черкизовская улица, 11",
     metro: "Преображенская пл.",
     workingMode: "10.00-21.00",
     img: "https://zovrus.ru/files/_cache/salon/chr-2183.crop596x380.jpg?0bfd5e9120d5aab3b6063d99b0f8e1f3",
@@ -239,7 +239,7 @@ export default () => {
                     alt="saloon"
                   />
                   <div className="flex flex-col mt-4 ml-2">
-                    <p className="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white">
+                    <p className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                       <span>г. {item.city},</span>
                     </p>
                     <p className="mb-2 text-base font-bold leading-tight text-gray-900 dark:text-white ">
