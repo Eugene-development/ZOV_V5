@@ -10,7 +10,7 @@ export default () => {
   const container = useRef();
 
   useGSAP(() => {
-    gsap.from(".box", { opacity: 0, stagger: 1 });
+    gsap.from(".box", { opacity: 0, stagger: 0.4 });
   }, { scope: container });
 
 
