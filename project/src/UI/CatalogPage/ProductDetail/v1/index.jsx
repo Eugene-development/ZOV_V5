@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image";
 import FavoriteButton from './favoriteButton'
 
 import { Suspense } from 'react'
@@ -100,7 +100,10 @@ export default (props) => {
                       <>
                         <span className="sr-only">{item.hash}</span>
                         <span className="absolute inset-0 overflow-hidden rounded-md">
-                          <img src={`${process.env.NEXT_PUBLIC_S3}/${item?.hash}`} alt={props.product.value} className="h-full w-full object-cover object-center" />
+                          <Image src={`${process.env.NEXT_PUBLIC_S3}/${item?.hash}`}
+                            width={720}
+                            height={480}
+                            alt={props.product.value} className="h-full w-full object-cover object-center" />
                         </span>
                         {/* {img.hash} */}
                         <span
@@ -123,8 +126,10 @@ export default (props) => {
               {props.product.image.map((img) => (
                 <Tab.Panel key={img.hash}>
 
-                  <img
+                  <Image
                     src={`${process.env.NEXT_PUBLIC_S3}/${img?.hash}`}
+                    width={720}
+                    height={480}
                     alt={props.product.value}
                     className="h-full w-full object-cover object-center sm:rounded-lg"
                   />

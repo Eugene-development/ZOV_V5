@@ -30,11 +30,11 @@ export default ({ products }) => {
                     >
                       <div onClick={() => showSimilarProducts(products)} className="my-2 relative overflow-hidden group ">
                         <Image
-                          className="object-cover w-full h-[360px] shadow-xl shadow-gray-500 border-2 "
+                          className="object-cover w-full  shadow-xl shadow-gray-500 border-2 "
                           // TODO: А если нет изображения?
                           src={`${process.env.NEXT_PUBLIC_S3}/${item?.image[0]?.hash}`}
-                          width={360}
-                          height={190}
+                          width={720}
+                          height={480}
                           alt={`Проект ${item.value}`}
                         />
                         <div className="absolute  inset-0 grid items-end justify-center p-2 bg-gradient-to-b from-transparent to-black/60">
