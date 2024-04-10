@@ -153,7 +153,7 @@ export default () => {
                     </div>
                   ))}
                 </div>
-                <div className="bg-gray-900 ">
+                <div className="bg-gray-900">
                   <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
                     <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5 ">
                       {equipment.map((item) => (
