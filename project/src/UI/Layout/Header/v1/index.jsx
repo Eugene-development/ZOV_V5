@@ -91,25 +91,25 @@ export default () => {
         <Popover.Group className="hidden 2xl:flex divide-x font-display">
           <Link
             href="/"
-            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 transition ease-in-out hover:scale-110"
+            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Главная
           </Link>
           <Link
             href="/company"
-            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 transition ease-in-out hover:scale-110"
+            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Компания
           </Link>
           <Link
             href="/blog"
-            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 transition ease-in-out hover:scale-110"
+            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Блог
           </Link>
 
           <Popover>
-            <Popover.Button className="outline-none pl-4 pr-3 flex *:hover:rotate-90 items-center gap-x-1 text-sm xl:text-base font-display font-semibold leading-6 text-gray-950 hover:text-red-800 transition ease-in-out hover:scale-110">
+            <Popover.Button className="outline-none pl-4 pr-3 flex *:hover:rotate-90 items-center gap-x-1 text-sm xl:text-base font-display font-semibold leading-6 text-gray-950 hover:text-red-800 scale110">
               Каталог
               <ChevronRightIcon
                 className="h-5 w-5 flex-none text-red-700  animate-pulse"
@@ -131,7 +131,7 @@ export default () => {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative rounded-lg p-5 text-sm leading-6 shadow-2xl shadow-gray-50 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 border-l transparent border-gray-300 transition ease-in-out hover:scale-110"
+                      className="group relative rounded-lg p-5 text-sm leading-6 shadow-2xl shadow-gray-50 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 border-l transparent border-gray-300 scale110"
                     >
                       <div className="flex ">
                         {/* <img
@@ -185,19 +185,19 @@ export default () => {
 
           <Link
             href="/service"
-            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 transition ease-in-out hover:scale-110"
+            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Сервис
           </Link>
           <Link
             href="/actions"
-            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 transition ease-in-out hover:scale-110"
+            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Акции
           </Link>
           <Link
             href="/contacts"
-            className="pl-4 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 transition ease-in-out hover:scale-110"
+            className="pl-4 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Салоны
           </Link>
