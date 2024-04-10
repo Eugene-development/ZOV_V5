@@ -103,7 +103,7 @@ export default (props) => {
                           <Image src={`${process.env.NEXT_PUBLIC_S3}/${item?.hash}`}
                             width={720}
                             height={480}
-                            alt={props.product.value} className="h-full w-full object-cover object-center" />
+                            alt={props.product.value} className="object-cover h-full w-full object-center" />
                         </span>
                         {/* {img.hash} */}
                         <span
@@ -131,7 +131,7 @@ export default (props) => {
                     width={720}
                     height={480}
                     alt={props.product.value}
-                    className="h-full w-full object-cover object-center sm:rounded-lg"
+                    className="object-cover h-full w-full object-center sm:rounded-lg"
                   />
 
                 </Tab.Panel>
