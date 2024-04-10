@@ -131,7 +131,7 @@ export default () => {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative rounded-lg p-5 text-sm leading-6 shadow-2xl shadow-gray-50 bg-gradient-to-br from-gray-50 via-gray-100 hover:via-gray-200 to-gray-50 border-l transparent border-gray-200 transition ease-in-out hover:scale-110"
+                      className="group relative rounded-lg p-5 text-sm leading-6 shadow-2xl shadow-gray-50 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 border-l transparent border-gray-300 transition ease-in-out hover:scale-110"
                     >
                       <div className="flex ">
                         {/* <img
