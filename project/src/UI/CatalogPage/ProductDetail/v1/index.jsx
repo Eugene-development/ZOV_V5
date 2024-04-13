@@ -173,7 +173,7 @@ export default (props) => {
 
               <div
                 className="space-y-6 text-base text-gray-700"
-                dangerouslySetInnerHTML={{ __html: props.product.text[0]?.value }}
+                dangerouslySetInnerHTML={{ __html: props.product?.text?.value }}
               />
             </div>
 
