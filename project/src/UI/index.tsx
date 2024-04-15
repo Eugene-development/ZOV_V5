@@ -1,6 +1,5 @@
 export { default as Spasibo } from "./Spasibo/v1";
 export { default as FormConsultation } from "./Forms/Consultation/v1";
-export { default as PromoCode } from "./Modal/Promo/v1";
 export { default as Banner } from "./Layout/Banner/v2";
 export { default as Footer } from "./Layout/Footer/v1";
 export { default as Header } from "./Layout/Header/v1";
@@ -20,6 +19,11 @@ export { default as Hero } from "./MainPage/Hero/v3";
 export { default as Logo } from "./MainPage/Logo/v1";
 export { default as Testimonials } from "./MainPage/Testimonials/v2";
 export { default as ZOV } from "./MainPage/ZOV/v1";
+
+// Modal
+export { default as Notification } from "./Modal/Notifications/v1";
+export { default as PromoCode } from "./Modal/Promo/v1";
+
 
 // Company
 export { default as Content } from "./CompanyPage/Content/v1";
