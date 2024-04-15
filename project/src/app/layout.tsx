@@ -2,7 +2,7 @@ import "../css/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Banner, Header, Footer, FormConsultation, PromoCode } from "@/UI";
+import { Banner, Header, Footer, FormConsultation, PromoCode, Notification } from "@/UI";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -55,6 +55,7 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
+        <Notification />
         <PromoCode />
         <FormConsultation />
         <Banner />
