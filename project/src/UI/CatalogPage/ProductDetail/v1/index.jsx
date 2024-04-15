@@ -13,6 +13,9 @@ import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
 import { useFormsStore } from "@/store/forms";
 const { visibleFormConsultation } = useFormsStore;
 
+import { useNotificationStore } from "@/store/notifications";
+const { visibleNotification } = useNotificationStore;
+
 
 const product = {
   // name: 'МИ0000',
@@ -82,6 +85,8 @@ function classNames(...classes) {
 }
 export default (props) => {
   const { openVisibleFormConsultation } = visibleFormConsultation();
+  const { openVisibleNotification } = visibleNotification();
+
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
       <div className="max-w-screen-2xl px-8 mx-auto py-4 sm:px-6 sm:py-16  lg:px-8">
@@ -242,7 +247,7 @@ export default (props) => {
                         <Disclosure.Panel as="div" className="prose prose-sm pb-6">
                           <ul role="list">
                             {detail.items.map((item) => (
-                              <li key={item}>{item}</li>
+                              <li onClick={openVisibleNotification} key={item}>{item}</li>
                             ))}
                           </ul>
                         </Disclosure.Panel>

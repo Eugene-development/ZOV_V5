@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const visibleNotification = create((set) => ({
-    currentVisibleNotification: true,
+    currentVisibleNotification: false,
     openVisibleNotification: () => set(() => ({ currentVisibleNotification: true })),
     closeVisibleNotification: () => set(() => ({ currentVisibleNotification: false })),
 }));
