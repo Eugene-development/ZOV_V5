@@ -247,7 +247,9 @@ export default (props) => {
                         <Disclosure.Panel as="div" className="prose prose-sm pb-6">
                           <ul role="list">
                             {detail.items.map((item) => (
-                              <li onClick={openVisibleNotification} key={item}>{item}</li>
+                              <li key={item} onClick={openVisibleNotification} className="cursor-pointer hover:text-red-700">
+                                {item}
+                              </li>
                             ))}
                           </ul>
                         </Disclosure.Panel>
