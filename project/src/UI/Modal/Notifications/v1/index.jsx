@@ -8,7 +8,6 @@ import { useNotificationStore } from "@/store/notifications";
 const { visibleNotification } = useNotificationStore;
 
 export default () => {
-    // const [show, setShow] = useState(true)
 
     const { currentVisibleNotification, closeVisibleNotification, currentNotification } = visibleNotification();
 
