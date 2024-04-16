@@ -12,6 +12,7 @@ export default () => {
 
     const { currentVisibleNotification, closeVisibleNotification, currentNotification } = visibleNotification();
 
+    console.log(currentNotification)
 
     return (
         <>
@@ -37,11 +38,10 @@ export default () => {
                                         <InboxIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
                                     </div>
                                     <div className="ml-3 w-0 flex-1 pt-0.5">
-                                        <p className="text-sm font-medium text-gray-900">{currentNotification}</p>
+                                        <p className="text-sm font-medium text-gray-900">{currentNotification.name}</p>
                                         <p className="mt-1 text-sm text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
+                                            {currentNotification.value}
                                         </p>
-                                        <p>{currentNotification}</p>
                                         <div className="mt-3 flex space-x-7">
                                             <button
                                                 type="button"
