@@ -37,7 +37,7 @@ export default () => {
                                         <InboxIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
                                     </div>
                                     <div className="ml-3 w-0 flex-1 pt-0.5">
-                                        <p className="text-sm font-medium text-gray-900">Discussion moved</p>
+                                        <p className="text-sm font-medium text-gray-900">{currentNotification}</p>
                                         <p className="mt-1 text-sm text-gray-500">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                                         </p>

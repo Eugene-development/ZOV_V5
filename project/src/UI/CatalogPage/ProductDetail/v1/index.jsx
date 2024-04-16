@@ -88,9 +88,9 @@ export default (props) => {
   const { openVisibleNotification, setCurrentNotification } = visibleNotification();
 
   const notification = 'ggg'
-  const handleNotification = () => {
+  const handleNotification = (item) => {
     openVisibleNotification()
-    setCurrentNotification(notification)
+    setCurrentNotification(item)
   }
 
   return (
@@ -253,7 +253,7 @@ export default (props) => {
                         <Disclosure.Panel as="div" className="prose prose-sm pb-6">
                           <ul role="list">
                             {detail.items.map((item) => (
-                              <li key={item} onClick={handleNotification} className="cursor-pointer hover:text-red-700">
+                              <li key={item} onClick={() => handleNotification(item)} className="cursor-pointer hover:text-red-700">
                                 {item}
                               </li>
                             ))}
