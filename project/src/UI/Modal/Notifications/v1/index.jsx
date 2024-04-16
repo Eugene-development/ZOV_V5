@@ -1,7 +1,7 @@
 "use client"
 import { Fragment, useState } from 'react'
 import { Transition } from '@headlessui/react'
-import { InboxIcon } from '@heroicons/react/24/outline'
+import { CheckCircleIcon } from '@heroicons/react/24/outline'
 import { XMarkIcon } from '@heroicons/react/20/solid'
 
 import { useNotificationStore } from "@/store/notifications";
@@ -11,8 +11,6 @@ export default () => {
     // const [show, setShow] = useState(true)
 
     const { currentVisibleNotification, closeVisibleNotification, currentNotification } = visibleNotification();
-
-    console.log(currentNotification)
 
     return (
         <>
@@ -35,32 +33,26 @@ export default () => {
                             <div className="p-4">
                                 <div className="flex items-start">
                                     <div className="flex-shrink-0">
-                                        <InboxIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                                        <CheckCircleIcon className="h-6 w-6 text-green-500" aria-hidden="true" />
                                     </div>
                                     <div className="ml-3 w-0 flex-1 pt-0.5">
                                         <p className="text-sm font-medium text-gray-900">{currentNotification.name}</p>
                                         <p className="mt-1 text-sm text-gray-500">
                                             {currentNotification.value}
                                         </p>
-                                        <div className="mt-3 flex space-x-7">
+                                        {/* <div className="mt-3 flex space-x-7">
                                             <button
                                                 type="button"
-                                                className="rounded-md bg-white text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                                className="rounded-md bg-white text-sm font-medium text-red-600 hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
                                             >
-                                                Undo
+                                                Закрыть
                                             </button>
-                                            <button
-                                                type="button"
-                                                className="rounded-md bg-white text-sm font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                                            >
-                                                Dismiss
-                                            </button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <div className="ml-4 flex flex-shrink-0">
                                         <button
                                             type="button"
-                                            className="inline-flex rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                            className="inline-flex rounded-md bg-white text-red-500 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
                                             onClick={() => {
                                                 closeVisibleNotification()
                                             }}
