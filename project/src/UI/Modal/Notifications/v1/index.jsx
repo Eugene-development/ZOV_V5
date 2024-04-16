@@ -10,7 +10,7 @@ const { visibleNotification } = useNotificationStore;
 export default () => {
     // const [show, setShow] = useState(true)
 
-    const { currentVisibleNotification, closeVisibleNotification } = visibleNotification();
+    const { currentVisibleNotification, closeVisibleNotification, currentNotification } = visibleNotification();
 
 
     return (
@@ -41,6 +41,7 @@ export default () => {
                                         <p className="mt-1 text-sm text-gray-500">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.
                                         </p>
+                                        <p>{currentNotification}</p>
                                         <div className="mt-3 flex space-x-7">
                                             <button
                                                 type="button"

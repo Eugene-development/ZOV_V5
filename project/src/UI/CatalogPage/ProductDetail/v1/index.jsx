@@ -85,7 +85,13 @@ function classNames(...classes) {
 }
 export default (props) => {
   const { openVisibleFormConsultation } = visibleFormConsultation();
-  const { openVisibleNotification } = visibleNotification();
+  const { openVisibleNotification, setCurrentNotification } = visibleNotification();
+
+  const notification = 'ggg'
+  const handleNotification = () => {
+    openVisibleNotification()
+    setCurrentNotification(notification)
+  }
 
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
@@ -247,7 +253,7 @@ export default (props) => {
                         <Disclosure.Panel as="div" className="prose prose-sm pb-6">
                           <ul role="list">
                             {detail.items.map((item) => (
-                              <li key={item} onClick={openVisibleNotification} className="cursor-pointer hover:text-red-700">
+                              <li key={item} onClick={handleNotification} className="cursor-pointer hover:text-red-700">
                                 {item}
                               </li>
                             ))}
