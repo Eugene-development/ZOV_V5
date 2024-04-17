@@ -5,7 +5,7 @@ const visibleNotification = create((set) => ({
     currentNotification: {},
     openVisibleNotification: () => set(() => ({ currentVisibleNotification: true })),
     closeVisibleNotification: () => set(() => ({ currentVisibleNotification: false })),
-    setCurrentNotification: (notification: any) => set(() => ({ currentNotification: notification }))
+    changeVisibleNotification: () => set((state: any) => ({ currentVisibleNotification: !state.currentVisibleNotification })), setCurrentNotification: (notification: any) => set(() => ({ currentNotification: notification }))
 }));
 
 export const useNotificationStore = {

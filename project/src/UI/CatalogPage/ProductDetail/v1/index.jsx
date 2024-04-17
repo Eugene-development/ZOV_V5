@@ -117,7 +117,6 @@ export default (props) => {
   const { openVisibleFormConsultation } = visibleFormConsultation();
   const { openVisibleNotification, setCurrentNotification } = visibleNotification();
 
-  const notification = 'ggg'
   const handleNotification = (item) => {
     openVisibleNotification()
     setCurrentNotification(item)
