@@ -4,7 +4,7 @@ export async function generateMetadata({ params }) {
   const meta = await getOneCategory({ params })
 
   return {
-    title: 'Фабрика ЗОВ | ' + meta.category_one.value,
+    title: 'Фабрика мебели ЗОВ | ' + meta.category_one.value,
     description: 'Если Вас интересуют ' + meta.category_one.value + ' с нашей фабрики ЗОВ, то ознакомьтесь с нашими предложениями вариантов мебели на нашем сайте.',
 
   }

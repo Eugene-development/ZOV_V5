@@ -1,5 +1,16 @@
-import { BreadCrumbs, ProductDetail, SimilarProducts, SliderSimple } from "@/UI";
+import { BreadCrumbs, ProductDetail, SimilarProducts } from "@/UI";
 import { getOneProduct } from "../server";
+
+
+export async function generateMetadata({ params }) {
+  const meta = await getOneProduct({ params })
+
+  return {
+    title: 'Фабрика мебели ЗОВ | Мебельный проект' + meta.product_one.value,
+    description: 'Если Вас интересует проект' + meta.product_one.value + ' с нашей фабрики ЗОВ.',
+
+  }
+}
 
 // import { Suspense } from 'react'
 // import Loading from "./loading";
