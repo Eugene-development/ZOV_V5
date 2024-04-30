@@ -1,5 +1,7 @@
 import { BreadCrumbs, ProductList, HeadProductList } from "@/UI";
 import { getOneCategory } from "../server";
+
+
 export async function generateMetadata({ params }) {
   const meta = await getOneCategory({ params })
 
