@@ -25,9 +25,7 @@ export default ({ products }) => {
               {products.map((item) => (
                 <div key={item.value} className="transition ease-in-out hover:scale-105">
                   <FadeIn>
-                    <Link href={`/product/${item.slug}`}
-
-                    >
+                    <Link href={`/product/${item.slug}`}>
                       <div onClick={() => showSimilarProducts(products)} className="my-2 relative overflow-hidden group ">
                         <Image
                           className="object-cover w-full  shadow-xl shadow-gray-500 border-2 "

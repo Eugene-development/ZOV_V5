@@ -180,7 +180,7 @@ export default () => {
                                                         </thead>
                                                         <tbody>
                                                             {filteredProducts.map(
-                                                                ({ id, value }) => (
+                                                                ({ id, value, slug }) => (
                                                                     <tr
                                                                         key={id}
                                                                         className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -193,21 +193,20 @@ export default () => {
                                                                                 Проект - {value}
                                                                             </span>
                                                                         </th>
-                                                                        <td className="px-4 py-3">
+                                                                        {/* <td className="px-4 py-3">
                                                                             <span className="bg-primary-100 text-primary-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300">
-                                                                                Desktop PC
+                                                                                Подробнее
                                                                             </span>
-                                                                        </td>
+                                                                        </td> */}
                                                                         <td className="px-4 py-3  font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                                            {/* <div className="flex items-center space-x-4 ">
+                                                                            <div className="flex items-center space-x-4 ">
                                                                                 <Button
-                                                                                    productID={id}
+                                                                                    slug={slug}
                                                                                     productName={
                                                                                         value
                                                                                     }
-                                                                                    productCount="1"
                                                                                 />
-                                                                            </div> */}
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                 )
