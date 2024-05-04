@@ -202,9 +202,6 @@ export default () => {
                                                                             <div className="flex items-center space-x-4 ">
                                                                                 <Button
                                                                                     slug={slug}
-                                                                                    productName={
-                                                                                        value
-                                                                                    }
                                                                                 />
                                                                             </div>
                                                                         </td>

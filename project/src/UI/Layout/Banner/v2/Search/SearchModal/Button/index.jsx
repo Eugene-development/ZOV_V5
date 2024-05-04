@@ -1,12 +1,21 @@
 'use client'
 import Link from "next/link"
 
+import { useStoreSearch } from '@/store/search'
+const { visibleSearch } = useStoreSearch
+
+
 export default ({ slug }) => {
+	const { closeVisibleSearch } = visibleSearch()
+
 
 	return (
 		<>
-			<Link href={`/product/${slug}`}>
+			<Link href={`/product/${slug}`} onClick={closeVisibleSearch}
+			>
 				<div
+					onClick={closeVisibleSearch}
+
 					data-drawer-target="drawer-read-product-advanced"
 					data-drawer-show="drawer-read-product-advanced"
 					aria-controls="drawer-read-product-advanced"
