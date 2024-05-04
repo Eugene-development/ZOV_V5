@@ -183,7 +183,7 @@ export default () => {
                                                                 ({ id, value, slug }) => (
                                                                     <tr
                                                                         key={id}
-                                                                        className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700"
+                                                                        className="border-b dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 justify-between"
                                                                     >
                                                                         <th
                                                                             scope="row"
@@ -199,7 +199,7 @@ export default () => {
                                                                             </span>
                                                                         </td> */}
                                                                         <td className="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                                            <div className="">
+                                                                            <div className="max-w-sm">
                                                                                 <Button
                                                                                     slug={slug}
                                                                                 />

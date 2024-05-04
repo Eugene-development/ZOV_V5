@@ -19,7 +19,7 @@ export default ({ slug }) => {
 					data-drawer-target="drawer-read-product-advanced"
 					data-drawer-show="drawer-read-product-advanced"
 					aria-controls="drawer-read-product-advanced"
-					className="py-2 px-3 flex items-center  text-sm font-medium text-center text-primary-900 focus:outline-none  rounded-lg border border-gray-200 bg-primary-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+					className="py-2 px-3 flex items-center text-sm font-medium text-center text-primary-900 focus:outline-none  rounded-lg border border-gray-200 bg-primary-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
 				>
 
 					<p className="flex mx-auto">
