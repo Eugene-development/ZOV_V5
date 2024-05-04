@@ -189,17 +189,17 @@ export default () => {
                                                                             scope="row"
                                                                             className="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                                                                         >
-                                                                            <span className="flex items-center mr-3 text-xs first-letter:uppercase">
+                                                                            <span className="flex items-center mr-3 text-sm first-letter:uppercase">
                                                                                 Проект - {value}
                                                                             </span>
                                                                         </th>
                                                                         {/* <td className="px-4 py-3">
-                                                                            <span className="bg-primary-100 text-primary-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300">
-                                                                                Подробнее
+                                                                            <span className="bg-primary-100 text-primary-800 text-base font-medium px-2 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300">
+                                                                                Выполненный проект
                                                                             </span>
                                                                         </td> */}
-                                                                        <td className="px-4 py-3  font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                                            <div className="flex items-center space-x-4 ">
+                                                                        <td className="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                                            <div className="">
                                                                                 <Button
                                                                                     slug={slug}
                                                                                 />
