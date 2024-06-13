@@ -20,15 +20,7 @@ export default function Navbar({ className }) {
   return (
     <div className={cn(" inset-x-0 max-w-3xl z-50 ", className)}>
       <Menu setActive={setActive}>
-        <Link href="/" className=" hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Главная</Link>
 
-        <MenuItem setActive={setActive} active={active} item="Услуги">
-          <div className=" flex flex-col mx-2 space-y-4 text-sm">
-            <HoveredLink href="/">Консультация на адресе</HoveredLink>
-            <HoveredLink href="/"> Замер помещения</HoveredLink>
-            <HoveredLink href="/seo">Дизайн-проект мебели</HoveredLink>
-          </div>
-        </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Каталог">
           <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
             <ProductItem
@@ -57,13 +49,6 @@ export default function Navbar({ className }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Акции">
-          <div className="flex flex-col mx-2 space-y-4 text-sm">
-            <HoveredLink href="/hobby">Скидки</HoveredLink>
-            <HoveredLink href="/individual">Подарки</HoveredLink>
-          </div>
-        </MenuItem>
-        <Link href="/blog" className="hover:text-sky-900 mx-2 cursor-pointer text-black text-lg hover:opacity-[0.9] dark:text-white">Блог</Link>
       </Menu>
     </div>
   );
