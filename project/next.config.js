@@ -10,6 +10,13 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "assets.aceternity.com",
+        port: "",
+        pathname: "/**",
+      },
+
+      {
+        protocol: "https",
         hostname: "zovofficial.com",
         port: "",
         pathname: "/**",

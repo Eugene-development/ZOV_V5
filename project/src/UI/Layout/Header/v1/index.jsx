@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import NavBar from "./NavBar";
 
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
@@ -15,6 +16,9 @@ import {
   PhoneIcon,
   RectangleGroupIcon,
 } from "@heroicons/react/20/solid";
+
+
+
 
 const products = [
   {
@@ -60,7 +64,7 @@ export default () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0  isolate z-10 bg-gray-50/90 shadow-lg">
+    <header className="sticky top-0 isolate z-10 bg-gray-50/90 shadow-lg">
       <nav
         className="mx-auto flex max-w-full items-center justify-between p-4 lg:px-8"
         //  ^?
@@ -107,6 +111,8 @@ export default () => {
           >
             Блог
           </Link>
+
+          <NavBar />
 
           <Popover>
             <Popover.Button className="outline-none pl-4 pr-3 flex *:hover:rotate-90 items-center gap-x-1 text-sm xl:text-base font-display font-semibold leading-6 text-gray-950 hover:text-red-800 scale110">
