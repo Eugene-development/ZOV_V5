@@ -11,7 +11,6 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
-  ChevronRightIcon,
   ChevronDownIcon,
   PhoneIcon,
   RectangleGroupIcon,
@@ -66,7 +65,7 @@ export default () => {
   return (
     <header className="sticky top-0 isolate z-10 bg-gray-50/90 shadow-lg">
       <nav
-        className="mx-auto flex max-w-full items-center justify-between p-4 lg:px-8"
+        className="mx-auto flex max-w-full items-center justify-between lg:px-8"
         //  ^?
         aria-label="Global"
       >
@@ -92,7 +91,7 @@ export default () => {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden 2xl:flex divide-x font-display">
+        <Popover.Group className="hidden 2xl:flex  font-display items-center">
           <Link
             href="/"
             className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
@@ -101,13 +100,13 @@ export default () => {
           </Link>
           <Link
             href="/company"
-            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
+            className="px-3  text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Компания
           </Link>
           <Link
             href="/blog"
-            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
+            className="px-3  text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Блог
           </Link>
@@ -117,19 +116,19 @@ export default () => {
 
           <Link
             href="/service"
-            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
+            className="px-3  text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Сервис
           </Link>
           <Link
             href="/actions"
-            className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
+            className="px-3  text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Акции
           </Link>
           <Link
             href="/contacts"
-            className="pl-4 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
+            className="pl-3  text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
           >
             Салоны
           </Link>
@@ -301,3 +300,66 @@ export default () => {
     </header >
   );
 };
+
+
+{/* <Popover>
+  <Popover.Button className="outline-none pl-4 pr-3 flex *:hover:rotate-90 items-center gap-x-1 text-sm xl:text-base font-display font-semibold leading-6 text-gray-950 hover:text-red-800 scale110">
+    Каталог
+    <ChevronRightIcon
+      className="h-5 w-5 flex-none text-red-700  animate-pulse"
+      aria-hidden="true"
+    />
+  </Popover.Button>
+
+  <Transition
+    as={Fragment}
+    enter="transition ease-out duration-200"
+    enterFrom="opacity-0 -translate-y-1"
+    enterTo="opacity-100 translate-y-0"
+    leave="transition ease-in duration-150"
+    leaveFrom="opacity-100 translate-y-0"
+    leaveTo="opacity-0 -translate-y-1"
+  >
+    <div className="absolute inset-x-0 top-0 -z-10 bg-gray-50 pt-12 shadow-lg ring-1 ring-gray-900/5 border-t">
+      <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-8 lg:px-8 xl:gap-x-8 ">
+        {products.map((item) => (
+          <div
+            key={item.name}
+            className="group relative rounded-lg p-5 text-sm leading-6 shadow-2xl shadow-gray-50 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 border-l transparent border-gray-300 scale110"
+          >
+            <div className="flex ">
+              <item.icon className="size-5 text-red-900" aria-hidden="true" />
+              <Link
+                href={item.href}
+                className="ml-2 block text-lg font-semibold text-gray-800"
+              >
+                {item.name}
+                <span className="absolute inset-0" />
+              </Link>
+            </div>
+
+            <p className="mt-2 text-gray-600">{item.description}</p>
+          </div>
+        ))}
+      </div>
+      <div className="bg-gray-900">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+          <div className="grid grid-cols-3 divide-x divide-gray-900/5 border-x border-gray-900/5 ">
+            {equipment.map((item) => (
+              <div
+                key={item.name}
+                className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-50 hover:bg-gray-800"
+              >
+                <item.icon
+                  className="h-5 w-5 flex-none text-gray-50"
+                  aria-hidden="true"
+                />
+                {item.name}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </Transition>
+</Popover> */}
