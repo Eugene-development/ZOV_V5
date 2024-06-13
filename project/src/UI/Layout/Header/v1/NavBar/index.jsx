@@ -14,28 +14,28 @@ export default function Navbar({ className }) {
         <MenuItem setActive={setActive} active={active} item="Каталог">
           <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
             <ProductItem
-              title="Мебель"
+              title="Кухонные гарнитуры"
               href="https://algochurn.com"
               src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Production ready Tailwind css components for your next project"
+              description="Лучшие проектные решения вашего кухонного гарнитура"
             />
             <ProductItem
-              title="Бытовая Техника"
+              title="Шкафы и гардеробы"
               href="https://tailwindmasterkit.com"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Production ready Tailwind css components for your next project"
+              description="Вместительные конструкции с различным наполнением и фурнитурой"
             />
             <ProductItem
-              title="Столешницы"
+              title="Шкафы купе"
               href="https://gomoonbeam.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Never write from scratch again. Go from idea to blog in minutes."
+              description="Дизайнерские проекты шкафов купе для экономии пространства"
             />
             <ProductItem
-              title="Мойки и смесители"
+              title="Распродажа"
               href="https://userogue.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+              description="Реализация продукции в салонах по сниженным ценам"
             />
           </div>
         </MenuItem>
