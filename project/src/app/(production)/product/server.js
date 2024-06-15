@@ -15,6 +15,12 @@ const ONE_PRODUCT = gql`
       image {
         hash
       }
+      seoTitle {
+            value
+      }
+        seoDescription {
+            value
+      }
       parent: parentable {
         ... on Category {
           value

@@ -6,8 +6,8 @@ export async function generateMetadata({ params }) {
   const meta = await getOneProduct({ params })
 
   return {
-    title: 'Фабрика мебели ЗОВ | Мебельный проект ' + meta.product_one.value,
-    description: 'Если Вас интересует проект ' + meta.product_one.value + ' с нашей фабрики ЗОВ.',
+    title: meta.product_one.seoTitle.value,
+    description: meta.product_one.seoDescription.value,
 
   }
 }
