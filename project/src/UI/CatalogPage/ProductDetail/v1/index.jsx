@@ -124,7 +124,7 @@ export default (props) => {
 
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
-      <div className="max-w-screen-2xl px-8 mx-auto py-4 sm:px-6 sm:py-16  lg:px-8">
+      <div className="max-w-screen-2xl px-8 mx-auto py-4 sm:px-6 sm:py-12 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-16">
           {/* Image gallery */}
           <Tab.Group as="div" className="flex flex-col-reverse">
@@ -180,7 +180,7 @@ export default (props) => {
 
           </Tab.Group>
           {/* Product info */}
-          <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
+          <div className="mt-8 px-4 sm:mt-16 sm:px-0 lg:mt-0">
             <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Проект - {props.product.value}</h1>
 
             {/* <div className="mt-3">
@@ -208,11 +208,11 @@ export default (props) => {
               </div>
             </div>
 
-            <div className="mt-4">
+            <div className="mt-2 pr-8">
               <h3 className="sr-only">Описание</h3>
 
               <div
-                className="space-y-6 text-base text-gray-700"
+                className="space-y-6 text-base text-gray-500"
                 dangerouslySetInnerHTML={{ __html: props.product?.text?.value }}
               />
             </div>

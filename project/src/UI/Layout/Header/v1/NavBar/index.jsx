@@ -15,25 +15,25 @@ export default function Navbar({ className }) {
           <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
             <ProductItem
               title="Кухонные гарнитуры"
-              href="https://algochurn.com"
+              href="/catalog/kuhna"
               src="https://assets.aceternity.com/demos/algochurn.webp"
               description="Лучшие проектные решения вашего кухонного гарнитура"
             />
             <ProductItem
               title="Шкафы и гардеробы"
-              href="https://tailwindmasterkit.com"
+              href="/catalog/garderob"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Вместительные конструкции с различным наполнением и фурнитурой"
             />
             <ProductItem
               title="Шкафы купе"
-              href="https://gomoonbeam.com"
+              href="/catalog/kupe"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Дизайнерские проекты шкафов купе для экономии пространства"
             />
             <ProductItem
               title="Распродажа"
-              href="https://userogue.com"
+              href="/catalog/rasprodazha"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Реализация продукции в салонах по сниженным ценам"
             />
