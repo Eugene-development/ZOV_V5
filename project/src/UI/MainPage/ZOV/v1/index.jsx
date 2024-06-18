@@ -13,8 +13,8 @@ export default function CallToAction() {
       <Container className="relative">
         <img
           className="mx-auto h-40 md:h-72"
-          src="https://zovrus.ru/design/zovrus/images/dist/svg/logo-white.svg"
-          alt="Белорусская абрика мебели 'ЗОВ'"
+          src="https://storage.yandexcloud.net/zovrus/brand/logo-white.svg"
+          alt="Белорусская фабрика мебели 'ЗОВ'"
         />
       </Container>
     </section>

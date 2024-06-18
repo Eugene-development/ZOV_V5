@@ -18,8 +18,8 @@ export default () => {
           <div className="my-8 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
             <div className="group aspect-w-2 aspect-h-1 overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
               <img
-                src="https://zovrus.ru/files/_cache/product/a4-mat-akril.resize1200x1200w.png?95461fcf11bd7e19632aaa9bde5229f3"
-                alt=""
+                src="https://storage.yandexcloud.net/zovrus/site/main/cam-2-1087x890.jpg"
+                alt="Гардероб"
                 className="object-cover object-center group-hover:opacity-75"
               />
               <div
@@ -39,8 +39,8 @@ export default () => {
             </div>
             <div className="group aspect-w-2 aspect-h-1 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
               <img
-                src="https://zovrus.ru/files/_cache/product/chr-1046_2.resize1200x1200w.jpg?8a9ec4c73c7d199741f9a9837334bb3e"
-                alt=""
+                src="https://zovofficial.com/image/cache/catalog/products/kuhni/2024/norvud/cam-1-1087x890.jpg"
+                alt="Кухонный гарнитур"
                 className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
               />
               <div
@@ -60,8 +60,8 @@ export default () => {
             </div>
             <div className="group aspect-w-2 aspect-h-1 overflow-hidden rounded-lg sm:aspect-none sm:relative sm:h-full">
               <img
-                src="https://millarti.ru/wp-content/uploads/2023/01/1-8-1.png"
-                alt=""
+                src="https://shkafy-spb.ru/upload/iblock/5cf/5cff3716d080aa68a418437c84497c31.jpg"
+                alt="Шкаф купе"
                 className="object-cover object-center group-hover:opacity-75 sm:absolute sm:inset-0 sm:h-full sm:w-full"
               />
               <div
