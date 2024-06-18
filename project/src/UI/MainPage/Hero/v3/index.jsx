@@ -82,7 +82,7 @@ export default function index() {
             </svg>
           </button>
         </div>
-        <div className="grid gap-8 pt-8 lg:py-12 mt-8 lg:mt-12 sm:grid-cols-2 lg:grid-cols-4 bg-gray-800/60 p-6 shadow-2xl shadow-black rounded-md">
+        <div className="grid gap-8 pt-8 lg:py-12 mt-8 lg:mt-12 sm:grid-cols-2 lg:grid-cols-4 bg-gray-800/20 p-6 shadow-2xl shadow-black rounded-md">
           <div>
             <h2 className="mb-1 text-xl font-semibold">Кухонные гарнитуры</h2>
             {/* <p className="mb-1 text-sm text-gray-200">Бесплатный дизайн-проект</p> */}
