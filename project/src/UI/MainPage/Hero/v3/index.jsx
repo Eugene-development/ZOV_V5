@@ -65,9 +65,9 @@ export default function index() {
           </div>
           <button
             onClick={openVisibleFormConsultation}
-            className="md:hidden inline-flex items-center py-3 px-5 font-medium text-center text-white rounded-lg bg-gray-900 hover:bg-primary-900 focus:ring-4 focus:outline-none focus:ring-primary-900 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            className="md:hidden inline-flex items-center ml-2 mt-2 py-3 px-5 font-medium text-center text-gray-800 rounded-lg bg-gray-50 hover:bg-primary-900 focus:ring-4 focus:outline-none focus:ring-primary-900 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
           >
-            Составить дизайн проект
+            Заказать дизайн проект
             <svg
               className="ml-2 -mr-1 w-5 h-5 text-red-500"
               fill="currentColor"

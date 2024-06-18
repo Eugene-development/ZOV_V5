@@ -63,7 +63,7 @@ export default () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 isolate z-10 bg-gray-50/90 shadow-lg">
+    <header className="sticky top-0 p-4 sm:p-0.5 isolate z-10 bg-gray-50/90 shadow-lg">
       <nav
         className="mx-auto flex max-w-full items-center justify-between lg:px-8"
         //  ^?
