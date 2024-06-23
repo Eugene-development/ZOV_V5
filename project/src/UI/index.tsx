@@ -44,8 +44,8 @@ export { default as SimilarProducts } from "./CatalogPage/Similar/v1";
 export { default as BlogList } from "./Blog/BlogList/v1";
 export { default as Article } from "./Blog/Article/v1";
 
-// Police
-export { default as Policy } from "./Police/v1";
+// Policy
+export { default as Policy } from "./Policy/v1";
 
 // Action
 export { default as Action } from "./Action/v1";
