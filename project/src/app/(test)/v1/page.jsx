@@ -3,7 +3,6 @@
 // import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
 
-
 // export default function index() {
 
 //     const container = useRef();
@@ -16,12 +15,6 @@
 //         gsap.to(".good", { rotation: 180 });
 //     });
 
-
-
-
-
-
-
 //     return (
 //         <div ref={container}>
 //             <button onClick={onClickBad} className="bad size-10 bg-red-900"></button>
@@ -30,15 +23,12 @@
 //     )
 // }
 
-
 export const metadata = {
-    title: "Белорусская фабрика мебели ЗОВ",
-    description: "",
-    content: "noindex"
+  title: "Белорусская фабрика мебели ЗОВ",
+  description: "",
+  content: "noindex",
 };
 
 export default function page() {
-    return (
-        <div>page</div>
-    )
+  return <div>page</div>;
 }

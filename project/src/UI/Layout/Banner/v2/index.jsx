@@ -1,15 +1,12 @@
 "use client";
 import Link from "next/link";
 
-import Search from "./Search"
-import Favorites from "./Favorites"
+import Search from "./Search";
+import Favorites from "./Favorites";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 
-
 export default (props) => {
-
   return (
-
     <div className=" relative isolate flex items-center py-2.5 px-4 sm:px-3.5 bg-gray-900  justify-between">
       {/* {props.children} */}
       <svg
@@ -69,9 +66,10 @@ export default (props) => {
         </div>
       </div>
 
-
-      <marquee direction="left" className="hidden mx-24 md:block text-sm leading-6 text-gray-50">
-
+      <marquee
+        direction="left"
+        className="hidden mx-24 md:block text-sm leading-6 text-gray-50"
+      >
         <svg
           viewBox="0 0 2 2"
           className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
@@ -87,7 +85,9 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-        <strong className="font-semibold">Сборка и установка за счёт компании</strong>
+        <strong className="font-semibold">
+          Сборка и установка за счёт компании
+        </strong>
         <svg
           viewBox="0 0 2 2"
           className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
@@ -103,7 +103,9 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-        <strong className="font-semibold">Пятая позиция техники в подарок</strong>
+        <strong className="font-semibold">
+          Пятая позиция техники в подарок
+        </strong>
         <svg
           viewBox="0 0 2 2"
           className="mx-2 inline h-0.5 w-0.5 fill-current text-red-500"
@@ -119,8 +121,6 @@ export default (props) => {
         >
           <circle cx={1} cy={1} r={1} />
         </svg>
-
-
       </marquee>
       <div className="hidden md:flex flex-1 justify-end divide-x">
         <Favorites />
@@ -133,5 +133,5 @@ export default (props) => {
         </Link>
       </div>
     </div>
-  )
+  );
 };

@@ -5,7 +5,6 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-
 import Form from "./Form";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
@@ -16,12 +15,14 @@ import { useFormsStore } from "@/store/forms";
 const { visibleFormConsultation } = useFormsStore;
 
 export default function index() {
-
   const container = useRef();
 
-  useGSAP(() => {
-    gsap.from(".box", { opacity: 0, stagger: 1 });
-  }, { scope: container });
+  useGSAP(
+    () => {
+      gsap.from(".box", { opacity: 0, stagger: 1 });
+    },
+    { scope: container },
+  );
 
   const { openVisiblePromo } = visiblePromo();
   const { openVisibleFormConsultation } = visibleFormConsultation();
@@ -29,7 +30,10 @@ export default function index() {
   return (
     <section className="shadow-xl bg-[url('https://storage.yandexcloud.net/zovrus/site/1-1600x1573.jpg')] bg-no-repeat bg-cover bg-center bg-gray-200 bg-blend-multiply">
       {/* <section className="shadow-xl bg-[url('https://zovofficial.com/image/cache/catalog/products/kuhni/2022/velvet/1-1600x1573.jpg')] bg-no-repeat bg-cover bg-center bg-gray-300 bg-blend-multiply"> */}
-      <div ref={container} className="relative py-8 px-4 mx-auto max-w-screen-xl text-white lg:py-16 z-1">
+      <div
+        ref={container}
+        className="relative py-8 px-4 mx-auto max-w-screen-xl text-white lg:py-16 z-1"
+      >
         <div className="mb-4 sm:mb-6">
           <div className=" inline-flex sm:space-x-6">
             <span className="hidden md:block rounded-full bg-gray-500/10 px-6 py-1 text-xs md:text-sm font-semibold leading-6 text-gray-50 ring-1 ring-inset ring-gray-500/40 ">
@@ -54,9 +58,11 @@ export default function index() {
             </h1>
             <p className=" p-2 font-light text-white lg:mb-8 md:text-lg lg:text-xl bg-gray-900/20 ">
               Мебельная фабрика «ЗОВ» - это крупнейший производитель корпусной
-              мебели на заказ по индивидуальным размерам в Республике Беларусь и за её пределами. <br />{" "}
+              мебели на заказ по индивидуальным размерам в Республике Беларусь и
+              за её пределами. <br />{" "}
               <span className="hidden md:block mt-2">
-                Наша фабрика гарантирует Вам высочайшее качество премиальной мебели и доступную цену на всю линейку продукции.
+                Наша фабрика гарантирует Вам высочайшее качество премиальной
+                мебели и доступную цену на всю линейку продукции.
               </span>
             </p>
           </div>

@@ -7,8 +7,6 @@ import ActionModal from "./ActionModal";
 import Slide from "./slide";
 
 export default ({ actions }) => {
-
-
   return (
     <>
       <ActionModal />
@@ -17,12 +15,15 @@ export default ({ actions }) => {
         className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8"
       >
         <div className="mx-auto max-w-2xl lg:max-w-none">
-          <h1 id="sale-heading" className="text-4xl font-semibold font-display tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+          <h1
+            id="sale-heading"
+            className="text-4xl font-semibold font-display tracking-tight text-gray-900 sm:text-5xl lg:text-6xl"
+          >
             Наши акции и предложения
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-600">
-            Мы стараемся Вас радовать не только качественной и красивой
-            мебелью, но и приятными бонусами при покупке!
+            Мы стараемся Вас радовать не только качественной и красивой мебелью,
+            но и приятными бонусами при покупке!
           </p>
         </div>
       </section>

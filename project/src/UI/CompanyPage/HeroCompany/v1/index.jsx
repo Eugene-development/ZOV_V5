@@ -6,13 +6,14 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 export default () => {
-
   const container = useRef();
 
-  useGSAP(() => {
-    gsap.from(".box", { opacity: 0, stagger: 0.4 });
-  }, { scope: container });
-
+  useGSAP(
+    () => {
+      gsap.from(".box", { opacity: 0, stagger: 0.4 });
+    },
+    { scope: container },
+  );
 
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -64,15 +65,17 @@ export default () => {
               <div className="w-full max-w-2xl lg:shrink-0 xl:max-w-3xl font-display">
                 <h2 className="text-xl font-semibold tracking-tight text-gray-900 sm:text-2xl ">
                   <span className="">ОТ НАШЕЙ ФАБРИКИ</span> <br />{" "}
-                  <span className="text-4xl sm:text-5xl xl:text-7xl font-bold">ДЛЯ ВАШЕЙ СЕМЬИ</span>
+                  <span className="text-4xl sm:text-5xl xl:text-7xl font-bold">
+                    ДЛЯ ВАШЕЙ СЕМЬИ
+                  </span>
                 </h2>
                 {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     Мы официальный дилер фабрики "ЗОВ" <br/>в России
                   </h1> */}
                 <p className="relative mt-8 text-base sm:text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-2xl">
                   Наша компания располагает самой крупной сетью мебельных
-                  салонов фабрики "ЗОВ" в России. Предлагаем Вам отличный
-                  сервис и доступные цены на мебель премиального качества.
+                  салонов фабрики "ЗОВ" в России. Предлагаем Вам отличный сервис
+                  и доступные цены на мебель премиального качества.
                 </p>
                 <p className="relative mt-8 text-base sm:text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-2xl">
                   Посетите ли вы наши салоны или проконсультируетесь он-лайн, в
@@ -83,7 +86,10 @@ export default () => {
                   Ждём Вас в наших салонах!
                 </p>
               </div>
-              <div ref={container} className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+              <div
+                ref={container}
+                className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
+              >
                 <div className="box ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <img

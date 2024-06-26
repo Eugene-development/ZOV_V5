@@ -16,9 +16,6 @@ import {
   RectangleGroupIcon,
 } from "@heroicons/react/20/solid";
 
-
-
-
 const products = [
   {
     name: "Кухонные гарнитуры",
@@ -113,7 +110,6 @@ export default () => {
 
           <NavBar />
 
-
           <Link
             href="/service"
             className="px-3  text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
@@ -152,9 +148,7 @@ export default () => {
                 className="block h-4 w-4 xl:h-6 xl:w-6 text-gray-950 animate-pulse"
                 aria-hidden="true"
               />
-              <div
-                className=" ml-2 text-sm xl:text-base font-bold text-gray-950"
-              >
+              <div className=" ml-2 text-sm xl:text-base font-bold text-gray-950">
                 info@zov.top
               </div>
             </div>
@@ -297,12 +291,12 @@ export default () => {
           </div>
         </Dialog.Panel>
       </Dialog>
-    </header >
+    </header>
   );
 };
 
-
-{/* <Popover>
+{
+  /* <Popover>
   <Popover.Button className="outline-none pl-4 pr-3 flex *:hover:rotate-90 items-center gap-x-1 text-sm xl:text-base font-display font-semibold leading-6 text-gray-950 hover:text-red-800 scale110">
     Каталог
     <ChevronRightIcon
@@ -362,4 +356,5 @@ export default () => {
       </div>
     </div>
   </Transition>
-</Popover> */}
+</Popover> */
+}

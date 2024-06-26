@@ -1,21 +1,19 @@
-"use client"
+"use client";
 import Image from "next/image";
-import FavoriteButton from './favoriteButton'
+import FavoriteButton from "./favoriteButton";
 
-import { Suspense } from 'react'
+import { Suspense } from "react";
 import { motion } from "framer-motion";
 
-import { Disclosure, Tab } from '@headlessui/react'
-import { StarIcon } from '@heroicons/react/20/solid'
-import { HeartIcon, MinusIcon, PlusIcon } from '@heroicons/react/24/outline'
-
+import { Disclosure, Tab } from "@headlessui/react";
+import { StarIcon } from "@heroicons/react/20/solid";
+import { HeartIcon, MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 
 import { useFormsStore } from "@/store/forms";
 const { visibleFormConsultation } = useFormsStore;
 
 import { useNotificationStore } from "@/store/notifications";
 const { visibleNotification } = useNotificationStore;
-
 
 const product = {
   // name: 'МИ0000',
@@ -57,70 +55,80 @@ const product = {
   // `,
   details: [
     {
-      name: 'Общая информация',
+      name: "Общая информация",
       items: [
         {
-          name: 'Цена',
-          value: 'Наша фабрика предлагает идеальное соотношение приемлемой цены к премиальному качеству мебели.',
+          name: "Цена",
+          value:
+            "Наша фабрика предлагает идеальное соотношение приемлемой цены к премиальному качеству мебели.",
         },
         {
-          name: 'Замер',
-          value: 'Замер помещения осуществляется специалистом соответствующими измерительными приборами.',
+          name: "Замер",
+          value:
+            "Замер помещения осуществляется специалистом соответствующими измерительными приборами.",
         },
         {
-          name: 'Договор',
-          value: 'Договор заключается в наших салонах, где обозначены все условия по срокам, цене и гарантийным обязательствам.',
+          name: "Договор",
+          value:
+            "Договор заключается в наших салонах, где обозначены все условия по срокам, цене и гарантийным обязательствам.",
         },
         {
-          name: 'Предоплата',
-          value: 'При заключении договора вносится предоплата не менее 40 процентов ,а оставшая сумма по факту готовности.',
+          name: "Предоплата",
+          value:
+            "При заключении договора вносится предоплата не менее 40 процентов ,а оставшая сумма по факту готовности.",
         },
         {
-          name: 'Рассрочка',
-          value: 'Вы можете приобрести мебель в рассрочку сроком до одного года с первоначальным взносом от 10%.',
+          name: "Рассрочка",
+          value:
+            "Вы можете приобрести мебель в рассрочку сроком до одного года с первоначальным взносом от 10%.",
         },
         {
-          name: 'Доставка',
-          value: 'Мы можем организовать вам доставку заказа с грузчиками до квартиры по Москве и области.',
+          name: "Доставка",
+          value:
+            "Мы можем организовать вам доставку заказа с грузчиками до квартиры по Москве и области.",
         },
         {
-          name: 'Сборка',
-          value: 'Сборка и установка мебели осуществляется нашими штатными специалистами, прошедшими обучение.',
+          name: "Сборка",
+          value:
+            "Сборка и установка мебели осуществляется нашими штатными специалистами, прошедшими обучение.",
         },
       ],
     },
     {
-      name: 'Комплектация изделия',
+      name: "Комплектация изделия",
       items: [
         {
-          name: 'Каркас',
-          value: 'Каркас мебели выполнен из высокопрочной плиты ЛДСП Egger, увеличенной толщины 18 мм.',
+          name: "Каркас",
+          value:
+            "Каркас мебели выполнен из высокопрочной плиты ЛДСП Egger, увеличенной толщины 18 мм.",
         },
         {
-          name: 'Фасады',
-          value: 'Наша фабрика предлагает фасады из массива дерева, покрытые пластиком или крашенные эмалью.',
+          name: "Фасады",
+          value:
+            "Наша фабрика предлагает фасады из массива дерева, покрытые пластиком или крашенные эмалью.",
         },
         {
-          name: 'Фурнитура',
-          value: 'В наших изделиях мы используем только высококачественную фурнитуру брендов Hettich и BLUM.',
+          name: "Фурнитура",
+          value:
+            "В наших изделиях мы используем только высококачественную фурнитуру брендов Hettich и BLUM.",
         },
       ],
     },
-
   ],
-}
+};
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 export default (props) => {
   const { openVisibleFormConsultation } = visibleFormConsultation();
-  const { openVisibleNotification, setCurrentNotification } = visibleNotification();
+  const { openVisibleNotification, setCurrentNotification } =
+    visibleNotification();
 
   const handleNotification = (item) => {
-    openVisibleNotification()
-    setCurrentNotification(item)
-  }
+    openVisibleNotification();
+    setCurrentNotification(item);
+  };
 
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
@@ -140,16 +148,19 @@ export default (props) => {
                       <>
                         <span className="sr-only">{item.hash}</span>
                         <span className="absolute inset-0 overflow-hidden rounded-md">
-                          <Image src={`${process.env.NEXT_PUBLIC_S3}/${item?.hash}`}
+                          <Image
+                            src={`${process.env.NEXT_PUBLIC_S3}/${item?.hash}`}
                             width={720}
                             height={480}
-                            alt={props.product.value} className="object-cover h-full w-full object-center" />
+                            alt={props.product.value}
+                            className="object-cover h-full w-full object-center"
+                          />
                         </span>
                         {/* {img.hash} */}
                         <span
                           className={classNames(
-                            selected ? 'ring-gray-500' : 'ring-transparent',
-                            'pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2'
+                            selected ? "ring-gray-500" : "ring-transparent",
+                            "pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2",
                           )}
                           aria-hidden="true"
                         />
@@ -160,12 +171,9 @@ export default (props) => {
               </Tab.List>
             </div>
 
-
-
             <Tab.Panels className="aspect-h-3 aspect-w-4 w-full">
               {props.product.image.map((img) => (
                 <Tab.Panel key={img.hash}>
-
                   <Image
                     src={`${process.env.NEXT_PUBLIC_S3}/${img?.hash}`}
                     width={720}
@@ -173,15 +181,15 @@ export default (props) => {
                     alt={props.product.value}
                     className="object-cover h-full w-full object-center sm:rounded-lg"
                   />
-
                 </Tab.Panel>
               ))}
             </Tab.Panels>
-
           </Tab.Group>
           {/* Product info */}
           <div className="mt-8 px-4 sm:mt-16 sm:px-0 lg:mt-0">
-            <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">Проект - {props.product.value}</h1>
+            <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-gray-900">
+              Проект - {props.product.value}
+            </h1>
 
             {/* <div className="mt-3">
                 <h2 className="sr-only">Product information</h2>
@@ -197,8 +205,10 @@ export default (props) => {
                     <StarIcon
                       key={rating}
                       className={classNames(
-                        product.rating > rating ? 'text-red-600' : 'text-gray-300',
-                        'h-5 w-5 flex-shrink-0'
+                        product.rating > rating
+                          ? "text-red-600"
+                          : "text-gray-300",
+                        "h-5 w-5 flex-shrink-0",
                       )}
                       aria-hidden="true"
                     />
@@ -218,9 +228,10 @@ export default (props) => {
             </div>
 
             <div className="mt-6">
-
               <div>
-                <h3 className="text-xs sm:text-sm text-red-600">АКЦИЯ: Замер в пределах МКАД бесплатно</h3>
+                <h3 className="text-xs sm:text-sm text-red-600">
+                  АКЦИЯ: Замер в пределах МКАД бесплатно
+                </h3>
               </div>
 
               <div className="mt-8 flex">
@@ -229,19 +240,21 @@ export default (props) => {
                   onClick={openVisibleFormConsultation}
                   className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-gray-600 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
-                  <span className="hidden sm:block">Составить дизайн проект</span>
+                  <span className="hidden sm:block">
+                    Составить дизайн проект
+                  </span>
                   <span className="block sm:hidden">Проект</span>
-
                 </button>
                 <button
                   type="submit"
                   onClick={openVisibleFormConsultation}
                   className="ml-4 flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-gray-600 px-8 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                 >
-                  <span className="hidden sm:block">Заказать замер помещения</span>
+                  <span className="hidden sm:block">
+                    Заказать замер помещения
+                  </span>
                   <span className="block sm:hidden">Замер</span>
                 </button>
-
 
                 <FavoriteButton product={props.product} />
               </div>
@@ -260,7 +273,10 @@ export default (props) => {
                         <h3>
                           <Disclosure.Button className="group relative flex w-full items-center justify-between py-6 text-left">
                             <span
-                              className={classNames(open ? 'text-gray-600' : 'text-gray-900', 'text-sm font-medium')}
+                              className={classNames(
+                                open ? "text-gray-600" : "text-gray-900",
+                                "text-sm font-medium",
+                              )}
                             >
                               {detail.name}
                             </span>
@@ -279,10 +295,17 @@ export default (props) => {
                             </span>
                           </Disclosure.Button>
                         </h3>
-                        <Disclosure.Panel as="div" className="prose prose-sm pb-6">
+                        <Disclosure.Panel
+                          as="div"
+                          className="prose prose-sm pb-6"
+                        >
                           <ul role="list">
                             {detail.items.map((item) => (
-                              <li key={item} onClick={() => handleNotification(item)} className="cursor-pointer hover:text-red-700">
+                              <li
+                                key={item}
+                                onClick={() => handleNotification(item)}
+                                className="cursor-pointer hover:text-red-700"
+                              >
                                 {item.name}
                               </li>
                             ))}
@@ -298,5 +321,5 @@ export default (props) => {
         </div>
       </div>
     </motion.main>
-  )
-}
+  );
+};

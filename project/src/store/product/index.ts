@@ -1,18 +1,16 @@
 import { create } from "zustand";
-import { persist } from 'zustand/middleware'
+import { persist } from "zustand/middleware";
 
-const visibleProductModal = create(
-  (set) => ({
-    currentVisibleProductModal: false,
-    currentProduct: [],
-    openVisibleProductModal: (item: any) => {
-      set(() => ({ currentProduct: item }));
-      set(() => ({ currentVisibleProductModal: true }));
-    },
-    closeVisibleProductModal: () =>
-      set(() => ({ currentVisibleProductModal: false })),
-  })
-);
+const visibleProductModal = create((set) => ({
+  currentVisibleProductModal: false,
+  currentProduct: [],
+  openVisibleProductModal: (item: any) => {
+    set(() => ({ currentProduct: item }));
+    set(() => ({ currentVisibleProductModal: true }));
+  },
+  closeVisibleProductModal: () =>
+    set(() => ({ currentVisibleProductModal: false })),
+}));
 
 const similarProducts = create(
   persist(
@@ -23,8 +21,10 @@ const similarProducts = create(
       },
     }),
     {
-      name: 'similar'
-    }));
+      name: "similar",
+    },
+  ),
+);
 
 const favoritesProducts = create(
   persist(
@@ -32,22 +32,28 @@ const favoritesProducts = create(
       currentFavoritesProducts: [],
       addToFavoritesProducts: (newProduct: any) => {
         set((state: any) => ({
-          currentFavoritesProducts: [...state.currentFavoritesProducts, newProduct]
+          currentFavoritesProducts: [
+            ...state.currentFavoritesProducts,
+            newProduct,
+          ],
         }));
       },
       removeFromFavoritesProducts: (id: any) => {
         set((state: any) => ({
-          currentFavoritesProducts: state.currentFavoritesProducts.filter((product: any) => product.id !== id)
+          currentFavoritesProducts: state.currentFavoritesProducts.filter(
+            (product: any) => product.id !== id,
+          ),
         }));
       },
     }),
     {
-      name: 'favorites'
-    }
-  ));
+      name: "favorites",
+    },
+  ),
+);
 
 export const useProductStore = {
   visibleProductModal,
   similarProducts,
-  favoritesProducts
+  favoritesProducts,
 };

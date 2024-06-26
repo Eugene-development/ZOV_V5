@@ -24,7 +24,6 @@ export { default as ZOV } from "./MainPage/ZOV/v1";
 export { default as Notification } from "./Modal/Notifications/v1";
 export { default as PromoCode } from "./Modal/Promo/v1";
 
-
 // Company
 export { default as Content } from "./CompanyPage/Content/v1";
 export { default as HeroCompany } from "./CompanyPage/HeroCompany/v1";
@@ -39,7 +38,6 @@ export { default as ProductList } from "./CatalogPage/ProductList/v2";
 export { default as ProductDetail } from "./CatalogPage/ProductDetail/v1";
 export { default as SimilarProducts } from "./CatalogPage/Similar/v1";
 
-
 // Blog
 export { default as BlogList } from "./Blog/BlogList/v1";
 export { default as Article } from "./Blog/Article/v1";
@@ -52,5 +50,3 @@ export { default as Action } from "./Action/v1";
 
 // Sliders
 export { default as SliderSimple } from "./Slider/Simple/v1";
-
-

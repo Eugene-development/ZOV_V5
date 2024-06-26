@@ -53,7 +53,6 @@ export default () => {
               <p className="font-semibold text-gray-900">{value.name}</p>
               <p className="mt-1 text-gray-600">{value.description}</p>
             </div>
-
           ))}
         </div>
       </FadeIn>

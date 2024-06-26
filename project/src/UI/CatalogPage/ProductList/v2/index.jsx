@@ -8,9 +8,6 @@ import { FadeIn } from "@/functions/FadeIn";
 import { useProductStore } from "@/store/product";
 const { visibleProductModal, similarProducts } = useProductStore;
 
-
-
-
 export default ({ products }) => {
   const { openVisibleProductModal } = visibleProductModal();
   const { showSimilarProducts } = similarProducts();
@@ -23,10 +20,16 @@ export default ({ products }) => {
           <div className="max-w-screen-2xl px-4 mx-auto ">
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
               {products.map((item) => (
-                <div key={item.value} className="transition ease-in-out hover:scale-105">
+                <div
+                  key={item.value}
+                  className="transition ease-in-out hover:scale-105"
+                >
                   <FadeIn>
                     <Link href={`/product/${item.slug}`}>
-                      <div onClick={() => showSimilarProducts(products)} className="my-2 relative overflow-hidden group ">
+                      <div
+                        onClick={() => showSimilarProducts(products)}
+                        className="my-2 relative overflow-hidden group "
+                      >
                         <Image
                           className="object-cover w-full  shadow-xl shadow-gray-500 border-2 "
                           // TODO: А если нет изображения?
@@ -42,9 +45,7 @@ export default ({ products }) => {
                             </p>
                           </div>
                         </div>
-
                       </div>
-
                     </Link>
                   </FadeIn>
                 </div>
@@ -82,7 +83,13 @@ export default ({ products }) => {
               className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
               aria-hidden="true"
             >
-              <circle cx={512} cy={512} r={512} fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fillOpacity="0.7" />
+              <circle
+                cx={512}
+                cy={512}
+                r={512}
+                fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
+                fillOpacity="0.7"
+              />
               <defs>
                 <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
                   <stop stopColor="#7775D6" />
@@ -93,6 +100,6 @@ export default ({ products }) => {
           </div>
         </div>
       </div>
-    )
+    );
   }
 };

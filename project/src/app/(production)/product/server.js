@@ -16,10 +16,10 @@ const ONE_PRODUCT = gql`
         hash
       }
       seoTitle {
-            value
+        value
       }
-        seoDescription {
-            value
+      seoDescription {
+        value
       }
       parent: parentable {
         ... on Category {

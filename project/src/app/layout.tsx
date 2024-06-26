@@ -2,7 +2,14 @@ import "../css/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Banner, Header, Footer, FormConsultation, PromoCode, Notification } from "@/UI";
+import {
+  Banner,
+  Header,
+  Footer,
+  FormConsultation,
+  PromoCode,
+  Notification,
+} from "@/UI";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +29,7 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         {/* <link rel="icon" href="../image/favicon.ico" sizes="any" /> */}
-        {process.env.NODE_ENV === 'production' && (
+        {process.env.NODE_ENV === "production" && (
           <>
             <script src="//code.jivosite.com/widget/szuh00HFi5" async></script>
             <script

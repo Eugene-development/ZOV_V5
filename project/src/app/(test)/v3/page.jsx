@@ -36,16 +36,12 @@
 //     );
 // }
 
-
-
 export const metadata = {
-    title: "Белорусская фабрика мебели ЗОВ ",
-    description: "",
-    content: "noindex"
+  title: "Белорусская фабрика мебели ЗОВ ",
+  description: "",
+  content: "noindex",
 };
 
 export default function page() {
-    return (
-        <div>page</div>
-    )
+  return <div>page</div>;
 }

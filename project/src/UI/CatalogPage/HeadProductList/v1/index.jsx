@@ -51,8 +51,13 @@ export default (props) => {
           {/* <p className="px-2 font-light text-gray-500 text-sm sm:text-lg dark:text-gray-400">
             {props.head}
           </p> */}
-          <p className="px-2 font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Выберите подходящую конфигурацию, стиль и цвет вашей будущей мебели от нашей фабрики.</p>
-          <p className="px-2 font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">Возможно изготовление по вашим размерам.</p>
+          <p className="px-2 font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">
+            Выберите подходящую конфигурацию, стиль и цвет вашей будущей мебели
+            от нашей фабрики.
+          </p>
+          <p className="px-2 font-light text-gray-500 text-sm sm:text-xl dark:text-gray-400">
+            Возможно изготовление по вашим размерам.
+          </p>
         </div>
       </div>
     </motion.main>

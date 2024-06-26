@@ -1,11 +1,8 @@
-
 // 'use client'
 // import { useRef } from "react";
 
 // import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
-
-
 
 // export default function index() {
 
@@ -24,16 +21,12 @@
 //     )
 // }
 
-
-
 export const metadata = {
-    title: "Белорусская фабрика мебели ЗОВ ",
-    description: "",
-    content: "noindex"
+  title: "Белорусская фабрика мебели ЗОВ ",
+  description: "",
+  content: "noindex",
 };
 
 export default function page() {
-    return (
-        <div>page</div>
-    )
+  return <div>page</div>;
 }

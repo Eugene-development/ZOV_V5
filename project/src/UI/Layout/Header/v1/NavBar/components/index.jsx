@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-
 const transition = {
   type: "spring",
   mass: 0.5,
@@ -64,7 +63,11 @@ export const Menu = ({ setActive, children }) => {
 
 export const ProductItem = ({ title, description, href, src }) => {
   return (
-    <Link href={href} className="flex space-x-2">
+    <Link
+      href={href}
+      // onClick={() => setActive(null)}
+      className="flex space-x-2"
+    >
       {/* <Image
         src={src}
         width={140}

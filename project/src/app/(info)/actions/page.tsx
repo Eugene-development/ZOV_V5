@@ -63,5 +63,5 @@ export default function page() {
     <>
       <Action actions={actions} />;
     </>
-  )
+  );
 }
