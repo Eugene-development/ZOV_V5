@@ -61,29 +61,34 @@ export const Menu = ({ setActive, children }) => {
   );
 };
 
-export const ProductItem = ({ title, description, href, src }) => {
+export const ProductItem = ({ setActive, title, description, href, src }) => {
   return (
-    <Link
-      href={href}
-      // onClick={() => setActive(null)}
-      className="flex space-x-2"
+    <div
+      onClick={() => setActive(null)}
     >
-      {/* <Image
+      <Link
+        href={href}
+        className="flex space-x-2"
+      >
+        {/* <Image
         src={src}
         width={140}
         height={70}
         alt={title}
         className="flex-shrink-0 rounded-md shadow-xl shadow-gray-500"
       /> */}
-      <div className="pl-4">
-        <h4 className="mt-1 text-xl font-semibold mb-1 text-gray-900 dark:text-white">
-          {title}
-        </h4>
-        <p className="text-neutral-700 text-sm max-w-[20rem] dark:text-neutral-300">
-          {description}
-        </p>
-      </div>
-    </Link>
+        <div className="pl-4">
+          <h4 className="mt-1 text-xl font-semibold mb-1 text-gray-900 dark:text-white">
+            {title}
+          </h4>
+          <p className="text-neutral-700 text-sm max-w-[20rem] dark:text-neutral-300">
+            {description}
+          </p>
+        </div>
+      </Link>
+
+    </div>
+
   );
 };
 
