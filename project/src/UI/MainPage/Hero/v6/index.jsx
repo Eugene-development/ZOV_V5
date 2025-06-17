@@ -19,7 +19,7 @@ export default () => {
         <path d="M.5 200V.5H200" fill="none" />
       </pattern>
     </defs>
-    <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+    <rect width="100%" height="100%" strokeWidth="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
   </svg>
       {/* <div
         aria-hidden="true"
@@ -43,7 +43,7 @@ export default () => {
           <div className="mt-8 sm:mt-12 lg:mt-16">
             <a href="#" className="inline-flex space-x-6">
               <span className="rounded-full bg-gray-200/50 px-4 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-800 ring-1 ring-inset ring-gray-500/20">
-                Мебель для жизни
+                Сайт мебельной фабрики ЗОВ
               </span>
               {/* <span className="inline-flex items-center space-x-2 text-xs sm:text-sm font-medium leading-6 text-gray-300">
                 <span>Ваш промокод на скидку</span>
@@ -57,7 +57,7 @@ export default () => {
               >
                 <span>Ваш промокод на подарок</span>
                 <ChevronRightIcon
-                  className="h-5 w-5 text-gray-800"
+                  className="h-5 w-5 text-red-800"
                   aria-hidden="true"
                 />
               </button>
