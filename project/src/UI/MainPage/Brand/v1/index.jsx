@@ -22,9 +22,9 @@ export default () => {
   return (
     <FadeIn>
       <div className="py-16 px-2 ">
-        {/* <p className="font-display text-base text-center text-slate-900">
+        <p className="font-display text-base text-center text-slate-900">
           Фурнитура, которой мы доверяем:
-        </p> */}
+        </p>
         <ul
           role="list"
           className=" flex items-center justify-center gap-x-4 sm:gap-x-8 xl:gap-x-20"
