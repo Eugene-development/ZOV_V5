@@ -80,14 +80,17 @@ export default () => {
               
             </a>
           </div>
-          <h1 className="mt-12 text-4xl font-bold tracking-tight text-white sm:text-7xl">
-            Фабрика ЗОВ
+          <h1 className="mt-12 text-4xl font-semibold tracking-tight text-white sm:text-8xl">
+            Мебель ЗОВ
           </h1>
           <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-300">
             Мебельная фабрика «ЗОВ» - это крупнейший производитель корпусной мебели на заказ в Республике Беларусь и за её пределами.
           </p>
           <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-300">
             Наша фабрика гарантирует Вам высочайшее качество премиальной мебели и доступную цену на всю линейку продукции.
+          </p>
+          <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-300">
+            Получите консультацию нашего представителя в Москве.
           </p>
           <div className="mt-24 flex items-center">
           <button
