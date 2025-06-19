@@ -10,7 +10,7 @@ export default function Navbar({ className }) {
     <div className={cn(" inset-x-0 max-w-3xl z-50 ", className)}>
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Наш каталог">
-          <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-100 rounded-xl">
+          <div className="text-sm grid grid-cols-2 gap-10 p-8 bg-gray-50 rounded-xl">
             <ProductItem
               setActive={setActive}
               title="Кухонные гарнитуры"

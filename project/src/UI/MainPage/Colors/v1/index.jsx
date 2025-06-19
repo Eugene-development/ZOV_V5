@@ -48,10 +48,10 @@ export default () => {
         </div>
         <div className="hidden  relative lg:flex flex-col justify-center">
           <FadeIn>
-            <div className="pointer-events-none relative flex gap-6 ">
-              <div className=" flex  min-w-full shrink-0 items-center justify-around gap-6">
+            <div className="pointer-events-none relative flex">
+              <div className=" flex  min-w-full shrink-0 items-center justify-around gap-8">
                 <img
-                  className="aspect-square max-w-[clamp(22rem,28vmin,22rem)] rounded-md object-cover shadow-2xl shadow-[#c2b098]"
+                  className="aspect-square max-w-[clamp(22rem,28vmin,22rem)] rounded-md object-cover shadow-2xl shadow-[#c2b098] "
                   src="https://zovrus.ru/files/_cache/product/dsc07771.resize800x800w.jpg"
                   alt="цвет кухни"
                 />
@@ -73,8 +73,8 @@ export default () => {
               </div>
             </div>
 
-            <div className="mt-16 pointer-events-none relative flex gap-6">
-              <div className=" flex min-w-full shrink-0 items-center justify-around gap-6 ">
+            <div className="mt-16 pointer-events-none relative flex ">
+              <div className=" flex min-w-full shrink-0 items-center justify-around gap-8 ">
                 <img
                   className="aspect-square max-w-[clamp(22rem,28vmin,22rem)] rounded-md object-cover shadow-2xl shadow-lime-800"
                   src="https://zovrus.ru/files/_cache/product/ahr-9434.resize800x800w.jpg"
