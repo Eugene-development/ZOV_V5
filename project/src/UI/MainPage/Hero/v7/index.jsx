@@ -25,15 +25,15 @@ export default () => {
       }}
     >
       {/* Оверлей для затемнения фона */}
-      <div className="absolute inset-0 z-0 bg-black/40 pointer-events-none" />
-      <svg className="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+      <div className="absolute inset-0 z-0 bg-black/10 pointer-events-none" />
+      {/* <svg className="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
         <defs>
           <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
             <path d="M.5 200V.5H200" fill="none" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" strokeWidth="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
-      </svg>
+      </svg> */}
       <div className="mx-auto w-full max-w-7xl px-6 py-12 lg:px-8 font-display relative z-10">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-2xl lg:pt-8">
           <img
@@ -41,7 +41,7 @@ export default () => {
             src="https://storage.yandexcloud.net/zovrus/brand/logo-white.svg"
             className="h-36"
           />
-        <div className="max-w-xl lg:max-w-3xl bg-gray-800/30 p-8 -ml-8 mt-8 shadow-2xl shadow-black rounded-md">
+        <div className="max-w-xl lg:max-w-3xl bg-black/20 p-8 -ml-8 mt-8 shadow-2xl shadow-black rounded-md">
 
           <div className="mt-4 sm:mt-2 lg:mt-2">
             <a href="#" className="inline-flex space-x-6">
