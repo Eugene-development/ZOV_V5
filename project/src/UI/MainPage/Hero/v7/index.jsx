@@ -34,12 +34,12 @@ export default () => {
         </defs>
         <rect width="100%" height="100%" strokeWidth="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
       </svg> */}
-      <div className="mx-auto w-full max-w-7xl px-6 py-12 lg:px-8 font-display relative z-10">
+      <div className="mx-auto w-full max-w-7xl px-6 py-4 lg:px-8 font-display relative z-10">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-2xl lg:pt-8">
           <img
             alt="Фабрика ЗОВ"
             src="https://storage.yandexcloud.net/zovrus/brand/logo-white.svg"
-            className="h-36"
+            className="h-32"
           />
         <div className="max-w-xl lg:max-w-3xl bg-black/20 p-8 -ml-8 mt-8 shadow-2xl shadow-black rounded-md">
 
@@ -61,7 +61,7 @@ export default () => {
             </a>
           </div>
 
-          <h1 className="mt-16 text-4xl font-semibold tracking-tight text-gray-200 sm:text-7xl">
+          <h1 className="mt-12 text-4xl font-semibold tracking-wide text-gray-200 sm:text-7xl ">
             ФАБРИКА "ЗОВ"
           </h1>
           <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-200">
