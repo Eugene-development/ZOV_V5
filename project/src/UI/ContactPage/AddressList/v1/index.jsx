@@ -10,7 +10,7 @@ const showrooms = [
     city: "Москва",
     address: "Мичуринский проспект,  10к1",
     metro: "Ломоносовский проспект",
-    workingMode: "10.00-20.00",
+    workingMode: "10.00-21.00",
     img: "https://zovrus.ru/files/_cache/salon/chr-0272.resize1200x1200w.jpg?80096ff06e44387e81a13326382b42f5",
     link: "/",
   },
@@ -255,15 +255,15 @@ export default () => {
                     <p className="mb-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">
                       Режим работы: {item.workingMode}
                     </p>
-                    <p className="mb-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">
+                    {/* <p className="mb-2 font-light text-gray-500 dark:text-gray-400 max-w-sm">
                       Телефон: 8 (915) 400-00-20
-                    </p>
+                    </p> */}
 
                     <button
                       onClick={openVisibleFormConsultation}
-                      className="mt-4 inline-flex items-center text-base font-medium text-gray-800 hover:underline dark:text-red-500 font-display"
+                      className="mt-6 inline-flex items-center text-base font-medium text-gray-800 hover:underline dark:text-red-500 font-display"
                     >
-                      Заявка на просчёт проекта
+                      Запись в салон
                       <svg
                         aria-hidden="true"
                         className="w-4 h-4 ml-1.5"
