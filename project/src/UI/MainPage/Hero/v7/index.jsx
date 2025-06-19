@@ -39,12 +39,14 @@ export default () => {
           <img
             alt="Фабрика ЗОВ"
             src="https://storage.yandexcloud.net/zovrus/brand/logo-white.svg"
-            className="h-32"
+            className="h-36"
           />
-          <div className="mt-8 sm:mt-12 lg:mt-16">
+        <div className="max-w-xl lg:max-w-3xl bg-gray-800/30 p-8 -ml-8 mt-8 shadow-2xl shadow-black rounded-md">
+
+          <div className="mt-4 sm:mt-2 lg:mt-2">
             <a href="#" className="inline-flex space-x-6">
-              <span className="rounded-full bg-gray-200 px-4 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-800 ring-1 ring-inset ring-gray-500/20">
-                Сайт мебельной фабрики ЗОВ
+              <span className="rounded-full bg-gray-200 px-4 py-1.5 text-xs sm:text-sm font-semibold leading-6 text-gray-800 ring-1 ring-inset ring-gray-500/20">
+                Сайт мебельной фабрики ЗОВ в Москве
               </span>
               <button
                 onClick={openVisiblePromo}
@@ -58,24 +60,23 @@ export default () => {
               </button>
             </a>
           </div>
-          <h1 className="mt-12 text-4xl font-bold tracking-tight text-gray-200 sm:text-8xl">
-            Мебель ЗОВ
+
+          <h1 className="mt-16 text-4xl font-semibold tracking-tight text-gray-200 sm:text-7xl">
+            ФАБРИКА "ЗОВ"
           </h1>
           <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-200">
-            Мебельная фабрика «ЗОВ» - это крупнейший производитель корпусной мебели на заказ в Республике Беларусь и за её пределами.
+            Мебельная фабрика «ЗОВ» - это крупнейший производитель высококачественной корпусной мебели на заказ в Республике Беларусь и далеко за её пределами.
           </p>
           <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-200">
-            Наша фабрика гарантирует Вам высочайшее качество премиальной мебели и доступную цену на всю линейку продукции.
+            Наша фабрика гарантирует Вам высочайшее качество премиальной мебели и доступную цену на всю линейку продукции, приемлемые сроки изготовления и сервис.
           </p>
-          <p className="mt-6 text-sm font-semibold sm:text-lg leading-8 text-gray-200">
-            Получите консультацию нашего представителя в Москве.
-          </p>
+          
           <div className="mt-12 flex items-center">
             <button
               onClick={openVisibleFormConsultation}
-              className="border-2 border-gray-300 inline-flex items-center py-4 px-10 font-medium text-center text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:ring-4 "
+              className="border-2 border-gray-300 inline-flex items-center py-3 px-10 font-medium text-center text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:ring-4 "
             >
-              Бесплатная консультация дизайнера
+              Бесплатная консультация дизайнера в Москве
               <svg
                 className="ml-2 -mr-1 w-5 h-5 text-red-800"
                 fill="currentColor"
@@ -89,6 +90,7 @@ export default () => {
                 ></path>
               </svg>
             </button>
+          </div>
           </div>
         </div>
       </div>
