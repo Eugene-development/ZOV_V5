@@ -38,19 +38,19 @@ export default () => {
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-2xl lg:pt-8">
           <img
             alt="Фабрика ЗОВ"
-            src="https://storage.yandexcloud.net/zovrus/brand/logo-rus-x2.png"
+            src="https://storage.yandexcloud.net/zovrus/brand/logo-white.svg"
             className="h-32"
           />
           <div className="mt-8 sm:mt-12 lg:mt-16">
             <a href="#" className="inline-flex space-x-6">
-              <span className="rounded-full bg-gray-200/50 px-4 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-800 ring-1 ring-inset ring-gray-500/20">
+              <span className="rounded-full bg-gray-200 px-4 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-800 ring-1 ring-inset ring-gray-500/20">
                 Сайт мебельной фабрики ЗОВ
               </span>
               <button
                 onClick={openVisiblePromo}
-                className="inline-flex items-center space-x-2 text-xs md:text-sm font-medium leading-6 text-gray-800"
+                className="inline-flex items-center space-x-2 text-xs md:text-sm font-medium leading-6 text-gray-200"
               >
-                <span>Ваш промокод на подарок</span>
+                <span>Ваш промокод</span>
                 <ChevronRightIcon
                   className="h-5 w-5 text-red-800"
                   aria-hidden="true"
@@ -58,16 +58,16 @@ export default () => {
               </button>
             </a>
           </div>
-          <h1 className="mt-12 text-4xl font-bold tracking-tight text-gray-800 sm:text-8xl">
+          <h1 className="mt-12 text-4xl font-bold tracking-tight text-gray-200 sm:text-8xl">
             Мебель ЗОВ
           </h1>
-          <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-700">
+          <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-200">
             Мебельная фабрика «ЗОВ» - это крупнейший производитель корпусной мебели на заказ в Республике Беларусь и за её пределами.
           </p>
-          <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-700">
+          <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-200">
             Наша фабрика гарантирует Вам высочайшее качество премиальной мебели и доступную цену на всю линейку продукции.
           </p>
-          <p className="mt-6 text-sm font-semibold sm:text-lg leading-8 text-gray-900">
+          <p className="mt-6 text-sm font-semibold sm:text-lg leading-8 text-gray-200">
             Получите консультацию нашего представителя в Москве.
           </p>
           <div className="mt-12 flex items-center">
