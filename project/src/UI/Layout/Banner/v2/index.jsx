@@ -42,7 +42,7 @@ export default (props) => {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-5 h-5 text-indigo-300"
+            className="w-5 h-5 text-gray-200"
           >
             <path
               strokeLinecap="round"
@@ -55,7 +55,7 @@ export default (props) => {
               d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
             />
           </svg>
-          <span className="ml-1 text-sm text-gray-50">Москва</span>
+          <span className="ml-1 text-sm text-gray-50 whitespace-nowrap">Москва и МО</span>
         </div>
         <div className="flex md:hidden">
           <EnvelopeIcon

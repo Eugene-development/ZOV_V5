@@ -15,7 +15,7 @@ export { default as Colors } from "./MainPage/Colors/v1";
 export { default as Equipment } from "./MainPage/Equipment/v1";
 export { default as ExampleFurniture } from "./MainPage/ExampleFurniture/v1";
 export { default as Feature } from "./MainPage/Feature/v1";
-export { default as Hero } from "./MainPage/Hero/v6";
+export { default as Hero } from "./MainPage/Hero/v7";
 export { default as Logo } from "./MainPage/Logo/v1";
 export { default as Testimonials } from "./MainPage/Testimonials/v2";
 export { default as ZOV } from "./MainPage/ZOV/v1";
