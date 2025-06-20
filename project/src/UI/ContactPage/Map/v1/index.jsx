@@ -13,21 +13,21 @@ export default () => {
         </div>
       </div>
 
-      <div className="hidden md:block mx-auto p-8  overflow-hidden sm:rounded-lg ">
+      <div className="hidden md:block mx-auto pb-8  overflow-hidden sm:rounded-lg ">
         <iframe
           className="mx-auto  shadow-xl border-2"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Af53eed7fc969b9732e5ac139a551d2ebe71577fc49191db93689b4390e2a2fbf&amp;source=constructor"
           width="1124"
-          height="700"
+          height="600"
           title="Map"
         />
       </div>
-      <div className="md:hidden mx-auto p-8  overflow-hidden sm:rounded-lg">
+      <div className="md:hidden mx-auto pb-8  overflow-hidden sm:rounded-lg">
         <iframe
           className="mx-auto py-8 shadow-xl border-2"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Af53eed7fc969b9732e5ac139a551d2ebe71577fc49191db93689b4390e2a2fbf&amp;source=constructor"
           width="420"
-          height="700"
+          height="600"
           title="Map"
         />
       </div>

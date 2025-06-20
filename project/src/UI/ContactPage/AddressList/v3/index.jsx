@@ -229,15 +229,16 @@ export default () => {
         aria-label="Related articles"
         className="bg-white dark:bg-gray-900"
       >
-        <div className="mb-4 px-4 md:px-20 mx-auto max-w-full">
+        <div className="my-4 px-4 md:px-20 mx-auto max-w-full">
           <div className="grid gap-6 lg:gap-12 md:grid-cols-2 font-display">
             {showrooms.map((item) => (
               <FadeIn key={item.address}>
 <div
-  class="relative mx-auto w-full max-w-xl rounded-3xl border border-slate-200 bg-white ring-4 ring-slate-300/25"
+  class="relative mx-auto w-full max-w-2xl rounded-3xl border border-slate-200 bg-white ring-4 ring-slate-300/25"
 >
   <div class="flex flex-col gap-4 rounded-xl p-6">
-    <a href="javascript:void(0)" class="group relative">
+    <button
+                      onClick={openVisibleFormConsultation} class="group relative">
       <div
         class="absolute inset-0 z-10 flex items-center justify-center rounded-xl bg-black/50 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-active:opacity-90"
       >
@@ -256,17 +257,20 @@ export default () => {
           />
         </svg>
       </div>
-      <div
-        class="absolute top-7 right-7 rounded-xl bg-purple-700/50 px-2 py-1 text-xs font-semibold tracking-wider text-white uppercase"
-      >
-        Метро: "{item.metro}"
-      </div>
+      {item.metro && (
+        <div
+          class="absolute top-7 right-7 rounded-xl bg-purple-700/50 px-2 py-1 text-xs font-semibold tracking-wider text-white uppercase"
+        >
+          Метро: "{item.metro}"
+        </div>
+      )}
+     
       <img
         src={item.img}
-        alt="Story Image"
-        class="aspect-16/9 w-full rounded-xl object-cover"
+        alt="Салон"
+        class="aspect-16/9 w-full rounded-xl object-cover h-[12rem] sm:h-[16rem] md:h-[20rem] lg:h-[24rem]"
       />
-    </a>
+    </button>
     <div class="grow">
       <div class="mb-1.5 text-sm font-medium text-slate-500">
         г. {item.city}
