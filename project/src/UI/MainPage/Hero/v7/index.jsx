@@ -41,7 +41,7 @@ export default () => {
             src="https://storage.yandexcloud.net/zovrus/brand/logo-white.svg"
             className="h-16 sm:h-28 md:h-32 ml-6"
           />
-          <div className="w-full max-w-full sm:max-w-xl lg:max-w-3xl bg-black/50 p-4 sm:p-6 md:p-8 mt-4 sm:mt-8 shadow-2xl shadow-black rounded-lg">
+          <div className="w-full max-w-full sm:max-w-xl lg:max-w-3xl bg-gradient-to-b from-black/10 to-black/50 p-4 sm:p-6 md:p-8 mt-4 sm:mt-8 shadow-2xl shadow-black rounded-lg">
             <div className="mt-2 sm:mt-2 lg:mt-2">
               <a href="#" className="inline-flex flex-wrap gap-2 sm:gap-4 items-center">
                 <span className="rounded-full bg-gray-200 px-3 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-800 ring-1 ring-inset ring-gray-500/20">
