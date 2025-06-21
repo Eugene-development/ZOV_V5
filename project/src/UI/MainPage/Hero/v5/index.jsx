@@ -52,7 +52,7 @@ export default function index() {
         </div>
         <div className="ml-20 mb-6 max-w-4xl lg:mb-12">
           <div className="box">
-            <h1 className="mb-96  text-4xl text-gray-100 font-extrabold font-display tracking-wide leading-none md:text-5xl lg:text-7xl">
+            <h1 className="mb-96  text-4xl text-gray-100 font-extrabold tracking-wide leading-none md:text-5xl lg:text-7xl">
               Белорусская фабрика мебели <span className="lg:text-8xl">&#171;ЗОВ&#187;</span > 
               {/* Фабрика &#171;ЗОВ&#187; */}
             </h1>

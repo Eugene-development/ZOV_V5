@@ -78,7 +78,7 @@ export default () => {
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <h1
               id="sale-heading"
-              className="text-4xl font-semibold font-display tracking-tight text-gray-900 sm:text-5xl lg:text-6xl"
+              className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl"
             >
               Сервис от нашей фабрики
             </h1>

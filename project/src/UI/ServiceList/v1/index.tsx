@@ -58,7 +58,7 @@ export default () => {
   return (
     <div className="bg-white py-8 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-screen-sm text-center mb-4 lg:mb-8 font-display">
+        <div className="mx-auto max-w-screen-sm text-center mb-4 lg:mb-8">
           <h2 className=" mb-4 text-3xl lg:text-5xl font-extrabold text-gray-900 dark:text-white">
             Сервис компании
           </h2>
@@ -73,7 +73,7 @@ export default () => {
           transition={{ type: "spring", stiffness: 50 }}
         >
           <div className="mx-auto mt-8 max-w-2xl sm:mt-16 lg:mt-20 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-10 gap-y-16 lg:max-w-none lg:grid-cols-3 font-display">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-10 gap-y-16 lg:max-w-none lg:grid-cols-3">
               {services.map((item) => (
                 <div key={item.name} className="flex flex-col">
                   <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">

@@ -21,7 +21,7 @@ export default ({ action }) => {
           />
           <div className="gap-8 items-center mx-2 md:mx-16 max-w-full xl:gap-16 lg:grid lg:grid-cols-2 ">
             <div>
-              <h2 className="mb-4 text-left text-xl sm:text-3xl tracking-tight font-display font-extrabold text-gray-800 dark:text-white">
+              <h2 className="mb-4 text-left text-xl sm:text-3xl tracking-tight font-extrabold text-gray-800 dark:text-white">
                 {action.title}
               </h2>
               <p className="md:mb-6 max-w-lg text-left  text-sm sm:text-base font-light text-gray-500 md:text-lg dark:text-gray-400">

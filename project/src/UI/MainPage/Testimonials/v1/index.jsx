@@ -90,7 +90,7 @@ export default () => {
       >
         <Container>
           <FadeIn>
-            <div className="mx-auto max-w-2xl text-center font-display">
+            <div className="mx-auto max-w-2xl text-center">
               <h2 className=" mb-8 text-3xl md:text-6xl  font-extrabold text-gray-900 dark:text-white">
                 Отзывы <br className="md:hidden" /> о нас
               </h2>
@@ -119,7 +119,7 @@ export default () => {
                           </blockquote>
                           <figcaption className="relative mt-6 flex items-center justify-between border-t border-gray-100 pt-6">
                             <div>
-                              <div className="font-display text-base text-gray-700">
+                              <div className="text-base text-gray-700">
                                 {testimonial.author.name}
                               </div>
                               <div className="mt-1 text-sm text-gray-500">

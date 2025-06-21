@@ -23,7 +23,7 @@ export default (props) => {
                   {props.data.date}
                 </time>
               </span>
-              <h1 className="font-display mx-auto mb-4 max-w-3xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl">
+              <h1 className="mx-auto mb-4 max-w-3xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl">
                 {props.data.title}
               </h1>
               {/* <p className="text-lg font-normal text-gray-500 dark:text-gray-400">Мы рады поделиться с Вами своим опытом и помочь в выборе мебели нашей фабрики.</p> */}

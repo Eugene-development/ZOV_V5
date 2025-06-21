@@ -229,7 +229,7 @@ export default () => {
         className="bg-white dark:bg-gray-900"
       >
         <div className="mb-4 px-4 md:px-20 mx-auto max-w-full">
-          <div className="grid gap-6 lg:gap-12 md:grid-cols-2 font-display">
+          <div className="grid gap-6 lg:gap-12 md:grid-cols-2">
             {showrooms.map((item) => (
               <FadeIn key={item.address}>
                 <div className="flex flex-col xl:flex-row mb-4 p-5  transition ease-in-out hover:scale-105 border border-gray-100 rounded-md shadow-lg shadow-gray-200 ring-2 ring-offset-2 ring-gray-200 bg-gradient-to-br from-white  hover:via-gray-100 to-gray-50">
@@ -261,7 +261,7 @@ export default () => {
 
                     <button
                       onClick={openVisibleFormConsultation}
-                      className="mt-6 inline-flex items-center text-base font-medium text-gray-800 hover:underline dark:text-red-500 font-display"
+                      className="mt-6 inline-flex items-center text-base font-medium text-gray-800 hover:underline dark:text-red-500"
                     >
                       Запись в салон
                       <svg

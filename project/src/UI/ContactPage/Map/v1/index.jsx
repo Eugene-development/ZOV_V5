@@ -2,7 +2,7 @@ export default () => {
   return (
     <div className="bg-gray-50">
       <div id="map" className=" py-8 sm:pt-24 sm:pb-12">
-        <div className="mx-auto max-w-screen-sm text-center font-display">
+        <div className="mx-auto max-w-screen-sm text-center">
           <h2 className=" mb-4 text-2xl lg:text-6xl font-extrabold text-gray-900 dark:text-white ">
             Мы на карте
           </h2>

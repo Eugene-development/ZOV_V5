@@ -261,7 +261,7 @@ export default function Reviews() {
       className="pb-16 pt-12 sm:pb-24 sm:pt-32 z-50 bg-gray-50"
     >
       <Container>
-        <div className="mx-auto max-w-2xl text-center font-display">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="tracking-wide mb-8 text-3xl md:text-7xl font-extrabold text-gray-800 dark:text-white">
             Отзывы о нас
           </h2>

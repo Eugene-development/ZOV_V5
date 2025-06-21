@@ -11,7 +11,7 @@ export default (props) => {
   return (
     <motion.main initial={{ opacity: 0 }} animate={{ opacity: 2 }}>
       <div className="bg-white py-8 sm:py-16">
-        <div className="mx-auto max-w-screen-base text-center font-display">
+        <div className="mx-auto max-w-screen-base text-center">
           <nav className="flex mb-6" aria-label="Breadcrumb">
             <ol role="list" className="flex items-center space-x-4 mx-auto">
               <li>
@@ -45,7 +45,7 @@ export default (props) => {
             </ol>
           </nav>
 
-          <h1 className="mb-4 text-2xl lg:text-6xl font-display font-bold text-gray-900 dark:text-white">
+          <h1 className="mb-4 text-2xl lg:text-6xl font-bold text-gray-900 dark:text-white">
             {props.head}
           </h1>
           {/* <p className="px-2 font-light text-gray-500 text-sm sm:text-lg dark:text-gray-400">

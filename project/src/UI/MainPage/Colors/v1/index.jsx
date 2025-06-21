@@ -20,8 +20,8 @@ export default () => {
     // </section>
 
     <section className=" my-12  md:mb-24">
-      <div className=" mx-auto max-w-full px-6 sm:px-16 lg:px-24 sm:text-center lg:pt-24 text-center font-display">
-        <div className="max-w-screen-lg mx-auto mb-8 lg:mb-20 text-center font-display">
+      <div className=" mx-auto max-w-full px-6 sm:px-16 lg:px-24 sm:text-center lg:pt-24 text-center">
+        <div className="max-w-screen-lg mx-auto mb-8 lg:mb-20 text-center">
           {/* <h2 className="tracking-wide mb-8 text-3xl md:text-7xl  font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-green-400 to-violet-600">
             ЦВЕТОВАЯ ПАЛИТРА
           </h2> */}

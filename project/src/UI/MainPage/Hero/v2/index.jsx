@@ -26,7 +26,7 @@ export default () => {
           {/* <div className="mx-auto max-w-full pb-20  sm:pb-20 lg:grid lg:grid-cols-2 lg:gap-x-2  "> */}
           <div className="px-5 lg:pl-12 lg:py-4 ">
             <div className="mx-auto max-w-2xl ">
-              <div className="max-w-xl font-display">
+              <div className="max-w-xl">
                 {/* <img
                     className="h-48"
                     src="https://zovofficial.com/image/catalog/logo-rus-x2.png"

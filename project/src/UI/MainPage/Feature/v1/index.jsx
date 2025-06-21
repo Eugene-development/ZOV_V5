@@ -50,7 +50,7 @@ export default () => {
           <p className="text-base font-semibold leading-7 text-indigo-200">
             Это важно
           </p>
-          <h2 className="font-display mt-2 text-3xl font-bold tracking-tight text-white sm:text-5xl">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-5xl">
             Качество материалов
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">

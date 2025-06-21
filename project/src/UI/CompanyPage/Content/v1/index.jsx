@@ -13,7 +13,7 @@ export default () => {
   return (
     <FadeIn>
       <div className="mx-auto mt-4 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:mt-2">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none font-display">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Наша миссия
           </h2>

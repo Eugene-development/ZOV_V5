@@ -230,7 +230,7 @@ export default () => {
         className="bg-white dark:bg-gray-900"
       >
         <div className="my-4 px-4 md:px-20 mx-auto max-w-full">
-          <div className="grid gap-6 lg:gap-12 md:grid-cols-2 font-display">
+          <div className="grid gap-6 lg:gap-12 md:grid-cols-2">
             {showrooms.map((item) => (
               <FadeIn key={item.address}>
 <div

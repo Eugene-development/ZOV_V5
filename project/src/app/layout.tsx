@@ -63,7 +63,8 @@ export default function RootLayout({
         )}
       </head>
 
-      <body className={inter.className}>
+        <body className="font-display">
+
         <Notification />
         <PromoCode />
         <FormConsultation />

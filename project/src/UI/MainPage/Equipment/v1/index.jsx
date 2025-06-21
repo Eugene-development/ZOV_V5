@@ -4,7 +4,7 @@ export default () => {
   return (
     <section className="bg-white dark:bg-gray-900 text-center ">
       <div className="py-16 px-4 mx-auto max-w-screen-xl sm:py-32 lg:px-6">
-        <div className="max-w-screen-lg mx-auto mb-8 lg:mb-16 font-display">
+        <div className="max-w-screen-lg mx-auto mb-8 lg:mb-16">
           <h2 className="mb-8 text-3xl md:text-7xl tracking-wide font-extrabold text-gray-800 dark:text-white ">
             Комплектация мебели фабрики "ЗОВ"
           </h2>
@@ -14,7 +14,7 @@ export default () => {
           </p>
         </div>
         <FadeIn>
-          <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 xl:gap-6 md:space-y-0 text-left font-display">
+          <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 xl:gap-6 md:space-y-0 text-left ">
             <div className="p-5 space-y-4 bg-white border border-gray-200 rounded-lg shadow-md lg:p-6 dark:bg-gray-800 dark:border-gray-700">
               <img
                 className="object-cover w-full rounded-lg shadow-lg"

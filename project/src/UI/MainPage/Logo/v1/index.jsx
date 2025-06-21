@@ -4,8 +4,8 @@ export default () => {
   return (
     <FadeIn>
       <div className="relative isolate -z-10 ">
-        <div className="py-12 sm:py-32 mx-auto max-w-7xl px-6 lg:px-8 text-center font-display">
-          <div className="max-w-screen-lg mx-auto mb-8 lg:mb-12 text-center font-display">
+        <div className="py-12 sm:py-32 mx-auto max-w-7xl px-6 lg:px-8 text-center">
+          <div className="max-w-screen-lg mx-auto mb-8 lg:mb-12 text-center">
             <h2 className="mb-8 text-center text-2xl md:text-8xl tracking-wide font-extrabold text-gray-800">
               Бытовая техника
             </h2>

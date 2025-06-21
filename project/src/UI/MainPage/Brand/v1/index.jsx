@@ -22,7 +22,7 @@ export default () => {
   return (
     <FadeIn>
       <div className="py-16 px-2 ">
-        <p className="font-display text-base text-center text-slate-900">
+        <p className="text-base text-center text-slate-900">
           Фурнитура, которой мы доверяем:
         </p>
         <ul

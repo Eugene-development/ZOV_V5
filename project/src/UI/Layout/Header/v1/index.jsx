@@ -88,7 +88,7 @@ export default () => {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden 2xl:flex  font-display items-center">
+        <Popover.Group className="hidden 2xl:flex items-center">
           <Link
             href="/"
             className="px-3 text-sm xl:text-base leading-6 text-gray-900 hover:text-red-800 scale110"
@@ -297,7 +297,7 @@ export default () => {
 
 {
   /* <Popover>
-  <Popover.Button className="outline-none pl-4 pr-3 flex *:hover:rotate-90 items-center gap-x-1 text-sm xl:text-base font-display font-semibold leading-6 text-gray-950 hover:text-red-800 scale110">
+  <Popover.Button className="outline-none pl-4 pr-3 flex *:hover:rotate-90 items-center gap-x-1 text-sm xl:text-base font-semibold leading-6 text-gray-950 hover:text-red-800 scale110">
     Каталог
     <ChevronRightIcon
       className="h-5 w-5 flex-none text-red-700  animate-pulse"

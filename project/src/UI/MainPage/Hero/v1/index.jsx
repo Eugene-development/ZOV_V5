@@ -22,7 +22,7 @@ export default () => {
           <div className="mx-auto max-w-full pb-20 pt-10 sm:pb-24 lg:grid lg:grid-cols-2 lg:gap-x-2 lg:px-8 lg:py-16">
             <div className="px-5 lg:px-2 lg:pt-4">
               <div className="mx-auto max-w-2xl ">
-                <div className="max-w-xl font-display">
+                <div className="max-w-xl">
                   {/* <img
                     className="h-48"
                     src="https://zovofficial.com/image/catalog/logo-rus-x2.png"
@@ -57,13 +57,13 @@ export default () => {
                   <div className="mt-8 md:mt-24 flex items-center gap-x-8">
                     <button
                       onClick={openVisibleFormConsultation}
-                      className="hidden md:block rounded-md bg-gray-800 px-2.5 sm:px-4 py-2.5 text-xs sm:text-sm font-display font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+                      className="hidden md:block rounded-md bg-gray-800 px-2.5 sm:px-4 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
                     >
                       Заявка на просчёт проекта
                     </button>
                     <button
                       onClick={openVisibleFormConsultation}
-                      className="md:hidden rounded-md bg-gray-800 px-3 sm:px-4 py-2.5 text-xs sm:text-sm font-display font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+                      className="md:hidden rounded-md bg-gray-800 px-3 sm:px-4 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
                     >
                       Просчёт проекта
                     </button>

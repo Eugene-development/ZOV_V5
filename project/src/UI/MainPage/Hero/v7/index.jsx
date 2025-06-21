@@ -34,7 +34,7 @@ export default () => {
         </defs>
         <rect width="100%" height="100%" strokeWidth="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
       </svg> */}
-      <div className="mx-auto -mt-24 w-full max-w-7xl px-2 py-4 sm:px-4 sm:py-8 lg:px-8 font-display relative z-10">
+      <div className="mx-auto -mt-24 w-full max-w-7xl px-2 py-4 sm:px-4 sm:py-8 lg:px-8 relative z-10">
         <div className="mx-auto w-full max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-2xl lg:pt-8">
           <img
             alt="Фабрика ЗОВ"
