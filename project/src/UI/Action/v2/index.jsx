@@ -1,5 +1,40 @@
 "use client"
 
+import { GiftIcon } from "@heroicons/react/20/solid";
+
+const actions = [
+  {
+    name: "30000",
+    description:
+      "Если вы посещаете наш салон, то мы дарим вам 30000 рублей на покупку мебели.",
+    icon: GiftIcon,
+  },
+  {
+    name: "Сборка в подарок",
+    description:
+      "Если ваш заказ свыше 70000 рублей, то наша компания оплатит работу сборщиков за свой счёт.",
+    icon: GiftIcon,
+  },
+  {
+    name: "Вместе дешевле",
+    description:
+      "При единовременном заказе кухонного гарнитура и шкафа, мы предоставим скидку 5% на оба изделия.",
+    icon: GiftIcon,
+  },
+  {
+    name: "Дарим технику",
+    description:
+      "Если вы приобретёте 5 позиций бытовой техники, та что по меньшей цене будет вам в подарок.",
+    icon: GiftIcon,
+  },
+  {
+    name: "Столешница в подарок",
+    description:
+      "Дарим столешницу из акрила в подарок при покупке кухонного гарнитура.",
+    icon: GiftIcon,
+  },
+];
+
 export default () => {
   return (
 
@@ -17,33 +52,20 @@ export default () => {
     </p>
   </div>
   <div className="grid grid-cols-1 gap-9 md:grid-cols-2 lg:grid-cols-3">
-
-    <div className="rounded-lg bg-white p-6 ring-8 ring-gray-900/5">
+    {actions.map((action) => (
       <div
-        className="mb-4 flex size-12 items-center justify-center rounded-xl bg-yellow-100"
+        key={action.name}
+        className="rounded-lg bg-white p-6 ring-8 ring-gray-900/5"
       >
-        <svg
-          className="inline-block size-6 text-yellow-600"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M13 10V3L4 14h7v7l9-11h-7z"
-          ></path>
-        </svg>
+        <div className="mb-4 flex size-12 items-center justify-center rounded-xl bg-yellow-100">
+          <action.icon className="inline-block size-6 text-yellow-600" />
+        </div>
+        <h4 className="mb-2 font-bold text-gray-950">{action.name}</h4>
+        <p className="text-sm/relaxed text-gray-600">
+          {action.description}
+        </p>
       </div>
-      <h4 className="mb-2 font-bold text-gray-950">Site Speed Optimization</h4>
-      <p className="text-sm/relaxed text-gray-600">
-        Improve your website's loading speed for better user experience and
-        search rankings.
-      </p>
-    </div>
-
+    ))}
   </div>
 </div>
 
