@@ -61,7 +61,8 @@ const actions = [
 export default function page() {
   return (
     <>
-      <Action actions={actions} />;
+      <Action  />;
+      {/* <Action actions={actions} />; */}
     </>
   );
 }

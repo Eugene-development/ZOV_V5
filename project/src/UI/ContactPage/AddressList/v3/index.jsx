@@ -251,7 +251,7 @@ export default () => {
           class="hi-outline hi-arrow-up-right inline-block size-6 transition duration-200 group-hover:scale-150 group-active:scale-100"
         >
           <path
-            stroke-linecap="round"
+            strokeLinecap="round"
             strokeLinejoin="round"
             d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
           />

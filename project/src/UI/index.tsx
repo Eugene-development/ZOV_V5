@@ -46,7 +46,7 @@ export { default as Article } from "./Blog/Article/v1";
 export { default as Policy } from "./Policy/v1";
 
 // Action
-export { default as Action } from "./Action/v1";
+export { default as Action } from "./Action/v2";
 
 // Sliders
 export { default as SliderSimple } from "./Slider/Simple/v1";
