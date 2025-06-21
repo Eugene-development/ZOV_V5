@@ -238,7 +238,7 @@ export default () => {
 >
   <div class="flex flex-col gap-4 rounded-xl p-6">
     <button
-                      onClick={openVisibleFormConsultation} class="group relative">
+      onClick={openVisibleFormConsultation} class="group relative">
       <div
         class="absolute inset-0 z-10 flex items-center justify-center rounded-xl bg-black/50 text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-active:opacity-90"
       >
@@ -252,7 +252,7 @@ export default () => {
         >
           <path
             stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinejoin="round"
             d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
           />
         </svg>

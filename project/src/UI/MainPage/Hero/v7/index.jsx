@@ -34,16 +34,16 @@ export default () => {
         </defs>
         <rect width="100%" height="100%" strokeWidth="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
       </svg> */}
-      <div className="mx-auto -mt-16 w-full max-w-7xl px-2 py-4 sm:px-4 sm:py-8 lg:px-8 font-display relative z-10">
+      <div className="mx-auto -mt-24 w-full max-w-7xl px-2 py-4 sm:px-4 sm:py-8 lg:px-8 font-display relative z-10">
         <div className="mx-auto w-full max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-2xl lg:pt-8">
           <img
             alt="Фабрика ЗОВ"
             src="https://storage.yandexcloud.net/zovrus/brand/logo-white.svg"
             className="h-16 sm:h-28 md:h-32 ml-6"
           />
-          <div className="w-full max-w-full sm:max-w-xl lg:max-w-3xl bg-gradient-to-b from-black/10 to-black/50 p-4 sm:p-6 md:p-8 mt-4 sm:mt-8 shadow-2xl shadow-black rounded-lg">
+          <div className="w-full max-w-full sm:max-w-xl lg:max-w-5xl bg-gradient-to-b from-black/10 to-black/50 p-4 sm:p-6 md:p-6 mt-4 sm:mt-8 shadow-2xl shadow-black rounded-lg">
             <div className="mt-2 sm:mt-2 lg:mt-2">
-              <a href="#" className="inline-flex flex-wrap gap-2 sm:gap-4 items-center">
+              <p className="inline-flex flex-wrap gap-2 sm:gap-4 items-center">
                 <span className="rounded-full bg-gray-200 px-3 py-1 text-xs sm:text-sm font-semibold leading-6 text-gray-800 ring-1 ring-inset ring-gray-500/20">
                   Сайт мебельной фабрики ЗОВ в Москве
                 </span>
@@ -57,7 +57,7 @@ export default () => {
                     aria-hidden="true"
                   />
                 </button> */}
-              </a>
+              </p>
             </div>
             <h1 className="mt-8 sm:mt-10 text-3xl sm:text-4xl md:text-6xl font-semibold tracking-wide text-gray-200">
               ФАБРИКА "ЗОВ"
